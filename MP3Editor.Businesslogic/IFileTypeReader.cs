@@ -8,6 +8,6 @@ namespace MP3Editor.Businesslogic
 {
     public interface IFileTypeReader
     {
-        IFile Read(string filepath);
+        File Read(string filepath);
     }
 }

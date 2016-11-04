@@ -6,13 +6,14 @@ using System.Threading.Tasks;
 
 namespace MP3Editor.Businesslogic.Filetypes.ID3V1
 {
-    class Id3V1Reader : IFileTypeReader
+    public class Id3V1Reader : IFileTypeReader
     {
-        public IFile Read(string filepath)
+        public File Read(string filepath)
         {
+            TagLib.File file = TagLib.File.Create(filepath);
             return new Id3V1()
             {
-                Filename = filepath
+                Filename = file.Name
             };
         }
     }

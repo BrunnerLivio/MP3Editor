@@ -6,15 +6,15 @@ using System.Threading.Tasks;
 
 namespace MP3Editor.Businesslogic
 {
-    class FileTypeContext
+    public class FileTypeContext
     {
         private IFileTypeReader fileType;
-        public IFile Read(string filepath)
+        public File Read(string filepath)
         {
             return this.fileType.Read(filepath);
         }
 
-        public void SetFileType(IFileTypeReader fileType)
+        public void SetFileTypeReader(IFileTypeReader fileType)
         {
             this.fileType = fileType;
         }

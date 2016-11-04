@@ -1,6 +1,6 @@
 namespace MP3Editor.Businesslogic
 {
-    public interface IFile
+    public abstract class File
     {
     }
 }
