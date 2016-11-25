@@ -48,7 +48,6 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="FileTypeContext.cs" />
     <Compile Include="Filetypes\ID3V1\Id3V1.cs" />
     <Compile Include="Filetypes\ID3V1\ID3V1Reader.cs" />
     <Compile Include="File.cs" />
