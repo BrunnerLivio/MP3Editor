@@ -7,12 +7,11 @@ using TagLib;
 
 namespace MP3Editor.Businesslogic.Filetypes.ID3V1
 {
-    public class Id3V1Reader : IFileTypeReader
+    public class ID3V1Writer : IFileTypeWriter
     {
-        public IFile Read(string filepath)
+        public void Save(IFile fileToSave)
         {
-            TagLib.File file = TagLib.File.Create(filepath);
-            return new Id3V1(file);
+            fileToSave.GetFile().Save();
         }
     }
 }

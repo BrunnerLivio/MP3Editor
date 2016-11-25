@@ -11,16 +11,24 @@ namespace MP3Editor.Businesslogic.Test
         [TestMethod]
         public void ReadFile()
         {
-            var reader = new Mock<IFileTypeReader>();
             
             string filepath = "Give Me The Night.mp3";
+            var reader = new Mock<IFileTypeReader>();
+            var id3v1file = new Mock<IID3V1>();
+            id3v1file.Setup(i => i.Filename)
+                .Returns(filepath);
 
             reader
                 .Setup(r => r.Read(filepath))
-                .Returns(new Filetypes.ID3V1.Id3V1() {Filename = filepath});
-            
-            Filetypes.ID3V1.Id3V1 file = (Filetypes.ID3V1.Id3V1)reader.Object.Read(filepath);
+                .Returns(id3v1file.Object);
+
+            IID3V1 file = (IID3V1)reader.Object.Read(filepath);
             Assert.AreEqual(file.Filename, filepath);
+        }
+
+        [TestMethod]
+        public void WriteFile()
+        {
         }
 
     }

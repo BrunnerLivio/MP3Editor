@@ -48,9 +48,13 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="File.cs" />
     <Compile Include="Filetypes\ID3V1\Id3V1.cs" />
     <Compile Include="Filetypes\ID3V1\ID3V1Reader.cs" />
-    <Compile Include="File.cs" />
+    <Compile Include="Filetypes\ID3V1\IID3V1.cs" />
+    <Compile Include="FileTypReader.cs" />
+    <Compile Include="IFile.cs" />
+    <Compile Include="Filetypes\ID3V1\ID3V1Writer.cs" />
     <Compile Include="IFileTypeReader.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>

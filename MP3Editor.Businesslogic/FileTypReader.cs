@@ -6,8 +6,11 @@ using System.Threading.Tasks;
 
 namespace MP3Editor.Businesslogic
 {
-    public interface IFileTypeReader
+    public class FileTypReader : IFileTypeReader
     {
-        IFile Read(string filepath);
+        public IFile Read(string filepath)
+        {
+            throw new NotImplementedException();
+        }
     }
 }
