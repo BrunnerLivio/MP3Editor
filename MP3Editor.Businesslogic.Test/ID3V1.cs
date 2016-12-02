@@ -39,6 +39,7 @@ namespace MP3Editor.Businesslogic.Test
             id3v1file.Setup(i => i.Title)
                 .Returns(title);
 
+            id3v1file.Setup(i => i.Save());
             return id3v1file;
         }
         [TestMethod]
@@ -67,25 +68,16 @@ namespace MP3Editor.Businesslogic.Test
         [TestMethod]
         public void WriteFile()
         {
-            string filepath = "Give Me The Night.mp3";
-            string oldAlbum = "George Benson Best Hits";
+            
             var reader = new Mock<IFileTypeReader>();
-            var id3v1file = new Mock<IID3V1>();
-
-            id3v1file.Setup(i => i.Filename)
-                .Returns(filepath);
-
-            id3v1file.Setup(i => i.Album)
-                .Returns(oldAlbum);
-
-            id3v1file.Setup(i => i.Save());
+            var id3v1file = CreateID3V1File();
 
             reader
                 .Setup(r => r.Read(filepath))
                 .Returns(id3v1file.Object);
 
             IID3V1 file = (IID3V1)reader.Object.Read(filepath);
-            Assert.AreEqual(file.Album, oldAlbum);
+            Assert.AreEqual(file.Album, album);
             file.Save();
         }
     }
