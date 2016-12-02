@@ -25,5 +25,10 @@ namespace MP3Editor.Businesslogic.Filetypes.ID3V1
             get { return tag.Album; }
             set { tag.Album = value; }
         }
+
+        public override void Save()
+        {
+            file.Save();
+        }
     }
 }

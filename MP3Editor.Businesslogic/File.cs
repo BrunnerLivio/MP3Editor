@@ -16,9 +16,6 @@ namespace MP3Editor.Businesslogic
             this.file = file;
         }
 
-        public TagLib.File GetFile()
-        {
-            return this.file;
-        }
+        public abstract void Save();
     }
 }
