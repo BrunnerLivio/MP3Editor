@@ -9,10 +9,8 @@ namespace MP3Editor.Businesslogic
     public abstract class File : IFile
     {
         protected TagLib.File file;
-        protected TagLib.Tag tag;
-        protected File(TagLib.File file, TagLib.Tag tag)
+        protected File(TagLib.File file)
         {
-            this.tag = tag;
             this.file = file;
         }
 

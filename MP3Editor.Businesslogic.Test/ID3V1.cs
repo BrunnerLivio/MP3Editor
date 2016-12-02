@@ -50,6 +50,5 @@ namespace MP3Editor.Businesslogic.Test
             Assert.AreEqual(file.Album, oldAlbum);
             file.Save();
         }
-
     }
 }
