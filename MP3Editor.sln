@@ -1,11 +1,13 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 14
-VisualStudioVersion = 14.0.25420.1
+VisualStudioVersion = 14.0.25123.0
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MP3Editor.Businesslogic", "MP3Editor.Businesslogic\MP3Editor.Businesslogic.csproj", "{42050D97-09AE-4F00-82F4-7E7303C126B6}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MP3Editor.Businesslogic.Test", "MP3Editor.Businesslogic.Test\MP3Editor.Businesslogic.Test.csproj", "{DC7DAA00-68B8-48F7-826D-5CCBB360B5EF}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MP3Editor.UI", "MP3Editor.UI\MP3Editor.UI.csproj", "{3F59EA07-B138-4EEC-A8AD-C7C89E6D8CEF}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -21,6 +23,10 @@ Global
 		{DC7DAA00-68B8-48F7-826D-5CCBB360B5EF}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{DC7DAA00-68B8-48F7-826D-5CCBB360B5EF}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{DC7DAA00-68B8-48F7-826D-5CCBB360B5EF}.Release|Any CPU.Build.0 = Release|Any CPU
+		{3F59EA07-B138-4EEC-A8AD-C7C89E6D8CEF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3F59EA07-B138-4EEC-A8AD-C7C89E6D8CEF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3F59EA07-B138-4EEC-A8AD-C7C89E6D8CEF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3F59EA07-B138-4EEC-A8AD-C7C89E6D8CEF}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
