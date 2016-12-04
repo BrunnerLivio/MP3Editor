@@ -13,6 +13,8 @@ using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
 using MahApps.Metro.Controls;
+using Microsoft.Win32;
+using MP3Editor.UI.Models;
 
 namespace MP3Editor.UI
 {
@@ -24,6 +26,13 @@ namespace MP3Editor.UI
         public MainWindow()
         {
             InitializeComponent();
+            DataContext = new MainWindowViewModel();
+        }
+
+        private void LoadList_MenuItem_OnClick(object sender, RoutedEventArgs e)
+        {
+            MainWindowViewModel mainWindowViewModel = (MainWindowViewModel) (sender as MenuItem).DataContext;
+            mainWindowViewModel.LoadList(@"E:\Music");
         }
     }
 }

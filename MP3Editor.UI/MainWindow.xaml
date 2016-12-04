@@ -13,11 +13,16 @@
         <Menu Grid.Row="0" Background="LightGray">
             <MenuItem Header="Files" Background="LightGray">
                 <MenuItem Header="Add" Background="LightGray"></MenuItem>
-                <MenuItem Header="Load List" Background="LightGray"></MenuItem>
+                <MenuItem Click="LoadList_MenuItem_OnClick" Header="Load List" Background="LightGray"></MenuItem>
                 <MenuItem Header="Save List" Background="LightGray"></MenuItem>
             </MenuItem>
         </Menu>
-        <DataGrid Grid.Row="1" SelectedItem="">
+        <DataGrid Grid.Row="1" SelectedItem="" ItemsSource="{Binding Files}">
+            <DataGrid.Columns>
+                <DataGridTextColumn Header="File Name" Binding="{Binding Name}" />
+                <DataGridTextColumn Header="File Size" Binding="{Binding Size}" />
+                <DataGridTextColumn Header="Path" Binding="{Binding Path}" />
+            </DataGrid.Columns>
         </DataGrid>
     </Grid>
 </Controls:MetroWindow>
