@@ -17,7 +17,7 @@
                 <MenuItem Header="Save List" Background="LightGray"></MenuItem>
             </MenuItem>
         </Menu>
-        <DataGrid Grid.Row="1" SelectedItem="" ItemsSource="{Binding Files}">
+        <DataGrid MouseDoubleClick="DataGrid_OnMouseDoubleClick" IsReadOnly="True" AutoGenerateColumns="False" Grid.Row="1" SelectedItem="{Binding SelectedFile}" ItemsSource="{Binding Files}">
             <DataGrid.Columns>
                 <DataGridTextColumn Header="File Name" Binding="{Binding Name}" />
                 <DataGridTextColumn Header="File Size" Binding="{Binding Size}" />

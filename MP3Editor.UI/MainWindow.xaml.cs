@@ -34,5 +34,18 @@ namespace MP3Editor.UI
             MainWindowViewModel mainWindowViewModel = (MainWindowViewModel) (sender as MenuItem).DataContext;
             mainWindowViewModel.LoadList(@"E:\Music");
         }
+
+        private void File_DoubleClick(object sender, MouseButtonEventArgs e)
+        {
+            
+        }
+
+        private void DataGrid_OnMouseDoubleClick(object sender, MouseButtonEventArgs e)
+        {
+            MainWindowViewModel mainWindowViewModel = (MainWindowViewModel)(sender as DataGrid).DataContext;
+            GeneralWindow window = new GeneralWindow();
+            window.DataContext = mainWindowViewModel.SelectedFile;
+            window.Show();
+        }
     }
 }

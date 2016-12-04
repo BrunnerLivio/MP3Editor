@@ -11,17 +11,32 @@ using System.Windows.Input;
 using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Shapes;
+using MahApps.Metro.Controls;
+using MP3Editor.UI.Models;
 
 namespace MP3Editor.UI
 {
     /// <summary>
     /// Interaktionslogik für GeneralWindow.xaml
     /// </summary>
-    public partial class GeneralWindow : Window
+    public partial class GeneralWindow : MetroWindow
     {
         public GeneralWindow()
         {
             InitializeComponent();
+           
+        }
+
+        private void GeneralWindow_OnLoaded(object sender, RoutedEventArgs e)
+        {
+            FileViewModel file = (FileViewModel)DataContext;
+            file.LoadId3V1();
+        }
+
+        private void GeneralWindow_OnClosed(object sender, EventArgs e)
+        {
+            FileViewModel file = (FileViewModel) (sender as MetroWindow).DataContext;
+            file.Save();
         }
     }
 }

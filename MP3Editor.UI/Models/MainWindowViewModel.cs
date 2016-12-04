@@ -12,7 +12,7 @@ namespace MP3Editor.UI.Models
     {
         private string loadedPath;
         private ObservableCollection<FileViewModel> files = new ObservableCollection<FileViewModel>();
-
+        private FileViewModel selectedFile;
         public void LoadList(string folderpath)
         {
             loadedPath = folderpath;
@@ -25,6 +25,12 @@ namespace MP3Editor.UI.Models
         public ObservableCollection<FileViewModel> Files
         {
             get { return files; }
+        }
+
+        public FileViewModel SelectedFile
+        {
+            get { return selectedFile; }
+            set { selectedFile = value; }
         }
     }
 }
