@@ -9,7 +9,7 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MP3Editor.Businesslogic.Tes
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MP3Editor.UI", "MP3Editor.UI\MP3Editor.UI.csproj", "{3F59EA07-B138-4EEC-A8AD-C7C89E6D8CEF}"
 EndProject
-Project("{7CF6DF6D-3B04-46F8-A40B-537D21BCA0B4}") = "MP3Editor.Docs", "docs\MP3Editor.Docs.shfbproj", "{91AC51AB-FDB8-4EE1-B07D-4F310C26607B}"
+Project("{7CF6DF6D-3B04-46F8-A40B-537D21BCA0B4}") = "MP3Editor.Docs", "MP3Editor.Docs\MP3Editor.Docs.shfbproj", "{91AC51AB-FDB8-4EE1-B07D-4F310C26607B}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
