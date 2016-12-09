@@ -7,37 +7,61 @@ using TagLib;
 
 namespace MP3Editor.Businesslogic.Filetypes.ID3V1
 {
+    /// <summary>
+    /// Represents a data file which reprensents one MP3 file.
+    /// This class writes to the ID3V1 attributes of this file
+    /// </summary>
     public class Id3V1 : File, IID3V1
     {
-
+        /// <summary>
+        /// Initializes the file
+        /// </summary>
+        /// <param name="file">The file provided from TagLib, which should be read or written from</param>
         public Id3V1(TagLib.File file)
             :base(file)
         {
         }
 
+        /// <summary>
+        /// Gives the filename back
+        /// </summary>
         public string Filename
         {
             get { return file.Name; }
         }
 
+        /// <summary>
+        /// Returns the Album of the mp3 file
+        /// and writes it
+        /// </summary>
         public string Album
         {
             get { return file.Tag.Album; }
             set { file.Tag.Album = value; }
         }
 
+        /// <summary>
+        /// Returns an array of Album Artists and 
+        /// writes it
+        /// </summary>
         public string[] AlbumArtists
         {
             get { return file.Tag.AlbumArtists; }
             set { file.Tag.AlbumArtists = value; }
         }
 
+        /// <summary>
+        /// Returns the comment of the file and writes it
+        /// </summary>
         public string Comment
         {
             get { return file.Tag.Comment; }
             set { file.Tag.Comment = value; }
         }
 
+        /// <summary>
+        /// Returns the track number and sets it
+        /// </summary>
         public int Track
         {
             get { return Convert.ToInt32(file.Tag.Track); }
@@ -45,6 +69,9 @@ namespace MP3Editor.Businesslogic.Filetypes.ID3V1
             set { file.Tag.Track = Convert.ToUInt32(value); }
         }
 
+        /// <summary>
+        /// Returns the title of the file and sets it.
+        /// </summary>
         public string Title
         {
             get { return file.Tag.Title; }
@@ -52,6 +79,9 @@ namespace MP3Editor.Businesslogic.Filetypes.ID3V1
             set { file.Tag.Title = value; }
         }
 
+        /// <summary>
+        /// Returns the genre of the file and set it.
+        /// </summary>
         public string Genre
         {
             get { return file.Tag.Genres[0]; }
@@ -59,6 +89,9 @@ namespace MP3Editor.Businesslogic.Filetypes.ID3V1
             set { file.Tag.Genres[0] = value; }
         }
 
+        /// <summary>
+        /// Returns the release-year and sets it
+        /// </summary>
         public int Year
         {
             get { return Convert.ToInt32(file.Tag.Year); }
@@ -66,6 +99,9 @@ namespace MP3Editor.Businesslogic.Filetypes.ID3V1
             set { file.Tag.Year = Convert.ToUInt32(value); }
         }
 
+        /// <summary>
+        /// Finally writes the data to the file using Taglib.
+        /// </summary>
         public override void Save()
         {
             file.Save();
