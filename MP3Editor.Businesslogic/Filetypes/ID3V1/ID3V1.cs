@@ -23,7 +23,7 @@ namespace MP3Editor.Businesslogic.Filetypes.ID3V1
         }
 
         /// <summary>
-        /// Gives the filename back
+        /// Returns the filename
         /// </summary>
         public string Filename
         {
