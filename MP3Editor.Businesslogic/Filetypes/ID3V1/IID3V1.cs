@@ -25,6 +25,10 @@ namespace MP3Editor.Businesslogic.Filetypes.ID3V1
         /// </summary>
         string Title { get; set; }
         /// <summary>
+        /// Returns the Album Artists and sets them
+        /// </summary>
+        string AlbumArtist { get; set; }
+        /// <summary>
         /// Returns the Genre and sets it
         /// </summary>
         string Genre { get; set; }

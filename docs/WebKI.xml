@@ -6,7 +6,10 @@
     <HelpKINode Title="IID3V1.Album Property " Url="html/73b29dae-fa9a-3eaf-626e-c4e781ba5e45.htm" />
     <HelpKINode Title="IID3V2.Album Property " Url="html/f7a8bc77-176b-cb10-2bb1-70ef17522b35.htm" />
   </HelpKINode>
-  <HelpKINode Title="AlbumArtists property" Url="html/c7e4869c-448d-ac3b-ce8b-299d9c3540f5.htm" />
+  <HelpKINode Title="AlbumArtists property">
+    <HelpKINode Title="Id3V1.AlbumArtists Property " Url="html/c7e4869c-448d-ac3b-ce8b-299d9c3540f5.htm" />
+    <HelpKINode Title="IID3V1.AlbumArtists Property " Url="html/6dec1900-c683-b2ee-c3a0-5691e96346b4.htm" />
+  </HelpKINode>
   <HelpKINode Title="Artist property">
     <HelpKINode Title="Id3V2.Artist Property " Url="html/5c6ea4ac-524f-35a1-0db6-10b6b9020515.htm" />
     <HelpKINode Title="IID3V2.Artist Property " Url="html/3ff383ed-fc27-8d11-7659-fb0e028a86b1.htm" />
@@ -32,14 +35,6 @@
     <HelpKINode Title="IID3V1.Filename Property " Url="html/b6f1ad90-e75f-6618-fe09-d2ac28a53e76.htm" />
     <HelpKINode Title="IID3V2.Filename Property " Url="html/30ff6ccf-e1cf-8164-8d08-f52189b53cc1.htm" />
   </HelpKINode>
-  <HelpKINode Title="FileTypReader class">
-    <HelpKINode Title="FileTypReader Class" Url="html/1b9ee906-16c4-381b-5578-480a1442aaa0.htm" />
-    <HelpKINode Title="about FileTypReader class" Url="html/1b9ee906-16c4-381b-5578-480a1442aaa0.htm" />
-    <HelpKINode Title="constructor" Url="html/837ee59e-897c-45ac-5042-a6603937fb10.htm" />
-    <HelpKINode Title="methods" Url="html/be9759fa-4afd-2719-86b0-688b2a69ed60.htm" />
-  </HelpKINode>
-  <HelpKINode Title="FileTypReader.FileTypReader constructor" Url="html/837ee59e-897c-45ac-5042-a6603937fb10.htm" />
-  <HelpKINode Title="FileTypReader.Read method" Url="html/6a0b24d0-5abd-9bc4-5e90-90397afa5a95.htm" />
   <HelpKINode Title="Genre property">
     <HelpKINode Title="Id3V1.Genre Property " Url="html/741bdd1c-683a-82a7-996b-04f0aa6563ae.htm" />
     <HelpKINode Title="Id3V2.Genre Property " Url="html/afb87609-1f59-a049-ce22-aa3f629c5286.htm" />
@@ -115,6 +110,7 @@
     <HelpKINode Title="properties" Url="html/764ec950-6b85-c6f4-11a5-dbdd0d7c32f2.htm" />
   </HelpKINode>
   <HelpKINode Title="IID3V1.Album property" Url="html/73b29dae-fa9a-3eaf-626e-c4e781ba5e45.htm" />
+  <HelpKINode Title="IID3V1.AlbumArtists property" Url="html/6dec1900-c683-b2ee-c3a0-5691e96346b4.htm" />
   <HelpKINode Title="IID3V1.Comment property" Url="html/acf36225-eefc-5147-2e7b-ef03cec1ad4d.htm" />
   <HelpKINode Title="IID3V1.Filename property" Url="html/b6f1ad90-e75f-6618-fe09-d2ac28a53e76.htm" />
   <HelpKINode Title="IID3V1.Genre property" Url="html/f4ac4b20-0805-649e-dec5-823e96e8bf55.htm" />
@@ -142,11 +138,9 @@
   <HelpKINode Title="MP3Editor.Businesslogic.Filetypes.ID3V2.Id3V2 class" Url="html/4ff3a08e-38a4-40cf-e1ab-f27d70b2ea50.htm" />
   <HelpKINode Title="MP3Editor.Businesslogic.Filetypes.ID3V2.ID3V2Reader class" Url="html/94a388fe-c4a3-e7f1-c429-3945fc8e654e.htm" />
   <HelpKINode Title="MP3Editor.Businesslogic.Filetypes.ID3V2.IID3V2 interface" Url="html/970eebaf-dae7-5761-9ddc-4baaed06b050.htm" />
-  <HelpKINode Title="MP3Editor.Businesslogic.FileTypReader class" Url="html/1b9ee906-16c4-381b-5578-480a1442aaa0.htm" />
   <HelpKINode Title="MP3Editor.Businesslogic.IFile interface" Url="html/bc3f239c-e704-721c-4a8b-55341d0e6816.htm" />
   <HelpKINode Title="MP3Editor.Businesslogic.IFileTypeReader interface" Url="html/b4a43e61-acfa-756a-4f21-add56274e792.htm" />
   <HelpKINode Title="Read method">
-    <HelpKINode Title="FileTypReader.Read Method " Url="html/6a0b24d0-5abd-9bc4-5e90-90397afa5a95.htm" />
     <HelpKINode Title="Id3V1Reader.Read Method " Url="html/58467e69-ce36-7fcf-daf7-7105c6df0438.htm" />
     <HelpKINode Title="ID3V2Reader.Read Method " Url="html/2b29914f-ef02-ed68-4b07-2a2022861f7b.htm" />
     <HelpKINode Title="IFileTypeReader.Read Method " Url="html/c73b31d7-45f9-15f3-7124-11f5180f324a.htm" />

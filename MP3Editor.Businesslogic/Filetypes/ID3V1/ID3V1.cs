@@ -41,13 +41,20 @@ namespace MP3Editor.Businesslogic.Filetypes.ID3V1
         }
 
         /// <summary>
-        /// Returns an array of Album Artists and 
+        /// Returns the Album Artists and 
         /// writes it
         /// </summary>
-        public string[] AlbumArtists
+        public string AlbumArtist
         {
-            get { return file.Tag.AlbumArtists; }
-            set { file.Tag.AlbumArtists = value; }
+            get
+            {
+                if (file.Tag.AlbumArtists.Length == 0)
+                {
+                    return String.Empty;
+                }
+                return file.Tag.AlbumArtists[0];
+            }
+            set { file.Tag.AlbumArtists = new string[] { value }; }
         }
 
         /// <summary>
