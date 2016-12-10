@@ -1,4 +1,4 @@
-﻿<controls:MetroWindow Closed="GeneralWindow_OnClosed" Loaded="GeneralWindow_OnLoaded" x:Class="MP3Editor.UI.GeneralWindow"
+﻿<controls:MetroWindow Closed="GeneralWindow_OnClosed" x:Class="MP3Editor.UI.GeneralWindow"
         xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
         xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
         xmlns:controls="http://metro.mahapps.com/winfx/xaml/controls"
@@ -24,7 +24,7 @@
             </Grid.RowDefinitions>
             <!-- ID3V1 Form -->
             <StackPanel Orientation="Horizontal">
-                <CheckBox Margin="5,0,0,0"></CheckBox>
+                <CheckBox IsChecked="{Binding IsID3V1Checked}" Margin="5,0,0,0"></CheckBox>
                 <TextBlock>ID3v1</TextBlock>
             </StackPanel>
             <GroupBox Grid.Column="0" Grid.Row="1">
@@ -51,19 +51,19 @@
                             <RowDefinition></RowDefinition>
                         </Grid.RowDefinitions>
                         <TextBlock>Track:</TextBlock>
-                        <TextBox Text="{Binding Id3V1ViewModel.Track}" Grid.Row="0" Grid.Column="1"></TextBox>
+                        <TextBox IsEnabled="{Binding IsID3V1Checked}" Text="{Binding File.Id3V1ViewModel.Track}" Grid.Row="0" Grid.Column="1"></TextBox>
                         <TextBlock Grid.Column="0" Grid.Row="1" Text="Title:"></TextBlock>
-                        <TextBox Text="{Binding Id3V1ViewModel.Title}" Grid.Row="1" Grid.Column="1"></TextBox>
+                        <TextBox IsEnabled="{Binding IsID3V1Checked}" Text="{Binding File.Id3V1ViewModel.Title}" Grid.Row="1" Grid.Column="1"></TextBox>
                         <TextBlock Grid.Column="0" Grid.Row="2" Text="Artist:"></TextBlock>
-                        <TextBox Text="{Binding Id3V1ViewModel.AlbumArtist}" Grid.Row="2" Grid.Column="1"></TextBox>
+                        <TextBox IsEnabled="{Binding IsID3V1Checked}" Text="{Binding File.Id3V1ViewModel.AlbumArtist}" Grid.Row="2" Grid.Column="1"></TextBox>
                         <TextBlock Grid.Column="0" Grid.Row="3" Text="Album:"></TextBlock>
-                        <TextBox Text="{Binding Id3V1ViewModel.Album}"  Grid.Row="3" Grid.Column="1"></TextBox>
+                        <TextBox IsEnabled="{Binding IsID3V1Checked}" Text="{Binding File.Id3V1ViewModel.Album}"  Grid.Row="3" Grid.Column="1"></TextBox>
                         <TextBlock Grid.Column="0" Grid.Row="4" Text="Genre:"></TextBlock>
-                        <ComboBox Grid.Row="4" Grid.Column="1"></ComboBox>
+                        <ComboBox IsEnabled="{Binding IsID3V1Checked}" Grid.Row="4" Grid.Column="1"></ComboBox>
                         <TextBlock Grid.Column="0" Grid.Row="5" Text="Year:"></TextBlock>
-                        <TextBox Text="{Binding Id3V1ViewModel.Year}" Grid.Row="5" Grid.Column="1"></TextBox>
+                        <TextBox IsEnabled="{Binding IsID3V1Checked}" Text="{Binding File.Id3V1ViewModel.Year}" Grid.Row="5" Grid.Column="1"></TextBox>
                         <TextBlock Grid.Column="0" Grid.Row="6" Text="Comment:"></TextBlock>
-                        <TextBox Text="{Binding Id3V1ViewModel.Comment}" Grid.Row="6" Grid.Column="1"></TextBox>
+                        <TextBox IsEnabled="{Binding IsID3V1Checked}" Text="{Binding File.Id3V1ViewModel.Comment}" Grid.Row="6" Grid.Column="1"></TextBox>
                     </Grid>
                     <Button Margin="5"  Grid.Row="1" Content="Copy from version 2"></Button>
                 </Grid>

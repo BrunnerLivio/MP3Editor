@@ -57,5 +57,10 @@ namespace MP3Editor.UI.Models
                 id3V1ViewModel.Save();
             }
         }
+
+        public void UnloadId3V1()
+        {
+            id3V1ViewModel = null;
+        }
     }
 }

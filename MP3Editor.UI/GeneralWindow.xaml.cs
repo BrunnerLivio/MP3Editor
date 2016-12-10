@@ -27,16 +27,10 @@ namespace MP3Editor.UI
            
         }
 
-        private void GeneralWindow_OnLoaded(object sender, RoutedEventArgs e)
-        {
-            FileViewModel file = (FileViewModel)DataContext;
-            file.LoadId3V1();
-        }
-
         private void GeneralWindow_OnClosed(object sender, EventArgs e)
         {
-            FileViewModel file = (FileViewModel) (sender as MetroWindow).DataContext;
-            file.Save();
+            GeneralWindowViewModel window = (GeneralWindowViewModel) (sender as MetroWindow).DataContext;
+            window.File.Save();
         }
     }
 }

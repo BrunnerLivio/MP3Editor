@@ -77,6 +77,7 @@
       <DependentUpon>MainWindow.xaml</DependentUpon>
     </Compile>
     <Compile Include="Models\FileViewModel.cs" />
+    <Compile Include="Models\GeneralWindowViewModel.cs" />
     <Compile Include="Models\Id3V1ViewModel.cs" />
     <Compile Include="Models\MainWindowViewModel.cs" />
     <Compile Include="Models\ViewModel.cs" />

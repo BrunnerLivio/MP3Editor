@@ -50,7 +50,7 @@ namespace MP3Editor.UI
         {
             MainWindowViewModel mainWindowViewModel = (MainWindowViewModel)(sender as DataGrid).DataContext;
             GeneralWindow window = new GeneralWindow();
-            window.DataContext = mainWindowViewModel.SelectedFile;
+            window.DataContext = new GeneralWindowViewModel(mainWindowViewModel.SelectedFile);
             window.Show();
         }
     }
