@@ -13,7 +13,7 @@
             <RowDefinition></RowDefinition>
         </Grid.RowDefinitions>
         
-        <!--TODO Shortcuts für die MenuItems adden-->
+        <!--TODO Shortcuts für die MenuItems adden -->
         <Menu Grid.Row="0" Background="LightGray">
             <MenuItem Header="Files" Background="LightGray">
                 <MenuItem Header="Add" Background="LightGray"></MenuItem>

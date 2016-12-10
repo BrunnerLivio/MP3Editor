@@ -51,19 +51,19 @@
                             <RowDefinition></RowDefinition>
                         </Grid.RowDefinitions>
                         <TextBlock>Track:</TextBlock>
-                        <TextBox Grid.Row="0" Grid.Column="1"></TextBox>
+                        <TextBox Text="{Binding Id3V1ViewModel.Track}" Grid.Row="0" Grid.Column="1"></TextBox>
                         <TextBlock Grid.Column="0" Grid.Row="1" Text="Title:"></TextBlock>
-                        <TextBox Grid.Row="1" Grid.Column="1"></TextBox>
+                        <TextBox Text="{Binding Id3V1ViewModel.Title}" Grid.Row="1" Grid.Column="1"></TextBox>
                         <TextBlock Grid.Column="0" Grid.Row="2" Text="Artist:"></TextBlock>
-                        <TextBox Grid.Row="2" Grid.Column="1"></TextBox>
+                        <TextBox Text="{Binding Id3V1ViewModel.AlbumArtist}" Grid.Row="2" Grid.Column="1"></TextBox>
                         <TextBlock Grid.Column="0" Grid.Row="3" Text="Album:"></TextBlock>
                         <TextBox Text="{Binding Id3V1ViewModel.Album}"  Grid.Row="3" Grid.Column="1"></TextBox>
                         <TextBlock Grid.Column="0" Grid.Row="4" Text="Genre:"></TextBlock>
                         <ComboBox Grid.Row="4" Grid.Column="1"></ComboBox>
                         <TextBlock Grid.Column="0" Grid.Row="5" Text="Year:"></TextBlock>
-                        <TextBox Grid.Row="5" Grid.Column="1"></TextBox>
+                        <TextBox Text="{Binding Id3V1ViewModel.Year}" Grid.Row="5" Grid.Column="1"></TextBox>
                         <TextBlock Grid.Column="0" Grid.Row="6" Text="Comment:"></TextBlock>
-                        <TextBox Grid.Row="6" Grid.Column="1"></TextBox>
+                        <TextBox Text="{Binding Id3V1ViewModel.Comment}" Grid.Row="6" Grid.Column="1"></TextBox>
                     </Grid>
                     <Button Margin="5"  Grid.Row="1" Content="Copy from version 2"></Button>
                 </Grid>
