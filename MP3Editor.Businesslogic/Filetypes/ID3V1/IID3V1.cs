@@ -15,7 +15,7 @@ namespace MP3Editor.Businesslogic.Filetypes.ID3V1
         /// <summary>
         /// Returns the Filename
         /// </summary>
-        string Filename { get; }
+        string FilePath { get; }
         /// <summary>
         /// Returns the Tracknumber and sets it
         /// </summary>

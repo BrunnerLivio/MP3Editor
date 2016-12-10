@@ -16,9 +16,10 @@ namespace MP3Editor.Businesslogic.Filetypes.ID3V2
         /// <summary>
         /// Initializes the file
         /// </summary>
-        /// <param name="file">The file provided from TagLib, which should be read or written from</param>
-        public Id3V2(TagLib.File file) : 
-            base(file)
+        /// <param name="tag">The tag provided from TagLib, which should be read or written from</param>
+        /// <param name="filepath">The filepath</param>
+        public Id3V2(TagLib.Tag tag, string filepath) : 
+            base(tag, filepath)
         {
         }
 
@@ -27,8 +28,8 @@ namespace MP3Editor.Businesslogic.Filetypes.ID3V2
         /// </summary>
         public string Album
         {
-            get { return file.Tag.Album; }
-            set { file.Tag.Album = value; }
+            get { return tag.Album; }
+            set { tag.Album = value; }
         }
 
         /// <summary>
@@ -36,8 +37,8 @@ namespace MP3Editor.Businesslogic.Filetypes.ID3V2
         /// </summary>
         public int Track
         {
-            get { return Convert.ToInt32(file.Tag.Track); }
-            set { file.Tag.Track = Convert.ToUInt32(value); }
+            get { return Convert.ToInt32(tag.Track); }
+            set { tag.Track = Convert.ToUInt32(value); }
         }
 
         /// <summary>
@@ -45,8 +46,8 @@ namespace MP3Editor.Businesslogic.Filetypes.ID3V2
         /// </summary>
         public string Title
         {
-            get { return file.Tag.Title; }
-            set { file.Tag.Title = value; }
+            get { return tag.Title; }
+            set { tag.Title = value; }
         }
 
         /// <summary>
@@ -54,8 +55,8 @@ namespace MP3Editor.Businesslogic.Filetypes.ID3V2
         /// </summary>
         public string Artist
         {
-            get { return file.Tag.Artists[0]; }
-            set { file.Tag.Artists[0] = value; }
+            get { return tag.Artists[0]; }
+            set { tag.Artists[0] = value; }
         }
 
         /// <summary>
@@ -63,24 +64,8 @@ namespace MP3Editor.Businesslogic.Filetypes.ID3V2
         /// </summary>
         public string Genre
         {
-            get { return file.Tag.Genres[0]; }
-            set { file.Tag.Genres[0] = value; }
-        }
-
-        /// <summary>
-        /// Returns the filename
-        /// </summary>
-        public string Filename
-        {
-            get { return file.Name; }
-        }
-
-        /// <summary>
-        /// Finally writes the data to the file using Taglib.
-        /// </summary>
-        public override void Save()
-        {
-            file.Save();
+            get { return tag.Genres[0]; }
+            set { tag.Genres[0] = value; }
         }
     }
 }

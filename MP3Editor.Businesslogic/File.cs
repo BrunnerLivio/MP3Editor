@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Globalization;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -11,19 +12,35 @@ namespace MP3Editor.Businesslogic
     /// </summary>
     public abstract class File : IFile
     {
-        protected TagLib.File file;
+        protected TagLib.Tag tag;
+        protected string filepath;
         /// <summary>
         /// Initializes the file
         /// </summary>
-        /// <param name="file">The file to read from</param>
-        protected File(TagLib.File file)
+        /// <param name="tag">The tags to read from</param>
+        /// <param name="filepath">The path of the file</param>
+        protected File(TagLib.Tag tag, string filepath)
         {
-            this.file = file;
+            this.tag = tag;
+            this.filepath = filepath;
         }
 
         /// <summary>
-        /// Write the data to the file
+        /// Returns the tags of the file
         /// </summary>
-        public abstract void Save();
+        public TagLib.Tag Tag
+        {
+            get
+            {
+                return tag;
+            }
+        }
+        /// <summary>
+        /// Returns the File path
+        /// </summary>
+        public string FilePath
+        {
+            get { return filepath; }
+        }
     }
 }

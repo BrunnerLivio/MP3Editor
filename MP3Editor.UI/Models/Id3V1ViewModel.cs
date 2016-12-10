@@ -1,9 +1,11 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.IO;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Controls;
+using MP3Editor.Businesslogic;
 using MP3Editor.Businesslogic.Filetypes.ID3V1;
 
 namespace MP3Editor.UI.Models
@@ -16,6 +18,7 @@ namespace MP3Editor.UI.Models
         private string path;
         private Id3V1Reader reader;
         private Id3V1 file;
+        private IFileTypeWriter writer;
 
         /// <summary>
         /// Initialize and read ID3V1 Tags of the file
@@ -25,6 +28,7 @@ namespace MP3Editor.UI.Models
         {
             this.path = path;
             reader = new Id3V1Reader();
+            writer = new FileTypeWriter();
             file = (Id3V1)reader.Read(path);
         }
 
@@ -44,14 +48,6 @@ namespace MP3Editor.UI.Models
         {
             get { return file.Track; }
             set { file.Track = value; }
-        }
-
-        /// <summary>
-        /// Get the name of the file
-        /// </summary>
-        public string Filename
-        {
-            get { return file.Filename; }
         }
 
         /// <summary>
@@ -94,7 +90,7 @@ namespace MP3Editor.UI.Models
         /// </summary>
         public void Save()
         {
-            file.Save();
+            writer.Write(file);
         }
     }
 }

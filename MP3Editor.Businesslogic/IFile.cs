@@ -6,8 +6,18 @@ using System.Threading.Tasks;
 
 namespace MP3Editor.Businesslogic
 {
+    /// <summary>
+    /// Represnts a file
+    /// </summary>
     public interface IFile
     {
-        void Save();
+        /// <summary>
+        /// The absoulte path, where the file is located
+        /// </summary>
+        string FilePath { get; }
+        /// <summary>
+        /// The file tags
+        /// </summary>
+        TagLib.Tag Tag { get; }
     }
 }

@@ -19,8 +19,12 @@ namespace MP3Editor.Businesslogic.Filetypes.ID3V2
         /// <returns>A ID3V2 file with the tags</returns>
         public IFile Read(string filepath)
         {
-            TagLib.File file = TagLib.File.Create(filepath);
-            return new Id3V2(file);
+            TagLib.Tag tags;
+            using (TagLib.File file = TagLib.File.Create(filepath))
+            {
+                tags = file.Tag;
+            }
+            return new Id3V2(tags, filepath);
         }
     }
 }

@@ -56,8 +56,10 @@
     <Compile Include="Filetypes\ID3V2\Id3V2.cs" />
     <Compile Include="Filetypes\ID3V2\ID3V2Reader.cs" />
     <Compile Include="Filetypes\ID3V2\IID3V2.cs" />
+    <Compile Include="FileTypeWriter.cs" />
     <Compile Include="IFile.cs" />
     <Compile Include="IFileTypeReader.cs" />
+    <Compile Include="IFileTypeWriter.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>

@@ -9,10 +9,6 @@ namespace MP3Editor.Businesslogic.Filetypes.ID3V2
     public interface IID3V2
     {
         /// <summary>
-        /// Retursn the Filename
-        /// </summary>
-        string Filename { get; }
-        /// <summary>
         /// Returns the Album and sets it
         /// </summary>
         string Album { get; set; }

@@ -18,8 +18,6 @@ namespace MP3Editor.Businesslogic.Test
         private Mock<IID3V1> CreateID3V1File()
         {
             var id3v1file = new Mock<IID3V1>();
-            id3v1file.Setup(i => i.Filename)
-                .Returns(filepath);
 
             id3v1file.Setup(i => i.Album)
                 .Returns(album);
@@ -38,8 +36,6 @@ namespace MP3Editor.Businesslogic.Test
 
             id3v1file.Setup(i => i.Title)
                 .Returns(title);
-
-            id3v1file.Setup(i => i.Save());
             return id3v1file;
         }
         [TestMethod]
@@ -56,7 +52,6 @@ namespace MP3Editor.Businesslogic.Test
                 .Returns(id3v1file.Object);
 
             IID3V1 file = (IID3V1)reader.Object.Read(filepath);
-            Assert.AreEqual(file.Filename, filepath);
             Assert.AreEqual(file.Album, album);
             Assert.AreEqual(file.Comment, comment);
             Assert.AreEqual(file.Genre, genre);
@@ -69,16 +64,14 @@ namespace MP3Editor.Businesslogic.Test
         public void WriteFile()
         {
             
-            var reader = new Mock<IFileTypeReader>();
+            var writer = new Mock<IFileTypeWriter>();
             var id3v1file = CreateID3V1File();
 
-            reader
-                .Setup(r => r.Read(filepath))
-                .Returns(id3v1file.Object);
+            id3v1file.Object.Genre = "My Genre";
 
-            IID3V1 file = (IID3V1)reader.Object.Read(filepath);
-            Assert.AreEqual(file.Album, album);
-            file.Save();
+            writer
+                .Setup(r => r.Write(id3v1file.Object));
+            writer.Verify(m => m.Write(id3v1file.Object), Times.Once());
         }
     }
 }
