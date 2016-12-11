@@ -1,4 +1,4 @@
-﻿<Controls:MetroWindow x:Class="MP3Editor.UI.MainWindow"
+﻿<Controls:MetroWindow Loaded="MainWindow_OnLoaded"  x:Class="MP3Editor.UI.MainWindow"
         xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
         xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
         xmlns:Controls="clr-namespace:MahApps.Metro.Controls;assembly=MahApps.Metro"
@@ -16,9 +16,8 @@
         <!--TODO Shortcuts für die MenuItems adden -->
         <Menu Grid.Row="0" Background="LightGray">
             <MenuItem Header="Files" Background="LightGray">
-                <MenuItem Header="Add" Background="LightGray"></MenuItem>
                 <MenuItem Click="LoadList_MenuItem_OnClick" Header="Load List" Background="LightGray"></MenuItem>
-                <MenuItem Header="Save List" Background="LightGray"></MenuItem>
+                <MenuItem Click="Save_MenuItem_OnClick" Header="Save List" Background="LightGray"></MenuItem>
             </MenuItem>
         </Menu>
         <DataGrid MouseDoubleClick="DataGrid_OnMouseDoubleClick" IsReadOnly="True" AutoGenerateColumns="False" Grid.Row="1" SelectedItem="{Binding SelectedFile}" ItemsSource="{Binding Files}">

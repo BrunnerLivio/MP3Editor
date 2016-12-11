@@ -41,17 +41,31 @@ namespace MP3Editor.UI
             }
         }
 
-        private void File_DoubleClick(object sender, MouseButtonEventArgs e)
-        {
-
-        }
-
         private void DataGrid_OnMouseDoubleClick(object sender, MouseButtonEventArgs e)
         {
             MainWindowViewModel mainWindowViewModel = (MainWindowViewModel)(sender as DataGrid).DataContext;
             GeneralWindow window = new GeneralWindow();
             window.DataContext = new GeneralWindowViewModel(mainWindowViewModel.SelectedFile);
             window.Show();
+        }
+
+        private void Save_MenuItem_OnClick(object sender, RoutedEventArgs e)
+        {
+            MainWindowViewModel mainWindowViewModel = (MainWindowViewModel)(sender as MenuItem).DataContext;
+            mainWindowViewModel.SaveCurrentPath();
+        }
+
+        private void MainWindow_OnLoaded(object sender, RoutedEventArgs e)
+        {
+            MainWindowViewModel mainWindowViewModel = (MainWindowViewModel)(sender as MetroWindow).DataContext;
+            try
+            {
+                mainWindowViewModel.LoadList(mainWindowViewModel.GetCurrentPath());
+            }
+            catch (Exception ex)
+            {
+                
+            }
         }
     }
 }

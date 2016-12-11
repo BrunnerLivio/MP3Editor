@@ -5,6 +5,7 @@ using System.IO;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using MP3Editor.UI.Properties;
 
 namespace MP3Editor.UI.Models
 {
@@ -49,6 +50,17 @@ namespace MP3Editor.UI.Models
                 selectedFile = value; 
                 OnPropertyChanged("SelectedFile");
             }
+        }
+
+        public void SaveCurrentPath()
+        {
+            Settings.Default["CurrentPath"] = loadedPath;
+            Settings.Default.Save();
+        }
+
+        public string GetCurrentPath()
+        {
+            return (String)Settings.Default["CurrentPath"];
         }
     }
 }
