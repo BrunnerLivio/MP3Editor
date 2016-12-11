@@ -59,7 +59,7 @@
                         <TextBlock Grid.Column="0" Grid.Row="3" Text="Album:"></TextBlock>
                         <TextBox IsEnabled="{Binding IsID3V1Checked}" Text="{Binding File.Id3V1ViewModel.Album}"  Grid.Row="3" Grid.Column="1"></TextBox>
                         <TextBlock Grid.Column="0" Grid.Row="4" Text="Genre:"></TextBlock>
-                        <ComboBox IsEnabled="{Binding IsID3V1Checked}" Grid.Row="4" Grid.Column="1"></ComboBox>
+                        <ComboBox SelectedItem="{Binding File.Id3V1ViewModel.Genre}" ItemsSource="{Binding Genres}" IsEnabled="{Binding IsID3V1Checked}" Grid.Row="4" Grid.Column="1"></ComboBox>
                         <TextBlock Grid.Column="0" Grid.Row="5" Text="Year:"></TextBlock>
                         <TextBox IsEnabled="{Binding IsID3V1Checked}" Text="{Binding File.Id3V1ViewModel.Year}" Grid.Row="5" Grid.Column="1"></TextBox>
                         <TextBlock Grid.Column="0" Grid.Row="6" Text="Comment:"></TextBlock>
@@ -137,8 +137,8 @@
                 <ColumnDefinition></ColumnDefinition>
                 <ColumnDefinition></ColumnDefinition>
             </Grid.ColumnDefinitions>
-            <Button Margin="0,0,5,0" Content="OK"></Button>
-            <Button Margin="0,0,5,0" Grid.Row="0" Grid.Column="1" Content="Cancel"></Button>
+            <Button Click="Ok_Button_Click" Margin="0,0,5,0" Content="OK"></Button>
+            <Button Click="Cancel_Button_Click"  Margin="0,0,5,0" Grid.Row="0" Grid.Column="1" Content="Cancel"></Button>
             <Button Margin="0,0,5,0" Grid.Row="0" Grid.Column="2" Content="&lt;&lt;Previous"></Button>
             <Button Margin="0,0,5,0" Grid.Row="0" Grid.Column="3" Content="Next&gt;&gt;"></Button>
             <TextBlock Grid.Row="0" Grid.Column="4" VerticalAlignment="Center" Text="{Binding File.Path}"></TextBlock>

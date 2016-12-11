@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using MP3Editor.Businesslogic.Genre;
 
 namespace MP3Editor.UI.Models
 {
@@ -14,7 +15,7 @@ namespace MP3Editor.UI.Models
         private FileViewModel file;
         private bool isID3V1Checked = false;
         private bool isID3V2Checked = false;
-
+        private List<String> genres = new List<string>();
         /// <summary>
         /// Initializes the General Window
         /// </summary>
@@ -22,6 +23,11 @@ namespace MP3Editor.UI.Models
         public GeneralWindowViewModel(FileViewModel file)
         {
             this.file = file;
+            GenreFactory genreFactory = new GenreFactory();
+            this.genres = genreFactory
+                .GetAllAudioGenres()
+                .Select(g => g.Name)
+                .ToList();
         }
 
         /// <summary>
@@ -110,6 +116,11 @@ namespace MP3Editor.UI.Models
                 File.Id3V1ViewModel.Track = File.Id3V2ViewModel.Track;
                 File.Id3V1ViewModel.Title = File.Id3V2ViewModel.Title;
             }
+        }
+
+        public List<String> Genres
+        {
+            get { return this.genres; }
         }
     }
 }

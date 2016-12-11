@@ -30,8 +30,13 @@ namespace MP3Editor.UI
         private void GeneralWindow_OnClosed(object sender, EventArgs e)
         {
             GeneralWindowViewModel window = (GeneralWindowViewModel) (sender as MetroWindow).DataContext;
-            window.File.Save();
             window.File.Dispose();
+        }
+
+        private void Ok_Button_Click(object sender, EventArgs e)
+        {
+            GeneralWindowViewModel window = (GeneralWindowViewModel)(sender as Button).DataContext;
+            window.File.Save();
         }
 
         private void CopyFromVersion2_Button_Click(object sender, RoutedEventArgs e)
@@ -44,6 +49,13 @@ namespace MP3Editor.UI
         {
             GeneralWindowViewModel window = (GeneralWindowViewModel)(sender as Button).DataContext;
             window.CopyFromVersion1();
+        }
+
+        private void Cancel_Button_Click(object sender, RoutedEventArgs e)
+        {
+            GeneralWindowViewModel window = (GeneralWindowViewModel)(sender as Button).DataContext;
+            window.File.Dispose();
+            this.Close();
         }
     }
 }

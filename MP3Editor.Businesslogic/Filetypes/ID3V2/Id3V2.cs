@@ -57,7 +57,7 @@ namespace MP3Editor.Businesslogic.Filetypes.ID3V2
         {
             get
             {
-                if (tag.AlbumArtists.Length == 0)
+                if (tag.Artists.Length == 0)
                 {
                     return String.Empty;
                 }
