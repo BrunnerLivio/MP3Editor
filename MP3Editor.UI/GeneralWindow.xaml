@@ -123,7 +123,13 @@
                         <TextBlock Grid.Column="0" Grid.Row="5" Text="Genre:"></TextBlock>
                         <TextBox IsEnabled="{Binding IsID3V2Checked}" Text="{Binding File.Id3V2ViewModel.Genre}" Grid.Row ="5" Grid.Column="1"></TextBox>
                         <TextBlock Grid.Column="0" Grid.Row="6" Text="Language:"></TextBlock>
-                        <ComboBox Grid.Row="6" Grid.Column="1"></ComboBox>
+                        <ComboBox IsEnabled="{Binding IsID3V2Checked}" SelectedItem="{Binding File.Id3V2ViewModel.Language}" ItemsSource="{Binding Languages}" Grid.Row="6" Grid.Column="1">
+                            <ComboBox.ItemTemplate>
+                                <DataTemplate>
+                                    <TextBlock Text="{Binding Name}"></TextBlock>
+                                </DataTemplate>
+                            </ComboBox.ItemTemplate>
+                        </ComboBox>
                     </Grid>
                     <Button Click="CopyFromVersion1_Button_Click" Margin="5" Grid.Row="1" Content="Copy from version 1"></Button>
                 </Grid>

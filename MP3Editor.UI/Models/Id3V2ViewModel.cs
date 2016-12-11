@@ -6,10 +6,11 @@ using System.Threading.Tasks;
 using MP3Editor.Businesslogic;
 using MP3Editor.Businesslogic.Filetypes.ID3V1;
 using MP3Editor.Businesslogic.Filetypes.ID3V2;
+using MP3Editor.Businesslogic.Language;
 
 namespace MP3Editor.UI.Models
 {
-    public class Id3V2ViewModel: ViewModel
+    public class Id3V2ViewModel : ViewModel
     {
         private string path;
         private ID3V2Reader reader;
@@ -26,6 +27,7 @@ namespace MP3Editor.UI.Models
             reader = new ID3V2Reader();
             writer = new FileTypeWriter();
             file = (Id3V2)reader.Read(path);
+            OnPropertyChanged("Language");
         }
 
         /// <summary>
@@ -92,6 +94,12 @@ namespace MP3Editor.UI.Models
             }
         }
 
+        /// <summary>
+        /// Returns the Track and sets it
+        /// </summary>
+        /// <remarks>
+        /// To write to the actual file, call <see cref="Save"/>
+        /// </remarks>
         public int Track
         {
             get { return file.Track; }
@@ -99,6 +107,25 @@ namespace MP3Editor.UI.Models
             {
                 file.Track = value;
                 OnPropertyChanged("Track");
+            }
+        }
+
+        /// <summary>
+        /// Returns the Language and sets it
+        /// </summary>
+        /// <remarks>
+        /// To write to the actual file, call <see cref="Save"/>
+        /// </remarks>
+        public Language Language
+        {
+            get
+            {
+                return LanguageFactory.GetByShortname(Id3V2.Language);
+            }
+            set
+            {
+                Id3V2.Language = value.Shortname;
+                OnPropertyChanged("Language");
             }
         }
         /// <summary>

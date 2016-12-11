@@ -81,5 +81,11 @@ namespace MP3Editor.Businesslogic.Filetypes.ID3V2
             }
             set { tag.Genres = new string[] { value }; }
         }
+
+        public static string Language
+        {
+            get { return TagLib.Id3v2.Tag.Language; }
+            set { TagLib.Id3v2.Tag.Language = value; }
+        }
     }
 }

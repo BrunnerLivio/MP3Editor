@@ -4,6 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using MP3Editor.Businesslogic.Genre;
+using MP3Editor.Businesslogic.Language;
 
 namespace MP3Editor.UI.Models
 {
@@ -16,6 +17,7 @@ namespace MP3Editor.UI.Models
         private bool isID3V1Checked = false;
         private bool isID3V2Checked = false;
         private List<String> genres = new List<string>();
+        private List<Language> languages =new List<Language>();
         /// <summary>
         /// Initializes the General Window
         /// </summary>
@@ -28,6 +30,8 @@ namespace MP3Editor.UI.Models
                 .GetAllAudioGenres()
                 .Select(g => g.Name)
                 .ToList();
+            this.languages = LanguageFactory
+                .GetAll();
         }
 
         /// <summary>
@@ -118,9 +122,20 @@ namespace MP3Editor.UI.Models
             }
         }
 
+        /// <summary>
+        /// Returns a list of genres
+        /// </summary>
         public List<String> Genres
         {
             get { return this.genres; }
+        }
+
+        /// <summary>
+        /// Returns a list of languages
+        /// </summary>
+        public List<Language> Languages
+        {
+            get { return this.languages; }
         }
     }
 }
