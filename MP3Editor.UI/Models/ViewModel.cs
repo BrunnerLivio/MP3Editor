@@ -7,10 +7,16 @@ using System.Threading.Tasks;
 
 namespace MP3Editor.UI.Models
 {
+    /// <summary>
+    /// Represents one ViewModel
+    /// </summary>
     public abstract class ViewModel : INotifyPropertyChanged
     {
         public event PropertyChangedEventHandler PropertyChanged;
-
+        /// <summary>
+        /// Raise when property changed
+        /// </summary>
+        /// <param name="name">The property name as string</param>
         protected void OnPropertyChanged(string name)
         {
             PropertyChangedEventHandler handler = PropertyChanged;

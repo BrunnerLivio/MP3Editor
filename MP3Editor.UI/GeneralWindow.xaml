@@ -70,7 +70,7 @@
             </GroupBox>
             <!-- ID3V2 Form -->
             <StackPanel Grid.Column="1" Grid.Row="0" Orientation="Horizontal">
-                <CheckBox Margin="5,0,0,0"></CheckBox>
+                <CheckBox IsChecked="{Binding IsID3V2Checked}" Margin="5,0,0,0"></CheckBox>
                 <TextBlock>ID3v2</TextBlock>
             </StackPanel>
             <GroupBox Grid.Column="1" Grid.Row="1">
@@ -104,7 +104,7 @@
                                 <ColumnDefinition></ColumnDefinition>
                             </Grid.ColumnDefinitions>
                             <TextBlock Text="Track:"></TextBlock>
-                            <TextBox Grid.Column="1" Grid.Row="0"></TextBox>
+                            <TextBox IsEnabled="{Binding IsID3V2Checked}" Text="{Binding File.Id3V2ViewModel.Track}" Grid.Column="1" Grid.Row="0"></TextBox>
                         </Grid>
                         <Grid Grid.Row ="1" Grid.Column="1">
                             <Grid.ColumnDefinitions>
@@ -115,13 +115,13 @@
                             <TextBox Grid.Column="1" Grid.Row="0"></TextBox>
                         </Grid>
                         <TextBlock Grid.Column="0" Grid.Row="2" Text="Title:"></TextBlock>
-                        <TextBox Grid.Row="2" Grid.Column="1"></TextBox>
+                        <TextBox IsEnabled="{Binding IsID3V2Checked}" Text="{Binding File.Id3V2ViewModel.Title}" Grid.Row="2" Grid.Column="1"></TextBox>
                         <TextBlock Grid.Column="0" Grid.Row="3" Text="Artist:"></TextBlock>
-                        <TextBox Grid.Row="3" Grid.Column="1"></TextBox>
+                        <TextBox IsEnabled="{Binding IsID3V2Checked}" Text="{Binding File.Id3V2ViewModel.Artist}" Grid.Row="3" Grid.Column="1"></TextBox>
                         <TextBlock Grid.Column="0" Grid.Row="4" Text="Album:"></TextBlock>
-                        <TextBox Grid.Row="4" Grid.Column="1"></TextBox>
+                        <TextBox IsEnabled="{Binding IsID3V2Checked}" Text="{Binding File.Id3V2ViewModel.Album}" Grid.Row="4" Grid.Column="1"></TextBox>
                         <TextBlock Grid.Column="0" Grid.Row="5" Text="Genre:"></TextBlock>
-                        <TextBox Grid.Row ="5" Grid.Column="1"></TextBox>
+                        <TextBox IsEnabled="{Binding IsID3V2Checked}" Text="{Binding File.Id3V2ViewModel.Genre}" Grid.Row ="5" Grid.Column="1"></TextBox>
                         <TextBlock Grid.Column="0" Grid.Row="6" Text="Language:"></TextBlock>
                         <ComboBox Grid.Row="6" Grid.Column="1"></ComboBox>
                     </Grid>
@@ -141,7 +141,7 @@
             <Button Margin="0,0,5,0" Grid.Row="0" Grid.Column="1" Content="Cancel"></Button>
             <Button Margin="0,0,5,0" Grid.Row="0" Grid.Column="2" Content="&lt;&lt;Previous"></Button>
             <Button Margin="0,0,5,0" Grid.Row="0" Grid.Column="3" Content="Next&gt;&gt;"></Button>
-            <TextBlock Grid.Row="0" Grid.Column="4" VerticalAlignment="Center">PATH</TextBlock>
+            <TextBlock Grid.Row="0" Grid.Column="4" VerticalAlignment="Center" Text="{Binding File.Path}"></TextBlock>
         </Grid>
     </Grid>
     

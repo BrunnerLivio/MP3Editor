@@ -31,6 +31,7 @@ namespace MP3Editor.UI
         {
             GeneralWindowViewModel window = (GeneralWindowViewModel) (sender as MetroWindow).DataContext;
             window.File.Save();
+            window.File.Dispose();
         }
     }
 }
