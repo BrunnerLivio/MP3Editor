@@ -85,9 +85,14 @@ namespace MP3Editor.Businesslogic.Filetypes.ID3V1
         /// </summary>
         public string Genre
         {
-            get { return tag.Genres[0]; }
-
-            set { tag.Genres[0] = value; }
+            get {
+                if (tag.Genres.Length == 0)
+                {
+                    return String.Empty;
+                }
+                return tag.Genres[0];
+            }
+            set { tag.Genres = new string[] { value }; }
         }
 
         /// <summary>

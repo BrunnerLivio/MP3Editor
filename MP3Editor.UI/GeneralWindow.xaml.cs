@@ -33,5 +33,17 @@ namespace MP3Editor.UI
             window.File.Save();
             window.File.Dispose();
         }
+
+        private void CopyFromVersion2_Button_Click(object sender, RoutedEventArgs e)
+        {
+            GeneralWindowViewModel window = (GeneralWindowViewModel)(sender as Button).DataContext;
+            window.CopyFromVersion2();
+        }
+
+        private void CopyFromVersion1_Button_Click(object sender, RoutedEventArgs e)
+        {
+            GeneralWindowViewModel window = (GeneralWindowViewModel)(sender as Button).DataContext;
+            window.CopyFromVersion1();
+        }
     }
 }

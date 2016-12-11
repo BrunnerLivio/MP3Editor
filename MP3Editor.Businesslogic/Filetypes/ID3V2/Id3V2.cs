@@ -18,7 +18,7 @@ namespace MP3Editor.Businesslogic.Filetypes.ID3V2
         /// </summary>
         /// <param name="tag">The tag provided from TagLib, which should be read or written from</param>
         /// <param name="filepath">The filepath</param>
-        public Id3V2(TagLib.Tag tag, string filepath) : 
+        public Id3V2(TagLib.Tag tag, string filepath) :
             base(tag, filepath)
         {
         }
@@ -55,8 +55,15 @@ namespace MP3Editor.Businesslogic.Filetypes.ID3V2
         /// </summary>
         public string Artist
         {
-            get { return tag.Artists[0]; }
-            set { tag.Artists[0] = value; }
+            get
+            {
+                if (tag.AlbumArtists.Length == 0)
+                {
+                    return String.Empty;
+                }
+                return tag.Artists[0];
+            }
+            set { tag.Artists = new string[] { value }; }
         }
 
         /// <summary>
@@ -64,8 +71,15 @@ namespace MP3Editor.Businesslogic.Filetypes.ID3V2
         /// </summary>
         public string Genre
         {
-            get { return tag.Genres[0]; }
-            set { tag.Genres[0] = value; }
+            get
+            {
+                if (tag.Genres.Length == 0)
+                {
+                    return String.Empty;
+                }
+                return tag.Genres[0];
+            }
+            set { tag.Genres = new string[] { value }; }
         }
     }
 }

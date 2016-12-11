@@ -38,7 +38,11 @@ namespace MP3Editor.UI.Models
         public string Album
         {
             get { return file.Album; }
-            set { file.Album = value; }
+            set
+            {
+                file.Album = value;
+                OnPropertyChanged("Album");
+            }
         }
 
         /// <summary>
@@ -47,7 +51,11 @@ namespace MP3Editor.UI.Models
         public int Track
         {
             get { return file.Track; }
-            set { file.Track = value; }
+            set
+            {
+                file.Track = value; 
+                OnPropertyChanged("Track");
+            }
         }
 
         /// <summary>
@@ -56,7 +64,11 @@ namespace MP3Editor.UI.Models
         public string Genre
         {
             get { return file.Genre; }
-            set { file.Genre = value; }
+            set
+            {
+                file.Genre = value; 
+                OnPropertyChanged("Genre");
+            }
         }
 
         /// <summary>
@@ -65,7 +77,11 @@ namespace MP3Editor.UI.Models
         public int Year
         {
             get { return file.Year; }
-            set { file.Year = value; }
+            set
+            {
+                file.Year = value; 
+                OnPropertyChanged("Year");
+            }
         }
 
         /// <summary>
@@ -74,7 +90,11 @@ namespace MP3Editor.UI.Models
         public string Comment
         {
             get { return file.Comment; }
-            set { file.Comment = value; }
+            set
+            {
+                file.Comment = value;
+                OnPropertyChanged("Comment");
+            }
         }
 
         /// <summary>
@@ -83,8 +103,26 @@ namespace MP3Editor.UI.Models
         public string AlbumArtist
         {
             get { return file.AlbumArtist; }
-            set { file.AlbumArtist = value; }
+            set
+            {
+                file.AlbumArtist = value;
+                OnPropertyChanged("AlbumArtist");
+            }
         }
+
+        /// <summary>
+        /// Get or set the Title of the file
+        /// </summary>
+        public string Title
+        {
+            get { return file.Title; }
+            set
+            {
+                file.Title = value; 
+                OnPropertyChanged("Title");
+            }
+        }
+
         /// <summary>
         /// Saves the file
         /// </summary>

@@ -81,5 +81,35 @@ namespace MP3Editor.UI.Models
                 OnPropertyChanged("IsID3V2Checked");
             }
         }
+
+        /// <summary>
+        /// Copy data from id3v1
+        /// </summary>
+        public void CopyFromVersion1()
+        {
+            if (IsID3V2Checked)
+            {
+                File.Id3V2ViewModel.Album = File.Id3V1ViewModel.Album;
+                File.Id3V2ViewModel.Artist = File.Id3V1ViewModel.AlbumArtist;
+                File.Id3V2ViewModel.Genre = File.Id3V1ViewModel.Genre;
+                File.Id3V2ViewModel.Track = File.Id3V1ViewModel.Track;
+                File.Id3V2ViewModel.Title = File.Id3V1ViewModel.Title;
+            }
+        }
+
+        /// <summary>
+        /// Copy Data from Id3V2
+        /// </summary>
+        public void CopyFromVersion2()
+        {
+            if (IsID3V1Checked)
+            {
+                File.Id3V1ViewModel.Album = File.Id3V2ViewModel.Album;
+                File.Id3V1ViewModel.AlbumArtist = File.Id3V2ViewModel.Artist;
+                File.Id3V1ViewModel.Genre = File.Id3V2ViewModel.Genre;
+                File.Id3V1ViewModel.Track = File.Id3V2ViewModel.Track;
+                File.Id3V1ViewModel.Title = File.Id3V2ViewModel.Title;
+            }
+        }
     }
 }

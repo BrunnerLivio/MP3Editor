@@ -65,7 +65,7 @@
                         <TextBlock Grid.Column="0" Grid.Row="6" Text="Comment:"></TextBlock>
                         <TextBox IsEnabled="{Binding IsID3V1Checked}" Text="{Binding File.Id3V1ViewModel.Comment}" Grid.Row="6" Grid.Column="1"></TextBox>
                     </Grid>
-                    <Button Margin="5"  Grid.Row="1" Content="Copy from version 2"></Button>
+                    <Button Click="CopyFromVersion2_Button_Click" Margin="5"  Grid.Row="1" Content="Copy from version 2"></Button>
                 </Grid>
             </GroupBox>
             <!-- ID3V2 Form -->
@@ -125,7 +125,7 @@
                         <TextBlock Grid.Column="0" Grid.Row="6" Text="Language:"></TextBlock>
                         <ComboBox Grid.Row="6" Grid.Column="1"></ComboBox>
                     </Grid>
-                    <Button Margin="5" Grid.Row="1" Content="Copy from version 1"></Button>
+                    <Button Click="CopyFromVersion1_Button_Click" Margin="5" Grid.Row="1" Content="Copy from version 1"></Button>
                 </Grid>
             </GroupBox>
         </Grid>

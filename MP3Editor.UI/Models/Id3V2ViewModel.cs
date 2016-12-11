@@ -88,7 +88,7 @@ namespace MP3Editor.UI.Models
             set
             {
                 file.Title = value;
-                OnPropertyChanged("Genre");
+                OnPropertyChanged("Title");
             }
         }
 
