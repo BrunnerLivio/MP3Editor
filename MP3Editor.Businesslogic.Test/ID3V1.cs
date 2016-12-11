@@ -71,7 +71,6 @@ namespace MP3Editor.Businesslogic.Test
 
             writer
                 .Setup(r => r.Write(id3v1file.Object));
-            writer.Verify(m => m.Write(id3v1file.Object), Times.Once());
         }
     }
 }

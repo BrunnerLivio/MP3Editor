@@ -15,6 +15,7 @@ namespace MP3Editor.UI.Models
     {
         private string loadedPath;
         private ObservableCollection<FileViewModel> files = new ObservableCollection<FileViewModel>();
+
         private FileViewModel selectedFile;
         /// <summary>
         /// Load a list 
@@ -23,7 +24,7 @@ namespace MP3Editor.UI.Models
         public void LoadList(string folderpath)
         {
             loadedPath = folderpath;
-            foreach (string filepath in Directory.GetFiles(loadedPath).Where(p => p.EndsWith("mp3")))
+            foreach (string filepath in Directory.EnumerateFiles(loadedPath, "*.mp3", SearchOption.AllDirectories))
             {
                 files.Add(new FileViewModel(filepath));
             }
