@@ -52,13 +52,13 @@ namespace MP3Editor.Businesslogic.Filetypes.ID3V1
         {
             get
             {
-                if (tag.AlbumArtists.Length == 0)
+                if (tag.Performers.Length == 0)
                 {
                     return String.Empty;
                 }
-                return tag.AlbumArtists[0];
+                return tag.Performers[0];
             }
-            set { tag.AlbumArtists = new string[] { value }; }
+            set { tag.Performers = new string[1] { value }; }
         }
 
         /// <summary>
