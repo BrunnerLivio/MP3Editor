@@ -98,7 +98,7 @@ namespace MP3Editor.UI.Models
         /// </summary>
         public void CopyFromVersion1()
         {
-            if (IsID3V2Checked)
+            if (IsID3V1Checked)
             {
                 File.Id3V2ViewModel.Album = File.Id3V1ViewModel.Album;
                 File.Id3V2ViewModel.Artist = File.Id3V1ViewModel.AlbumArtist;
@@ -113,7 +113,7 @@ namespace MP3Editor.UI.Models
         /// </summary>
         public void CopyFromVersion2()
         {
-            if (IsID3V1Checked)
+            if (IsID3V2Checked)
             {
                 File.Id3V1ViewModel.Album = File.Id3V2ViewModel.Album;
                 File.Id3V1ViewModel.AlbumArtist = File.Id3V2ViewModel.Artist;
