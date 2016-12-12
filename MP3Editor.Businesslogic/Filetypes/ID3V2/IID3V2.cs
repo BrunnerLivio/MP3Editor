@@ -6,6 +6,9 @@ using System.Threading.Tasks;
 
 namespace MP3Editor.Businesslogic.Filetypes.ID3V2
 {
+    /// <summary>
+    /// An interface for ID3V2 Files
+    /// </summary>
     public interface IID3V2
     {
         /// <summary>

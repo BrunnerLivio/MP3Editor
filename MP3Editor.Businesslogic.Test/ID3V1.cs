@@ -64,7 +64,7 @@ namespace MP3Editor.Businesslogic.Test
         public void WriteFile()
         {
             
-            var writer = new Mock<IFileTypeWriter>();
+            var writer = new Mock<IID3V1Writer>();
             var id3v1file = CreateID3V1File();
 
             id3v1file.Object.Genre = "My Genre";

@@ -17,24 +17,13 @@ namespace MP3Editor.Businesslogic
         /// <summary>
         /// Initializes the file
         /// </summary>
-        /// <param name="tag">The tags to read from</param>
         /// <param name="filepath">The path of the file</param>
-        protected File(TagLib.Tag tag, string filepath)
+        protected File(string filepath)
         {
             this.tag = tag;
             this.filepath = filepath;
         }
 
-        /// <summary>
-        /// Returns the tags of the file
-        /// </summary>
-        public TagLib.Tag Tag
-        {
-            get
-            {
-                return tag;
-            }
-        }
         /// <summary>
         /// Returns the File path
         /// </summary>

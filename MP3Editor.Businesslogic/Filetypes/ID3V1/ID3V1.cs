@@ -11,17 +11,27 @@ namespace MP3Editor.Businesslogic.Filetypes.ID3V1
     /// Represents a data file which reprensents one MP3 file.
     /// This class writes to the ID3V1 attributes of this file
     /// </summary>
-    public class Id3V1 : File, IID3V1
+    public class Id3V1 : File, IID3V1, IFile
     {
+        private TagLib.Id3v1.Tag tag;
         private string filePath;
         /// <summary>
         /// Initializes the file
         /// </summary>
         /// <param name="filePath">The path of the file</param>
         /// <param name="tag">The tag provided from TagLib, which should be read or written from</param>
-        public Id3V1(string filePath, TagLib.Tag tag)
-            :base(tag, filePath)
+        public Id3V1(TagLib.Id3v1.Tag tag, string filePath)
+            :base(filePath)
         {
+            this.tag = tag;
+        }
+
+        /// <summary>
+        /// Returns the ID3V1 Tags
+        /// </summary>
+        public TagLib.Id3v1.Tag Tag
+        {
+            get { return this.tag; }
         }
 
         /// <summary>

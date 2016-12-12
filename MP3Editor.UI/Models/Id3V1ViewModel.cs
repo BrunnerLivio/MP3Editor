@@ -18,7 +18,7 @@ namespace MP3Editor.UI.Models
         private string path;
         private Id3V1Reader reader;
         private Id3V1 file;
-        private IFileTypeWriter writer;
+        private IID3V1Writer writer;
 
         /// <summary>
         /// Initialize and read ID3V1 Tags of the file
@@ -28,7 +28,7 @@ namespace MP3Editor.UI.Models
         {
             this.path = path;
             reader = new Id3V1Reader();
-            writer = new FileTypeWriter();
+            writer = new ID3V1Writer();
             file = (Id3V1)reader.Read(path);
         }
 

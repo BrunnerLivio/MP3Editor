@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using TagLib;
 
 namespace MP3Editor.Businesslogic.Filetypes.ID3V2
 {
@@ -19,10 +20,10 @@ namespace MP3Editor.Businesslogic.Filetypes.ID3V2
         /// <returns>A ID3V2 file with the tags</returns>
         public IFile Read(string filepath)
         {
-            TagLib.Tag tags;
+            TagLib.Id3v2.Tag tags;
             using (TagLib.File file = TagLib.File.Create(filepath))
             {
-                tags = file.Tag;
+                tags = file.GetTag(TagTypes.Id3v2) as TagLib.Id3v2.Tag;
             }
             return new Id3V2(tags, filepath);
         }

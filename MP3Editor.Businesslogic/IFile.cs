@@ -15,9 +15,5 @@ namespace MP3Editor.Businesslogic
         /// The absoulte path, where the file is located
         /// </summary>
         string FilePath { get; }
-        /// <summary>
-        /// The file tags
-        /// </summary>
-        TagLib.Tag Tag { get; }
     }
 }

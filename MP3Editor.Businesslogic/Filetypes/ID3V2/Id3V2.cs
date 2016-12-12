@@ -13,14 +13,24 @@ namespace MP3Editor.Businesslogic.Filetypes.ID3V2
     /// </summary>
     public class Id3V2 : File, IID3V2
     {
+        private TagLib.Id3v2.Tag tag;
         /// <summary>
         /// Initializes the file
         /// </summary>
         /// <param name="tag">The tag provided from TagLib, which should be read or written from</param>
         /// <param name="filepath">The filepath</param>
-        public Id3V2(TagLib.Tag tag, string filepath) :
-            base(tag, filepath)
+        public Id3V2(TagLib.Id3v2.Tag tag, string filepath) :
+            base(filepath)
         {
+            this.tag = tag;
+        }
+
+        /// <summary>
+        /// Returns the Tags
+        /// </summary>
+        public TagLib.Id3v2.Tag Tag
+        {
+            get { return this.tag; }
         }
 
         /// <summary>
@@ -82,10 +92,22 @@ namespace MP3Editor.Businesslogic.Filetypes.ID3V2
             set { tag.Genres = new string[] { value }; }
         }
 
+        /// <summary>
+        /// Returns the language and sets it
+        /// </summary>
         public static string Language
         {
             get { return TagLib.Id3v2.Tag.Language; }
             set { TagLib.Id3v2.Tag.Language = value; }
+        }
+
+        /// <summary>
+        /// Returns the version and sets it
+        /// </summary>
+        public byte Version
+        {
+            get { return ((TagLib.Id3v2.Tag) tag).Version; }
+            set { ((TagLib.Id3v2.Tag) tag).Version = value; }
         }
     }
 }

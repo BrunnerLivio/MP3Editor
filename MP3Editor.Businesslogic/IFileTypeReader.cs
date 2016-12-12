@@ -1,21 +1,22 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Security.Cryptography.X509Certificates;
 using System.Text;
 using System.Threading.Tasks;
 
 namespace MP3Editor.Businesslogic
 {
     /// <summary>
-    /// Strategy to read file
+    /// Interface for File Type Reader
     /// </summary>
     public interface IFileTypeReader
     {
         /// <summary>
-        /// Reads data from a file
+        /// Reads the Filetype
         /// </summary>
-        /// <param name="filepath">The path of the file, which should get read</param>
-        /// <returns></returns>
+        /// <param name="filepath">The absolute path of the file</param>
+        /// <returns>The file</returns>
         IFile Read(string filepath);
     }
 }

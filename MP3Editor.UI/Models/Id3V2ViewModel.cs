@@ -15,7 +15,7 @@ namespace MP3Editor.UI.Models
         private string path;
         private ID3V2Reader reader;
         private Id3V2 file;
-        private IFileTypeWriter writer;
+        private ID3V2Writer writer;
 
         /// <summary>
         /// Initialize and read ID3V2 Tags of the file
@@ -25,7 +25,7 @@ namespace MP3Editor.UI.Models
         {
             this.path = path;
             reader = new ID3V2Reader();
-            writer = new FileTypeWriter();
+            writer = new ID3V2Writer();
             file = (Id3V2)reader.Read(path);
             OnPropertyChanged("Language");
         }
@@ -118,16 +118,30 @@ namespace MP3Editor.UI.Models
         /// </remarks>
         public Language Language
         {
-            get
-            {
-                return LanguageFactory.GetByShortname(Id3V2.Language);
-            }
+            get { return LanguageFactory.GetByShortname(Id3V2.Language); }
             set
             {
                 Id3V2.Language = value.Shortname;
                 OnPropertyChanged("Language");
             }
         }
+
+        /// <summary>
+        /// Returns the version and sets it
+        /// </summary>
+        /// <remarks>
+        /// To write to the actual file, call <see cref="Save"/>
+        /// </remarks>
+        public byte Version
+        {
+            get { return file.Version; }
+            set
+            {
+                file.Version = value;
+                OnPropertyChanged("Version");
+            }
+        }
+
         /// <summary>
         /// Write the data to the file
         /// </summary>

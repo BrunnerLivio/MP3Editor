@@ -6,6 +6,9 @@ using System.Threading.Tasks;
 
 namespace MP3Editor.Businesslogic.Filetypes.ID3V1
 {
+    /// <summary>
+    /// Represents an ID3V1 file
+    /// </summary>
     public interface IID3V1 : IFile
     {
         /// <summary>
@@ -40,5 +43,9 @@ namespace MP3Editor.Businesslogic.Filetypes.ID3V1
         /// Returns the Comment and sets it
         /// </summary>
         string Comment { get; set; }
+        /// <summary>
+        /// Returns the Id3V2 Tag
+        /// </summary>
+        TagLib.Id3v1.Tag Tag { get; }
     }
 }

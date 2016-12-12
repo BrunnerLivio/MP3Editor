@@ -18,6 +18,7 @@ namespace MP3Editor.UI.Models
         private bool isID3V2Checked = false;
         private List<String> genres = new List<string>();
         private List<Language> languages =new List<Language>();
+        private List<byte> versions = new List<byte>() {2,3,4};
         /// <summary>
         /// Initializes the General Window
         /// </summary>
@@ -136,6 +137,14 @@ namespace MP3Editor.UI.Models
         public List<Language> Languages
         {
             get { return this.languages; }
+        }
+
+        /// <summary>
+        /// Returns all possible ID3V2 versions
+        /// </summary>
+        public List<byte> Versions
+        {
+            get { return versions; }
         }
     }
 }

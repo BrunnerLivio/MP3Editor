@@ -20,12 +20,12 @@ namespace MP3Editor.Businesslogic.Filetypes.ID3V1
         /// <returns>A ID3V1 file with the tags</returns>
         public IFile Read(string filepath)
         {
-            TagLib.Tag tags;
+            TagLib.Id3v1.Tag tags;
             using (TagLib.File file = TagLib.File.Create(filepath))
             {
-               tags = file.Tag;
+                tags = file.GetTag(TagTypes.Id3v1) as TagLib.Id3v1.Tag;
             }
-            return new Id3V1(filepath, tags);
+            return new Id3V1(tags, filepath);
         }
     }
 }

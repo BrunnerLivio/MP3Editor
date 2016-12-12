@@ -97,7 +97,7 @@
                             <RowDefinition></RowDefinition>
                         </Grid.RowDefinitions>
                         <TextBlock>Version:</TextBlock>
-                        <ComboBox Grid.Row="0" Grid.Column="1"></ComboBox>
+                        <ComboBox IsEnabled="{Binding IsID3V2Checked}" SelectedItem="{Binding File.Id3V2ViewModel.Version}" ItemsSource="{Binding Versions}" Grid.Row="0" Grid.Column="1"></ComboBox>
                         <Grid Grid.Row="1" Grid.Column="0">
                             <Grid.ColumnDefinitions>
                                 <ColumnDefinition></ColumnDefinition>
@@ -112,7 +112,7 @@
                                 <ColumnDefinition></ColumnDefinition>
                             </Grid.ColumnDefinitions>
                             <TextBlock Text="Set:" HorizontalAlignment="Right"></TextBlock>
-                            <TextBox Grid.Column="1" Grid.Row="0"></TextBox>
+                            <TextBox  Grid.Column="1" Grid.Row="0"></TextBox>
                         </Grid>
                         <TextBlock Grid.Column="0" Grid.Row="2" Text="Title:"></TextBlock>
                         <TextBox IsEnabled="{Binding IsID3V2Checked}" Text="{Binding File.Id3V2ViewModel.Title}" Grid.Row="2" Grid.Column="1"></TextBox>
