@@ -48,7 +48,7 @@ namespace MP3Editor.UI.Models
         /// <summary>
         /// Set or get the Track Number
         /// </summary>
-        public int Track
+        public uint Track
         {
             get { return file.Track; }
             set
@@ -74,7 +74,7 @@ namespace MP3Editor.UI.Models
         /// <summary>
         /// Get or set the creation year of the song
         /// </summary>
-        public int Year
+        public uint Year
         {
             get { return file.Year; }
             set

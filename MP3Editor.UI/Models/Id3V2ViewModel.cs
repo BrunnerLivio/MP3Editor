@@ -100,7 +100,7 @@ namespace MP3Editor.UI.Models
         /// <remarks>
         /// To write to the actual file, call <see cref="Save"/>
         /// </remarks>
-        public int Track
+        public uint Track
         {
             get { return file.Track; }
             set
@@ -118,10 +118,10 @@ namespace MP3Editor.UI.Models
         /// </remarks>
         public Language Language
         {
-            get { return LanguageFactory.GetByShortname(Id3V2.Language); }
+            get { return LanguageFactory.GetByShortname(file.Language); }
             set
             {
-                Id3V2.Language = value.Shortname;
+                file.Language = value.Shortname;
                 OnPropertyChanged("Language");
             }
         }

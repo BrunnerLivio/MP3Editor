@@ -12,7 +12,6 @@ namespace MP3Editor.Businesslogic
     /// </summary>
     public abstract class File : IFile
     {
-        protected TagLib.Tag tag;
         protected string filepath;
         /// <summary>
         /// Initializes the file
@@ -20,7 +19,6 @@ namespace MP3Editor.Businesslogic
         /// <param name="filepath">The path of the file</param>
         protected File(string filepath)
         {
-            this.tag = tag;
             this.filepath = filepath;
         }
 

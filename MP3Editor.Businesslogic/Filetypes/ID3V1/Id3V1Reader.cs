@@ -21,11 +21,33 @@ namespace MP3Editor.Businesslogic.Filetypes.ID3V1
         public IFile Read(string filepath)
         {
             TagLib.Id3v1.Tag tags;
+            IID3V1 newFile = new Id3V1(filepath);
             using (TagLib.File file = TagLib.File.Create(filepath))
             {
                 tags = file.GetTag(TagTypes.Id3v1) as TagLib.Id3v1.Tag;
+                if (tags.Performers.Length == 0)
+                {
+                    newFile.AlbumArtist = String.Empty;
+                }
+                else
+                {
+                    newFile.AlbumArtist = tags.Performers[0];
+                }
+                newFile.Album = tags.Album;
+                newFile.Comment = tags.Comment;
+                if (tags.Genres.Length == 0)
+                {
+                    newFile.Genre = String.Empty;
+                }
+                else
+                {
+                    newFile.Genre = tags.Genres[0];
+                }
+                newFile.Title = tags.Title;
+                newFile.Track = tags.Track;
+                newFile.Year = tags.Year;
             }
-            return new Id3V1(tags, filepath);
+            return newFile;
         }
     }
 }

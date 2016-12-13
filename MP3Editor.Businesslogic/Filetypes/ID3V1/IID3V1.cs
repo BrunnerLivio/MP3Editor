@@ -22,7 +22,7 @@ namespace MP3Editor.Businesslogic.Filetypes.ID3V1
         /// <summary>
         /// Returns the Tracknumber and sets it
         /// </summary>
-        int Track { get; set; }
+        uint Track { get; set; }
         /// <summary>
         /// Returns the Songtitle and sets it
         /// </summary>
@@ -38,14 +38,10 @@ namespace MP3Editor.Businesslogic.Filetypes.ID3V1
         /// <summary>
         /// Returns the Creationyear and sets it
         /// </summary>
-        int Year { get; set; }
+        uint Year { get; set; }
         /// <summary>
         /// Returns the Comment and sets it
         /// </summary>
         string Comment { get; set; }
-        /// <summary>
-        /// Returns the Id3V2 Tag
-        /// </summary>
-        TagLib.Id3v1.Tag Tag { get; }
     }
 }

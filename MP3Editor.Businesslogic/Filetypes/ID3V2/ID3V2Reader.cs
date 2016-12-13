@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using MP3Editor.Businesslogic.Filetypes.ID3V1;
 using TagLib;
 
 namespace MP3Editor.Businesslogic.Filetypes.ID3V2
@@ -12,7 +13,7 @@ namespace MP3Editor.Businesslogic.Filetypes.ID3V2
     /// using TagLib
     /// </summary>
     public class ID3V2Reader : IFileTypeReader
-    { 
+    {
         /// <summary>
         /// Reads the Id3V2 tags of the given file using TagLib
         /// </summary>
@@ -21,11 +22,33 @@ namespace MP3Editor.Businesslogic.Filetypes.ID3V2
         public IFile Read(string filepath)
         {
             TagLib.Id3v2.Tag tags;
+            IID3V2 newFile = new Id3V2(filepath);
             using (TagLib.File file = TagLib.File.Create(filepath))
             {
                 tags = file.GetTag(TagTypes.Id3v2) as TagLib.Id3v2.Tag;
+                newFile.Language = TagLib.Id3v2.Tag.Language;
+                newFile.Album = tags.Album;
+                if (tags.AlbumArtists.Length == 0)
+                {
+                    newFile.Artist = string.Empty;
+                }
+                else
+                {
+                    newFile.Artist = tags.AlbumArtists[0];
+                }
+                if (tags.Genres.Length == 0)
+                {
+                    newFile.Genre = string.Empty;
+                }
+                else
+                {
+                    newFile.Genre = tags.Genres[0];
+                }
+                newFile.Title = tags.Title;
+                newFile.Track = tags.Track;
+                newFile.Version = tags.Version;
             }
-            return new Id3V2(tags, filepath);
+            return newFile;
         }
     }
 }

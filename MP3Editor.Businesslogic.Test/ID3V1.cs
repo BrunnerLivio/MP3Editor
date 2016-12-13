@@ -12,9 +12,9 @@ namespace MP3Editor.Businesslogic.Test
         private string album = "George Benson Best Hits";
         private string comment = "My comment xD";
         private string genre = "Pop";
-        private int year = 1981;
+        private uint year = 1981;
         private string title = "Give Me The Night";
-        private int track = 1;
+        private uint track = 1;
         private Mock<IID3V1> CreateID3V1File()
         {
             var id3v1file = new Mock<IID3V1>();
@@ -39,25 +39,9 @@ namespace MP3Editor.Businesslogic.Test
             return id3v1file;
         }
         [TestMethod]
-        public void ReadFile()
+        public void Properties()
         {
-            Mock<IID3V1> id3v1file = CreateID3V1File();
-            
-
-            var reader = new Mock<IFileTypeReader>();
-            
-
-            reader
-                .Setup(r => r.Read(filepath))
-                .Returns(id3v1file.Object);
-
-            IID3V1 file = (IID3V1)reader.Object.Read(filepath);
-            Assert.AreEqual(file.Album, album);
-            Assert.AreEqual(file.Comment, comment);
-            Assert.AreEqual(file.Genre, genre);
-            Assert.AreEqual(file.Track, track);
-            Assert.AreEqual(file.Title, title);
-            Assert.AreEqual(file.Year, year);
+            Id3V1 file = new Id3V1();
         }
 
         [TestMethod]

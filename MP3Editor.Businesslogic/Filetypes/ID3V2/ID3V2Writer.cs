@@ -22,8 +22,13 @@ namespace MP3Editor.Businesslogic.Filetypes.ID3V2
             using (TagLib.File taglibFile = TagLib.File.Create(file.FilePath))
             {
                 TagLib.Id3v2.Tag tags = taglibFile.GetTag(TagTypes.Id3v2) as TagLib.Id3v2.Tag;
-                file.Tag.CopyTo(tags, true);
-                tags.Version = file.Tag.Version;
+                tags.Version = file.Version;
+                tags.Album = file.Album;
+                tags.AlbumArtists = new[] { file.Artist };
+                TagLib.Id3v2.Tag.Language = file.Language;
+                tags.Genres = new[] { file.Genre };
+                tags.Track = file.Track;
+                tags.Title = file.Title;
                 taglibFile.Save();
             }
         }

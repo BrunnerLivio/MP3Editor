@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using TagLib;
 
 namespace MP3Editor.Businesslogic.Filetypes.ID3V1
 {
@@ -20,7 +21,14 @@ namespace MP3Editor.Businesslogic.Filetypes.ID3V1
             
             using (TagLib.File taglibFile = TagLib.File.Create(file.FilePath))
             {
-                file.Tag.CopyTo(taglibFile.Tag, true);
+                TagLib.Id3v1.Tag tags = taglibFile.GetTag(TagTypes.Id3v1) as TagLib.Id3v1.Tag;
+                tags.Album = file.Album;
+                tags.Performers = new[] {file.AlbumArtist};
+                tags.Year = file.Year;
+                tags.Comment = file.Comment;
+                tags.Genres = new[] {file.Genre};
+                tags.Title = file.Title;
+                tags.Track = file.Track;
                 taglibFile.Save();
             }
         }
