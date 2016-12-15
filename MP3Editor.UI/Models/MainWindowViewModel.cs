@@ -29,19 +29,14 @@ namespace MP3Editor.UI.Models
         public void LoadList(string path)
         {
             loadedPath = path;
-            try
+            playlist = new Playlist();
+            files.Clear();
+            playlist.Load(path);
+            foreach (Businesslogic.File playlistFile in playlist.Files)
             {
-                playlist = new Playlist();
-                playlist.Load(path);
-                foreach (Businesslogic.File playlistFile in playlist.Files)
-                {
-                    files.Add(new FileViewModel(playlistFile.FilePath));
-                }
+                files.Add(new FileViewModel(playlistFile.FilePath));
             }
-            catch (Exception)
-            {
-                MessageBox.Show("Die Datei konnte nicht geladen werden");
-            }
+
         }
 
         /// <summary>
@@ -64,7 +59,7 @@ namespace MP3Editor.UI.Models
         /// <param name="filepath">The path of the file</param>
         public void AddfileToPlaylist(string filepath)
         {
-            playlist.Add(filepath);    
+            playlist.Add(filepath);
             files.Add(new FileViewModel(filepath));
         }
 
@@ -84,7 +79,7 @@ namespace MP3Editor.UI.Models
             get { return selectedFile; }
             set
             {
-                selectedFile = value; 
+                selectedFile = value;
                 OnPropertyChanged("SelectedFile");
             }
         }

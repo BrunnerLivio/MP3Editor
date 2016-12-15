@@ -34,10 +34,18 @@ namespace MP3Editor.UI
         private void LoadList_MenuItem_OnClick(object sender, RoutedEventArgs e)
         {
             MainWindowViewModel mainWindowViewModel = (MainWindowViewModel)(sender as MenuItem).DataContext;
-            FolderBrowserDialog dialog = new FolderBrowserDialog();
+            System.Windows.Forms.OpenFileDialog dialog = new System.Windows.Forms.OpenFileDialog();
+            dialog.Filter = "M3U Files | *.m3u";
             if (dialog.ShowDialog() == System.Windows.Forms.DialogResult.OK)
             {
-                mainWindowViewModel.LoadList(dialog.SelectedPath);
+                try
+                {
+                    mainWindowViewModel.LoadList(dialog.FileName);
+                }
+                catch (Exception)
+                {
+                    System.Windows.Forms.MessageBox.Show("Die Datei konnte nicht geladen werden");
+                }
             }
         }
 
@@ -53,9 +61,11 @@ namespace MP3Editor.UI
         {
             MainWindowViewModel mainWindowViewModel = (MainWindowViewModel)(sender as MenuItem).DataContext;
             System.Windows.Forms.SaveFileDialog dialog = new System.Windows.Forms.SaveFileDialog();
+            dialog.DefaultExt = ".m3u";
             string path;
             if (mainWindowViewModel.GetCurrentPath() == string.Empty)
             {
+                dialog.ShowDialog();
                 path = dialog.FileName;
             }
             else
@@ -79,9 +89,9 @@ namespace MP3Editor.UI
             {
                 mainWindowViewModel.LoadList(mainWindowViewModel.GetCurrentPath());
             }
-            catch (Exception ex)
+            catch (Exception)
             {
-                
+
             }
         }
 
@@ -89,6 +99,7 @@ namespace MP3Editor.UI
         {
             MainWindowViewModel mainWindowViewModel = (MainWindowViewModel)(sender as MenuItem).DataContext;
             System.Windows.Forms.OpenFileDialog dialog = new System.Windows.Forms.OpenFileDialog();
+            dialog.Filter = "MP3 Files | *.mp3";
             if (dialog.ShowDialog() == System.Windows.Forms.DialogResult.OK)
             {
                 mainWindowViewModel.AddfileToPlaylist(dialog.FileName);

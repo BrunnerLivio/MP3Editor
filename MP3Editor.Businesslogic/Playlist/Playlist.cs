@@ -46,10 +46,10 @@ namespace MP3Editor.Businesslogic.Playlist
         /// <param name="path">The name to save the m3u file to</param>
         public void Save(string path)
         {
-            string text = "#EXTM3U\n";
+            string text = string.Format("#EXTM3U{0}", Environment.NewLine);
             foreach (File file in this.files)
             {
-                text = string.Format("{0}{1}\n", text, file.FilePath);
+                text = string.Format("{0}{1}{2}", text, file.FilePath, Environment.NewLine);
                 System.IO.File.WriteAllText(path, text);
             }
         }
