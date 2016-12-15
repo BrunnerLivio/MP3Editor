@@ -5,6 +5,9 @@ using System.IO;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using System.Windows.Forms;
+using MP3Editor.Businesslogic;
+using MP3Editor.Businesslogic.Playlist;
 using MP3Editor.UI.Properties;
 
 namespace MP3Editor.UI.Models
@@ -18,17 +21,51 @@ namespace MP3Editor.UI.Models
         private ObservableCollection<FileViewModel> files = new ObservableCollection<FileViewModel>();
 
         private FileViewModel selectedFile;
+        private Playlist playlist = new Playlist();
         /// <summary>
         /// Load a list 
         /// </summary>
         /// <param name="folderpath">The folder to load</param>
-        public void LoadList(string folderpath)
+        public void LoadList(string path)
         {
-            loadedPath = folderpath;
-            foreach (string filepath in Directory.EnumerateFiles(loadedPath, "*.mp3", SearchOption.AllDirectories))
+            loadedPath = path;
+            try
             {
-                files.Add(new FileViewModel(filepath));
+                playlist = new Playlist();
+                playlist.Load(path);
+                foreach (Businesslogic.File playlistFile in playlist.Files)
+                {
+                    files.Add(new FileViewModel(playlistFile.FilePath));
+                }
             }
+            catch (Exception)
+            {
+                MessageBox.Show("Die Datei konnte nicht geladen werden");
+            }
+        }
+
+        /// <summary>
+        /// Saves the playlist
+        /// </summary>
+        public void SaveList(string path)
+        {
+            try
+            {
+                playlist.Save(path);
+            }
+            catch (Exception)
+            {
+                MessageBox.Show("Could not save the file");
+            }
+        }
+        /// <summary>
+        /// Add a file to the playlist and add it to the UI
+        /// </summary>
+        /// <param name="filepath">The path of the file</param>
+        public void AddfileToPlaylist(string filepath)
+        {
+            playlist.Add(filepath);    
+            files.Add(new FileViewModel(filepath));
         }
 
         /// <summary>
@@ -60,7 +97,8 @@ namespace MP3Editor.UI.Models
 
         public string GetCurrentPath()
         {
-            return (String)Settings.Default["CurrentPath"];
+            return string.Empty;
+            //return (String)Settings.Default["CurrentPath"];
         }
     }
 }

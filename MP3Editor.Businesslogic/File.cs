@@ -10,14 +10,14 @@ namespace MP3Editor.Businesslogic
     /// <summary>
     /// Represents one file
     /// </summary>
-    public abstract class File : IFile
+    public class File : IFile
     {
         protected string filepath;
         /// <summary>
         /// Initializes the file
         /// </summary>
         /// <param name="filepath">The path of the file</param>
-        protected File(string filepath)
+        public File(string filepath)
         {
             this.filepath = filepath;
         }

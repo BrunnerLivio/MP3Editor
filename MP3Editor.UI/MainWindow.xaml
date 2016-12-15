@@ -16,6 +16,7 @@
         <!--TODO Shortcuts für die MenuItems adden -->
         <Menu Grid.Row="0" Background="LightGray">
             <MenuItem Header="Files" Background="LightGray">
+                <MenuItem Click="Add_MenuItem_OnClick" Header="Add File" Background="LightGray"></MenuItem>
                 <MenuItem Click="LoadList_MenuItem_OnClick" Header="Load List" Background="LightGray"></MenuItem>
                 <MenuItem Click="Save_MenuItem_OnClick" Header="Save List" Background="LightGray"></MenuItem>
             </MenuItem>
