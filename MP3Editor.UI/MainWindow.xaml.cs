@@ -52,7 +52,24 @@ namespace MP3Editor.UI
         private void Save_MenuItem_OnClick(object sender, RoutedEventArgs e)
         {
             MainWindowViewModel mainWindowViewModel = (MainWindowViewModel)(sender as MenuItem).DataContext;
-            mainWindowViewModel.SaveCurrentPath();
+            System.Windows.Forms.SaveFileDialog dialog = new System.Windows.Forms.SaveFileDialog();
+            string path;
+            if (mainWindowViewModel.GetCurrentPath() == string.Empty)
+            {
+                path = dialog.FileName;
+            }
+            else
+            {
+                path = mainWindowViewModel.GetCurrentPath();
+            }
+            try
+            {
+                mainWindowViewModel.SaveList(path);
+            }
+            catch (Exception)
+            {
+                System.Windows.Forms.MessageBox.Show("Konnte Playlist nicht speichern");
+            }
         }
 
         private void MainWindow_OnLoaded(object sender, RoutedEventArgs e)
@@ -65,6 +82,16 @@ namespace MP3Editor.UI
             catch (Exception ex)
             {
                 
+            }
+        }
+
+        private void Add_MenuItem_OnClick(object sender, RoutedEventArgs e)
+        {
+            MainWindowViewModel mainWindowViewModel = (MainWindowViewModel)(sender as MenuItem).DataContext;
+            System.Windows.Forms.OpenFileDialog dialog = new System.Windows.Forms.OpenFileDialog();
+            if (dialog.ShowDialog() == System.Windows.Forms.DialogResult.OK)
+            {
+                mainWindowViewModel.AddfileToPlaylist(dialog.FileName);
             }
         }
     }

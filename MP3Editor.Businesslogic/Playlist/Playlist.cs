@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.IO;
 using System.Linq;
+using System.Runtime.CompilerServices;
 using System.Text;
 using System.Threading.Tasks;
 
@@ -12,26 +13,12 @@ namespace MP3Editor.Businesslogic.Playlist
     /// </summary>
     public class Playlist
     {
-        private string path;
-        private List<File> files;
+        private List<File> files = new List<File>();
         
-        /// <summary>
-        /// Initializes the playlist
-        /// </summary>
-        /// <param name="path">The path of the m3u file</param>
-        public Playlist(string path)
-        {
-            if (!this.path.EndsWith(".m3u"))
-            {
-                throw new Exception("Is not M3U file");
-            }
-            this.path = path;
-        }
-
         /// <summary>
         /// Loads the Files of the Playlist
         /// </summary>
-        public void Load()
+        public void Load(string path)
         {
             files = System.IO.File.ReadAllLines(path)
                 .Where(line =>
@@ -49,12 +36,31 @@ namespace MP3Editor.Businesslogic.Playlist
         {
             get
             {
-                if (this.files.Count == 0)
-                {
-                    Load();
-                }
                 return this.files;
             }
+        }
+
+        /// <summary>
+        /// Saves the playlist
+        /// </summary>
+        /// <param name="path">The name to save the m3u file to</param>
+        public void Save(string path)
+        {
+            string text = "#EXTM3U\n";
+            foreach (File file in this.files)
+            {
+                text = string.Format("{0}{1}\n", text, file.FilePath);
+                System.IO.File.WriteAllText(path, text);
+            }
+        }
+
+        /// <summary>
+        /// Add a file to this playlist
+        /// </summary>
+        /// <param name="filepath">The path of the file to add</param>
+        public void Add(string filepath)
+        {
+            Files.Add(new File(filepath));
         }
     }
 }
