@@ -65,7 +65,7 @@
     <Compile Include="IFile.cs" />
     <Compile Include="IFileTypeReader.cs" />
     <Compile Include="Language\Language.cs" />
-    <Compile Include="Language\LanguageFactory.cs" />
+    <Compile Include="Language\LanguageRepository.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>

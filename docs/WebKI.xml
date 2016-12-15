@@ -14,6 +14,7 @@
     <HelpKINode Title="Id3V2.Artist Property " Url="html/5c6ea4ac-524f-35a1-0db6-10b6b9020515.htm" />
     <HelpKINode Title="IID3V2.Artist Property " Url="html/3ff383ed-fc27-8d11-7659-fb0e028a86b1.htm" />
   </HelpKINode>
+  <HelpKINode Title="Clear method" Url="html/8b098dda-8a99-e01c-2c8c-1a91a2a019fb.htm" />
   <HelpKINode Title="Comment property">
     <HelpKINode Title="Id3V1.Comment Property " Url="html/ef84c720-69d4-c2ce-b918-877d93124260.htm" />
     <HelpKINode Title="IID3V1.Comment Property " Url="html/acf36225-eefc-5147-2e7b-ef03cec1ad4d.htm" />
@@ -58,9 +59,9 @@
   </HelpKINode>
   <HelpKINode Title="GenreFactory.GenreFactory constructor" Url="html/0d275580-f924-5f36-e256-ad7a5ec071cb.htm" />
   <HelpKINode Title="GenreFactory.GetAllAudioGenres method" Url="html/fc494455-12c5-975b-b6f3-ee9a7def673f.htm" />
-  <HelpKINode Title="GetAll method" Url="html/29248ffc-227f-114d-54ce-b08aaf793bd4.htm" />
+  <HelpKINode Title="GetAll method" Url="html/e94dbff8-d187-253f-39bf-4c733a957f69.htm" />
   <HelpKINode Title="GetAllAudioGenres method" Url="html/fc494455-12c5-975b-b6f3-ee9a7def673f.htm" />
-  <HelpKINode Title="GetByShortname method" Url="html/38bfcee8-71c4-346d-215c-85a83ceae1bb.htm" />
+  <HelpKINode Title="GetByShortname method" Url="html/e86fc860-ab9a-f360-8a27-f64e5fb1ef4d.htm" />
   <HelpKINode Title="Id3V1 class">
     <HelpKINode Title="Id3V1 Class" Url="html/f9899cf0-84fb-d770-050a-2bf17b78dffa.htm" />
     <HelpKINode Title="about Id3V1 class" Url="html/f9899cf0-84fb-d770-050a-2bf17b78dffa.htm" />
@@ -182,13 +183,14 @@
   <HelpKINode Title="Language.Language constructor" Url="html/7ef2e0a3-42c2-b63f-d534-b5e0729b90c9.htm" />
   <HelpKINode Title="Language.Name property" Url="html/c4cf1751-6389-a57d-bdeb-5612c07bb8c1.htm" />
   <HelpKINode Title="Language.Shortname property" Url="html/03c345f1-5693-7806-2fd5-5beadd711ce6.htm" />
-  <HelpKINode Title="LanguageFactory class">
-    <HelpKINode Title="LanguageFactory Class" Url="html/ac434a8f-c772-afd4-bab5-2197e8cacf1b.htm" />
-    <HelpKINode Title="about LanguageFactory class" Url="html/ac434a8f-c772-afd4-bab5-2197e8cacf1b.htm" />
-    <HelpKINode Title="methods" Url="html/e9de7a71-b925-80e0-d969-872a5d550a0e.htm" />
+  <HelpKINode Title="LanguageRepository class">
+    <HelpKINode Title="LanguageRepository Class" Url="html/a2069644-b96c-1e08-2f12-42556218c63b.htm" />
+    <HelpKINode Title="about LanguageRepository class" Url="html/a2069644-b96c-1e08-2f12-42556218c63b.htm" />
+    <HelpKINode Title="methods" Url="html/47e7dff8-c7fb-e139-6dac-0ce2d9e52697.htm" />
   </HelpKINode>
-  <HelpKINode Title="LanguageFactory.GetAll method" Url="html/29248ffc-227f-114d-54ce-b08aaf793bd4.htm" />
-  <HelpKINode Title="LanguageFactory.GetByShortname method" Url="html/38bfcee8-71c4-346d-215c-85a83ceae1bb.htm" />
+  <HelpKINode Title="LanguageRepository.Clear method" Url="html/8b098dda-8a99-e01c-2c8c-1a91a2a019fb.htm" />
+  <HelpKINode Title="LanguageRepository.GetAll method" Url="html/e94dbff8-d187-253f-39bf-4c733a957f69.htm" />
+  <HelpKINode Title="LanguageRepository.GetByShortname method" Url="html/e86fc860-ab9a-f360-8a27-f64e5fb1ef4d.htm" />
   <HelpKINode Title="MP3Editor.Businesslogic namespace" Url="html/c2abb1c3-56eb-5b8a-d4c4-8b6b654a041d.htm" />
   <HelpKINode Title="MP3Editor.Businesslogic.File class" Url="html/ac7ee872-c89c-9d01-aae7-437cf34cd343.htm" />
   <HelpKINode Title="MP3Editor.Businesslogic.Filetypes.ID3V1 namespace" Url="html/a84e21d9-6dff-6044-09cd-fd1dc7061f42.htm" />
@@ -209,7 +211,7 @@
   <HelpKINode Title="MP3Editor.Businesslogic.IFileTypeReader interface" Url="html/b4a43e61-acfa-756a-4f21-add56274e792.htm" />
   <HelpKINode Title="MP3Editor.Businesslogic.Language namespace" Url="html/a8365d5c-6a58-ec93-6488-bf53c9509a0a.htm" />
   <HelpKINode Title="MP3Editor.Businesslogic.Language.Language class" Url="html/56392f00-974a-74f5-4018-fcf82b815e6c.htm" />
-  <HelpKINode Title="MP3Editor.Businesslogic.Language.LanguageFactory class" Url="html/ac434a8f-c772-afd4-bab5-2197e8cacf1b.htm" />
+  <HelpKINode Title="MP3Editor.Businesslogic.Language.LanguageRepository class" Url="html/a2069644-b96c-1e08-2f12-42556218c63b.htm" />
   <HelpKINode Title="Name property">
     <HelpKINode Title="Genre.Name Property " Url="html/4be7b8c0-7472-fd75-c0c7-1779aa3eb22d.htm" />
     <HelpKINode Title="Language.Name Property " Url="html/c4cf1751-6389-a57d-bdeb-5612c07bb8c1.htm" />

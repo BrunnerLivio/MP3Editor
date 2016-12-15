@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Runtime.Remoting;
 using Microsoft.VisualStudio.TestTools.UnitTesting;
 using Moq;
 using MP3Editor.Businesslogic.Filetypes.ID3V1;
@@ -14,6 +15,7 @@ namespace MP3Editor.Businesslogic.Test
         private string genre = "Pop";
         private uint year = 1981;
         private string title = "Give Me The Night";
+        private string artist = "George Benson";
         private uint track = 1;
         private Mock<IID3V1> CreateID3V1File()
         {
@@ -39,9 +41,24 @@ namespace MP3Editor.Businesslogic.Test
             return id3v1file;
         }
         [TestMethod]
-        public void Properties()
+        public void ID3V1Properties()
         {
-            Id3V1 file = new Id3V1();
+            Filetypes.ID3V1.Id3V1 file = new Filetypes.ID3V1.Id3V1(filepath);
+            Assert.AreEqual(filepath, file.FilePath);
+            file.Album = album;
+            Assert.AreEqual(album, file.Album);
+            file.AlbumArtist = artist;
+            Assert.AreEqual(artist, file.AlbumArtist);
+            file.Comment = comment;
+            Assert.AreEqual(comment, file.Comment);
+            file.Genre = genre;
+            Assert.AreEqual(genre, file.Genre);
+            file.Title = title;
+            Assert.AreEqual(title, file.Title);
+            file.Track = track;
+            Assert.AreEqual(track, file.Track);
+            file.Year = year;
+            Assert.AreEqual(year, file.Year);
         }
 
         [TestMethod]
@@ -49,12 +66,21 @@ namespace MP3Editor.Businesslogic.Test
         {
             
             var writer = new Mock<IID3V1Writer>();
-            var id3v1file = CreateID3V1File();
-
-            id3v1file.Object.Genre = "My Genre";
-
             writer
-                .Setup(r => r.Write(id3v1file.Object));
+                .Setup(r => r.Write(new Filetypes.ID3V1.Id3V1(filepath)));
+        }
+
+        [TestMethod]
+        public void ReadFile()
+        {
+
+            var writer = new Mock<IFileTypeReader>();
+            writer
+                .Setup(r => r.Read(filepath))
+                .Returns(new Filetypes.ID3V1.Id3V1(filepath));
+
+            Filetypes.ID3V1.Id3V1 file = writer.Object.Read(filepath) as Filetypes.ID3V1.Id3V1;
+            Assert.AreEqual(filepath, file.FilePath);
         }
     }
 }

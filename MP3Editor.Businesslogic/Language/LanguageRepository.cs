@@ -10,7 +10,7 @@ namespace MP3Editor.Businesslogic.Language
     /// <summary>
     /// The language factory
     /// </summary>
-    public static class LanguageFactory
+    public static class LanguageRepository
     {
         private static List<Language> languages = new List<Language>();
 
@@ -46,6 +46,14 @@ namespace MP3Editor.Businesslogic.Language
                 LoadLanguages();
             }
             return languages.FirstOrDefault(c => c.Shortname == shortname);
+        }
+
+        /// <summary>
+        /// Clear the stored languages
+        /// </summary>
+        public static void Clear()
+        {
+            languages.Clear();
         }
     }
 }

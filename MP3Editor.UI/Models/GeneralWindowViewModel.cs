@@ -31,7 +31,7 @@ namespace MP3Editor.UI.Models
                 .GetAllAudioGenres()
                 .Select(g => g.Name)
                 .ToList();
-            this.languages = LanguageFactory
+            this.languages = LanguageRepository
                 .GetAll();
         }
 

@@ -118,7 +118,7 @@ namespace MP3Editor.UI.Models
         /// </remarks>
         public Language Language
         {
-            get { return LanguageFactory.GetByShortname(file.Language); }
+            get { return LanguageRepository.GetByShortname(file.Language); }
             set
             {
                 file.Language = value.Shortname;
