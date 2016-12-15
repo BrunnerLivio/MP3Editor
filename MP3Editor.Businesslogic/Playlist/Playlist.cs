@@ -14,18 +14,25 @@ namespace MP3Editor.Businesslogic.Playlist
     public class Playlist
     {
         private List<File> files = new List<File>();
-        
+
+        /// <summary>
+        /// Parse the content of a m3u files
+        /// </summary>
+        /// <param name="content">The content of the files</param>
+        /// <returns>The content as files list</returns>
+        public List<File> ParseFile(string[] content)
+        {
+            return content.Where(line => !line.StartsWith("#"))
+                .Select(line => new File(line))
+                .ToList();
+        }
+
         /// <summary>
         /// Loads the Files of the Playlist
         /// </summary>
         public void Load(string path)
         {
-            files = System.IO.File.ReadAllLines(path)
-                .Where(line =>
-                    !line.StartsWith("#")
-                    && System.IO.File.Exists(line))
-                .Select(line => new File(line))
-                .ToList();
+            files = ParseFile(System.IO.File.ReadAllLines(path));
         }
 
         /// <summary>
@@ -41,17 +48,28 @@ namespace MP3Editor.Businesslogic.Playlist
         }
 
         /// <summary>
+        /// Returns the text, which can be saved as M3U file
+        /// </summary>
+        public string M3UText
+        {
+            get
+            {
+                string text = string.Format("#EXTM3U{0}", Environment.NewLine);
+                foreach (File file in this.files)
+                {
+                    text = string.Format("{0}{1}{2}", text, file.FilePath, Environment.NewLine);
+                }
+                return text;
+            }
+        }
+
+        /// <summary>
         /// Saves the playlist
         /// </summary>
         /// <param name="path">The name to save the m3u file to</param>
         public void Save(string path)
         {
-            string text = string.Format("#EXTM3U{0}", Environment.NewLine);
-            foreach (File file in this.files)
-            {
-                text = string.Format("{0}{1}{2}", text, file.FilePath, Environment.NewLine);
-                System.IO.File.WriteAllText(path, text);
-            }
+            System.IO.File.WriteAllText(path, M3UText);
         }
 
         /// <summary>

@@ -1,6 +1,7 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <HelpKI>
   <HelpKINode Title="Add method" Url="html/f31394bf-2601-4ecb-b6e5-c845b2663efc.htm" />
+  <HelpKINode Title="AddList method" Url="html/c0d0a403-16e7-76c9-7e0b-bd9f5aa5654a.htm" />
   <HelpKINode Title="Album property">
     <HelpKINode Title="Id3V1.Album Property " Url="html/a08a8346-65d8-670a-c26f-8df0beef3d95.htm" />
     <HelpKINode Title="Id3V2.Album Property " Url="html/9202d958-d694-8222-a8ab-7e8db155aa52.htm" />
@@ -65,15 +66,15 @@
   <HelpKINode Title="GetAllAudioGenres method" Url="html/fc494455-12c5-975b-b6f3-ee9a7def673f.htm" />
   <HelpKINode Title="GetByShortname method" Url="html/e86fc860-ab9a-f360-8a27-f64e5fb1ef4d.htm" />
   <HelpKINode Title="Id3V1 class">
-    <HelpKINode Title="Id3V1 Class" Url="html/29ac12fc-5e24-b22e-b5ef-74b7849ec960.htm" />
     <HelpKINode Title="Id3V1 Class" Url="html/f9899cf0-84fb-d770-050a-2bf17b78dffa.htm" />
-    <HelpKINode Title="about Id3V1 class" Url="html/29ac12fc-5e24-b22e-b5ef-74b7849ec960.htm" />
+    <HelpKINode Title="Id3V1 Class" Url="html/29ac12fc-5e24-b22e-b5ef-74b7849ec960.htm" />
     <HelpKINode Title="about Id3V1 class" Url="html/f9899cf0-84fb-d770-050a-2bf17b78dffa.htm" />
+    <HelpKINode Title="about Id3V1 class" Url="html/29ac12fc-5e24-b22e-b5ef-74b7849ec960.htm" />
     <HelpKINode Title="constructor" Url="html/30c1fd04-8c48-46da-b103-42d426f789d5.htm" />
     <HelpKINode Title="constructor" Url="html/e18ff287-8a5b-40ea-8f66-5999d1154afc.htm" />
     <HelpKINode Title="fields" Url="html/84175dd2-5dec-e07f-5d1e-91161e5cd631.htm" />
-    <HelpKINode Title="methods" Url="html/29729f02-f712-f7d0-b15c-06a41e0a6d39.htm" />
     <HelpKINode Title="methods" Url="html/e7e4c2dc-a486-3450-fb40-5742bd477c52.htm" />
+    <HelpKINode Title="methods" Url="html/29729f02-f712-f7d0-b15c-06a41e0a6d39.htm" />
     <HelpKINode Title="properties" Url="html/9fba4ded-37f3-6361-c9b1-c31abd419683.htm" />
   </HelpKINode>
   <HelpKINode Title="Id3V1.Album property" Url="html/a08a8346-65d8-670a-c26f-8df0beef3d95.htm" />
@@ -81,8 +82,8 @@
   <HelpKINode Title="Id3V1.Comment property" Url="html/ef84c720-69d4-c2ce-b918-877d93124260.htm" />
   <HelpKINode Title="Id3V1.Genre property" Url="html/741bdd1c-683a-82a7-996b-04f0aa6563ae.htm" />
   <HelpKINode Title="Id3V1.Id3V1 constructor">
-    <HelpKINode Title="Id3V1 Constructor " Url="html/e18ff287-8a5b-40ea-8f66-5999d1154afc.htm" />
     <HelpKINode Title="Id3V1 Constructor " Url="html/30c1fd04-8c48-46da-b103-42d426f789d5.htm" />
+    <HelpKINode Title="Id3V1 Constructor " Url="html/e18ff287-8a5b-40ea-8f66-5999d1154afc.htm" />
   </HelpKINode>
   <HelpKINode Title="Id3V1.ID3V1Properties method" Url="html/11e1d07e-5caf-4ae4-3cc4-2267a50a722f.htm" />
   <HelpKINode Title="Id3V1.ReadFile method" Url="html/49300a25-3933-e244-e530-979d14a03278.htm" />
@@ -198,8 +199,8 @@
     <HelpKINode Title="about Language class" Url="html/8c6ba208-8453-bd24-8bda-45ad2b31ae2c.htm" />
     <HelpKINode Title="constructor" Url="html/c326e73b-66ee-cdd1-ab6d-c80e18163572.htm" />
     <HelpKINode Title="constructor" Url="html/7ef2e0a3-42c2-b63f-d534-b5e0729b90c9.htm" />
-    <HelpKINode Title="methods" Url="html/2bfce58f-1dd2-3f3d-dd77-121e3d35b843.htm" />
     <HelpKINode Title="methods" Url="html/4d2a9dc7-a298-5e9e-0880-aad17917ee5f.htm" />
+    <HelpKINode Title="methods" Url="html/2bfce58f-1dd2-3f3d-dd77-121e3d35b843.htm" />
     <HelpKINode Title="properties" Url="html/23b0fe67-83d8-6ee4-7235-c5510438b4b7.htm" />
   </HelpKINode>
   <HelpKINode Title="Language property">
@@ -207,8 +208,8 @@
     <HelpKINode Title="IID3V2.Language Property " Url="html/4a9ec7f6-4fa3-588b-7099-00fc34b20300.htm" />
   </HelpKINode>
   <HelpKINode Title="Language.Language constructor">
-    <HelpKINode Title="Language Constructor " Url="html/c326e73b-66ee-cdd1-ab6d-c80e18163572.htm" />
     <HelpKINode Title="Language Constructor " Url="html/7ef2e0a3-42c2-b63f-d534-b5e0729b90c9.htm" />
+    <HelpKINode Title="Language Constructor " Url="html/c326e73b-66ee-cdd1-ab6d-c80e18163572.htm" />
   </HelpKINode>
   <HelpKINode Title="Language.LanguageProperties method" Url="html/15a25b97-5980-94a4-7f33-938fcc930121.htm" />
   <HelpKINode Title="Language.LanguageRepositoryGetAll method" Url="html/25485473-2be4-f57b-786b-a193dd2cb027.htm" />
@@ -227,6 +228,8 @@
   <HelpKINode Title="LanguageRepositoryGetAll method" Url="html/25485473-2be4-f57b-786b-a193dd2cb027.htm" />
   <HelpKINode Title="LanguageRepositoryGetByShortname method" Url="html/2dffeb7c-14e3-e4c9-c885-c0841c6c43c4.htm" />
   <HelpKINode Title="Load method" Url="html/1169afde-551f-0a39-9a90-f7069f858965.htm" />
+  <HelpKINode Title="M3UText method" Url="html/7e18ff98-2bec-820a-c462-4d9c1e827d0b.htm" />
+  <HelpKINode Title="M3UText property" Url="html/25d4b23a-8a22-640c-8d1f-786220d84d0d.htm" />
   <HelpKINode Title="MP3Editor.Businesslogic namespace" Url="html/c2abb1c3-56eb-5b8a-d4c4-8b6b654a041d.htm" />
   <HelpKINode Title="MP3Editor.Businesslogic.File class" Url="html/ac7ee872-c89c-9d01-aae7-437cf34cd343.htm" />
   <HelpKINode Title="MP3Editor.Businesslogic.Filetypes.ID3V1 namespace" Url="html/a84e21d9-6dff-6044-09cd-fd1dc7061f42.htm" />
@@ -254,9 +257,14 @@
   <HelpKINode Title="MP3Editor.Businesslogic.Test.Id3V1 class" Url="html/29ac12fc-5e24-b22e-b5ef-74b7849ec960.htm" />
   <HelpKINode Title="MP3Editor.Businesslogic.Test.ID3V2 class" Url="html/d495c0bd-c164-f9dc-6cdb-3af350ea2670.htm" />
   <HelpKINode Title="MP3Editor.Businesslogic.Test.Language class" Url="html/8c6ba208-8453-bd24-8bda-45ad2b31ae2c.htm" />
+  <HelpKINode Title="MP3Editor.Businesslogic.Test.PlaylistTest class" Url="html/af4cdaee-4548-a1b3-e847-4a44dcd3524e.htm" />
   <HelpKINode Title="Name property">
     <HelpKINode Title="Genre.Name Property " Url="html/4be7b8c0-7472-fd75-c0c7-1779aa3eb22d.htm" />
     <HelpKINode Title="Language.Name Property " Url="html/c4cf1751-6389-a57d-bdeb-5612c07bb8c1.htm" />
+  </HelpKINode>
+  <HelpKINode Title="ParseFile method">
+    <HelpKINode Title="Playlist.ParseFile Method " Url="html/612fc743-0886-a0d8-5d7c-57ed493d3379.htm" />
+    <HelpKINode Title="PlaylistTest.ParseFile Method " Url="html/3b581fb3-2cb1-ec8a-ed8b-0c1d3de1cd7b.htm" />
   </HelpKINode>
   <HelpKINode Title="Playlist class">
     <HelpKINode Title="Playlist Class" Url="html/7bc73da0-2096-b656-3918-30b355b8fdf5.htm" />
@@ -268,8 +276,20 @@
   <HelpKINode Title="Playlist.Add method" Url="html/f31394bf-2601-4ecb-b6e5-c845b2663efc.htm" />
   <HelpKINode Title="Playlist.Files property" Url="html/1610b533-dc64-105f-4d88-f843f4e3ae8c.htm" />
   <HelpKINode Title="Playlist.Load method" Url="html/1169afde-551f-0a39-9a90-f7069f858965.htm" />
+  <HelpKINode Title="Playlist.M3UText property" Url="html/25d4b23a-8a22-640c-8d1f-786220d84d0d.htm" />
+  <HelpKINode Title="Playlist.ParseFile method" Url="html/612fc743-0886-a0d8-5d7c-57ed493d3379.htm" />
   <HelpKINode Title="Playlist.Playlist constructor" Url="html/bbdf503c-eb33-f1af-967f-d9b8f5b0cb14.htm" />
   <HelpKINode Title="Playlist.Save method" Url="html/beb7335f-e82e-44f4-5ef8-dfa11ffade4b.htm" />
+  <HelpKINode Title="PlaylistTest class">
+    <HelpKINode Title="PlaylistTest Class" Url="html/af4cdaee-4548-a1b3-e847-4a44dcd3524e.htm" />
+    <HelpKINode Title="about PlaylistTest class" Url="html/af4cdaee-4548-a1b3-e847-4a44dcd3524e.htm" />
+    <HelpKINode Title="constructor" Url="html/95b97eaf-cf1b-4552-5f9a-b766f409047f.htm" />
+    <HelpKINode Title="methods" Url="html/43a8baa3-d9ba-5143-81a1-53f8567b7faa.htm" />
+  </HelpKINode>
+  <HelpKINode Title="PlaylistTest.AddList method" Url="html/c0d0a403-16e7-76c9-7e0b-bd9f5aa5654a.htm" />
+  <HelpKINode Title="PlaylistTest.M3UText method" Url="html/7e18ff98-2bec-820a-c462-4d9c1e827d0b.htm" />
+  <HelpKINode Title="PlaylistTest.ParseFile method" Url="html/3b581fb3-2cb1-ec8a-ed8b-0c1d3de1cd7b.htm" />
+  <HelpKINode Title="PlaylistTest.PlaylistTest constructor" Url="html/95b97eaf-cf1b-4552-5f9a-b766f409047f.htm" />
   <HelpKINode Title="Read method">
     <HelpKINode Title="Id3V1Reader.Read Method " Url="html/58467e69-ce36-7fcf-daf7-7105c6df0438.htm" />
     <HelpKINode Title="ID3V2Reader.Read Method " Url="html/2b29914f-ef02-ed68-4b07-2a2022861f7b.htm" />
