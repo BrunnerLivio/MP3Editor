@@ -26,7 +26,7 @@ namespace MP3Editor.UI.Models
         public GeneralWindowViewModel(FileViewModel file)
         {
             this.file = file;
-            GenreFactory genreFactory = new GenreFactory();
+            GenreRepository genreFactory = new GenreRepository();
             this.genres = genreFactory
                 .GetAllAudioGenres()
                 .Select(g => g.Name)

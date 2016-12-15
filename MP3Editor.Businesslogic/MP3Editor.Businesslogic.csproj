@@ -61,7 +61,7 @@
     <Compile Include="Filetypes\ID3V2\IID3V2.cs" />
     <Compile Include="Filetypes\ID3V2\IID3V2Writer.cs" />
     <Compile Include="Genre\Genre.cs" />
-    <Compile Include="Genre\GenreFactory.cs" />
+    <Compile Include="Genre\GenreRepository.cs" />
     <Compile Include="IFile.cs" />
     <Compile Include="IFileTypeReader.cs" />
     <Compile Include="Language\Language.cs" />

@@ -21,6 +21,7 @@
     <HelpKINode Title="Id3V1.Comment Property " Url="html/ef84c720-69d4-c2ce-b918-877d93124260.htm" />
     <HelpKINode Title="IID3V1.Comment Property " Url="html/acf36225-eefc-5147-2e7b-ef03cec1ad4d.htm" />
   </HelpKINode>
+  <HelpKINode Title="Create method" Url="html/bb51a190-2b03-d1eb-7ffc-503a07e7f501.htm" />
   <HelpKINode Title="File class">
     <HelpKINode Title="File Class" Url="html/ac7ee872-c89c-9d01-aae7-437cf34cd343.htm" />
     <HelpKINode Title="about File class" Url="html/ac7ee872-c89c-9d01-aae7-437cf34cd343.htm" />
@@ -54,27 +55,39 @@
   </HelpKINode>
   <HelpKINode Title="Genre.Genre constructor" Url="html/05659bba-e714-fe72-04a5-123e83bfb8e5.htm" />
   <HelpKINode Title="Genre.Name property" Url="html/4be7b8c0-7472-fd75-c0c7-1779aa3eb22d.htm" />
-  <HelpKINode Title="GenreFactory class">
-    <HelpKINode Title="GenreFactory Class" Url="html/21e24889-1e62-8b0b-5972-02d63a000d5f.htm" />
-    <HelpKINode Title="about GenreFactory class" Url="html/21e24889-1e62-8b0b-5972-02d63a000d5f.htm" />
-    <HelpKINode Title="constructor" Url="html/0d275580-f924-5f36-e256-ad7a5ec071cb.htm" />
-    <HelpKINode Title="methods" Url="html/1a346f6d-3e25-dc86-f165-d4d3085f4776.htm" />
+  <HelpKINode Title="GenreRepository class">
+    <HelpKINode Title="GenreRepository Class" Url="html/20787be5-90da-f621-27d9-f6e647fa10fa.htm" />
+    <HelpKINode Title="about GenreRepository class" Url="html/20787be5-90da-f621-27d9-f6e647fa10fa.htm" />
+    <HelpKINode Title="constructor" Url="html/684f912b-feae-452e-9835-2a0a0d2971a9.htm" />
+    <HelpKINode Title="methods" Url="html/53e34764-8422-a44f-2248-6874467663ad.htm" />
   </HelpKINode>
-  <HelpKINode Title="GenreFactory.GenreFactory constructor" Url="html/0d275580-f924-5f36-e256-ad7a5ec071cb.htm" />
-  <HelpKINode Title="GenreFactory.GetAllAudioGenres method" Url="html/fc494455-12c5-975b-b6f3-ee9a7def673f.htm" />
-  <HelpKINode Title="GetAll method" Url="html/e94dbff8-d187-253f-39bf-4c733a957f69.htm" />
-  <HelpKINode Title="GetAllAudioGenres method" Url="html/fc494455-12c5-975b-b6f3-ee9a7def673f.htm" />
+  <HelpKINode Title="GenreRepository.GenreRepository constructor" Url="html/684f912b-feae-452e-9835-2a0a0d2971a9.htm" />
+  <HelpKINode Title="GenreRepository.GetAllAudioGenres method" Url="html/0d18e11c-b445-acfc-da65-37ad4276b533.htm" />
+  <HelpKINode Title="GenreTest class">
+    <HelpKINode Title="GenreTest Class" Url="html/14fa0361-8c4f-1bb2-acb5-7c841d67f51d.htm" />
+    <HelpKINode Title="about GenreTest class" Url="html/14fa0361-8c4f-1bb2-acb5-7c841d67f51d.htm" />
+    <HelpKINode Title="constructor" Url="html/0c9dc0cc-ed49-bfab-621f-0cdc959b2a28.htm" />
+    <HelpKINode Title="methods" Url="html/f266f008-420c-ffc6-8788-19a81ad664f0.htm" />
+  </HelpKINode>
+  <HelpKINode Title="GenreTest.Create method" Url="html/bb51a190-2b03-d1eb-7ffc-503a07e7f501.htm" />
+  <HelpKINode Title="GenreTest.GenreTest constructor" Url="html/0c9dc0cc-ed49-bfab-621f-0cdc959b2a28.htm" />
+  <HelpKINode Title="GenreTest.GetAll method" Url="html/89797815-ba5e-1fc2-97e6-abfdf12359f7.htm" />
+  <HelpKINode Title="GetAll method">
+    <HelpKINode Title="GenreTest.GetAll Method " Url="html/89797815-ba5e-1fc2-97e6-abfdf12359f7.htm" />
+    <HelpKINode Title="LanguageRepository.GetAll Method " Url="html/e94dbff8-d187-253f-39bf-4c733a957f69.htm" />
+  </HelpKINode>
+  <HelpKINode Title="GetAllAudioGenres method" Url="html/0d18e11c-b445-acfc-da65-37ad4276b533.htm" />
   <HelpKINode Title="GetByShortname method" Url="html/e86fc860-ab9a-f360-8a27-f64e5fb1ef4d.htm" />
   <HelpKINode Title="Id3V1 class">
     <HelpKINode Title="Id3V1 Class" Url="html/f9899cf0-84fb-d770-050a-2bf17b78dffa.htm" />
     <HelpKINode Title="Id3V1 Class" Url="html/29ac12fc-5e24-b22e-b5ef-74b7849ec960.htm" />
-    <HelpKINode Title="about Id3V1 class" Url="html/f9899cf0-84fb-d770-050a-2bf17b78dffa.htm" />
     <HelpKINode Title="about Id3V1 class" Url="html/29ac12fc-5e24-b22e-b5ef-74b7849ec960.htm" />
+    <HelpKINode Title="about Id3V1 class" Url="html/f9899cf0-84fb-d770-050a-2bf17b78dffa.htm" />
     <HelpKINode Title="constructor" Url="html/30c1fd04-8c48-46da-b103-42d426f789d5.htm" />
     <HelpKINode Title="constructor" Url="html/e18ff287-8a5b-40ea-8f66-5999d1154afc.htm" />
     <HelpKINode Title="fields" Url="html/84175dd2-5dec-e07f-5d1e-91161e5cd631.htm" />
-    <HelpKINode Title="methods" Url="html/e7e4c2dc-a486-3450-fb40-5742bd477c52.htm" />
     <HelpKINode Title="methods" Url="html/29729f02-f712-f7d0-b15c-06a41e0a6d39.htm" />
+    <HelpKINode Title="methods" Url="html/e7e4c2dc-a486-3450-fb40-5742bd477c52.htm" />
     <HelpKINode Title="properties" Url="html/9fba4ded-37f3-6361-c9b1-c31abd419683.htm" />
   </HelpKINode>
   <HelpKINode Title="Id3V1.Album property" Url="html/a08a8346-65d8-670a-c26f-8df0beef3d95.htm" />
@@ -82,8 +95,8 @@
   <HelpKINode Title="Id3V1.Comment property" Url="html/ef84c720-69d4-c2ce-b918-877d93124260.htm" />
   <HelpKINode Title="Id3V1.Genre property" Url="html/741bdd1c-683a-82a7-996b-04f0aa6563ae.htm" />
   <HelpKINode Title="Id3V1.Id3V1 constructor">
-    <HelpKINode Title="Id3V1 Constructor " Url="html/30c1fd04-8c48-46da-b103-42d426f789d5.htm" />
     <HelpKINode Title="Id3V1 Constructor " Url="html/e18ff287-8a5b-40ea-8f66-5999d1154afc.htm" />
+    <HelpKINode Title="Id3V1 Constructor " Url="html/30c1fd04-8c48-46da-b103-42d426f789d5.htm" />
   </HelpKINode>
   <HelpKINode Title="Id3V1.ID3V1Properties method" Url="html/11e1d07e-5caf-4ae4-3cc4-2267a50a722f.htm" />
   <HelpKINode Title="Id3V1.ReadFile method" Url="html/49300a25-3933-e244-e530-979d14a03278.htm" />
@@ -108,25 +121,25 @@
   </HelpKINode>
   <HelpKINode Title="ID3V1Writer.ID3V1Writer constructor" Url="html/20c82593-6025-4438-6e73-19b7d783f33c.htm" />
   <HelpKINode Title="ID3V1Writer.Write method" Url="html/4eaf604c-b7ea-fcc6-5ba2-bfb2ff65bdb3.htm" />
+  <HelpKINode Title="Id3V2 class">
+    <HelpKINode Title="Id3V2 Class" Url="html/4ff3a08e-38a4-40cf-e1ab-f27d70b2ea50.htm" />
+    <HelpKINode Title="about Id3V2 class" Url="html/4ff3a08e-38a4-40cf-e1ab-f27d70b2ea50.htm" />
+    <HelpKINode Title="constructor" Url="html/a2470402-9603-5a47-d3a9-89b1381076e5.htm" />
+    <HelpKINode Title="methods" Url="html/26bc884d-0743-16d6-c8f9-1b03e808ee4d.htm" />
+    <HelpKINode Title="properties" Url="html/6b6a8a5a-30d1-ee14-30c1-53f477def331.htm" />
+    <HelpKINode Title="fields" Url="html/e8793cad-bf82-5926-42f0-64d0f33d21f7.htm" />
+  </HelpKINode>
   <HelpKINode Title="ID3V2 class">
     <HelpKINode Title="ID3V2 Class" Url="html/d495c0bd-c164-f9dc-6cdb-3af350ea2670.htm" />
     <HelpKINode Title="about ID3V2 class" Url="html/d495c0bd-c164-f9dc-6cdb-3af350ea2670.htm" />
     <HelpKINode Title="constructor" Url="html/5f06ccb0-7b8c-dbb2-6f95-2709dea21c43.htm" />
     <HelpKINode Title="methods" Url="html/7bf8bf27-129d-84ce-0053-f883f37a489a.htm" />
   </HelpKINode>
-  <HelpKINode Title="Id3V2 class">
-    <HelpKINode Title="Id3V2 Class" Url="html/4ff3a08e-38a4-40cf-e1ab-f27d70b2ea50.htm" />
-    <HelpKINode Title="about Id3V2 class" Url="html/4ff3a08e-38a4-40cf-e1ab-f27d70b2ea50.htm" />
-    <HelpKINode Title="constructor" Url="html/a2470402-9603-5a47-d3a9-89b1381076e5.htm" />
-    <HelpKINode Title="fields" Url="html/e8793cad-bf82-5926-42f0-64d0f33d21f7.htm" />
-    <HelpKINode Title="methods" Url="html/26bc884d-0743-16d6-c8f9-1b03e808ee4d.htm" />
-    <HelpKINode Title="properties" Url="html/6b6a8a5a-30d1-ee14-30c1-53f477def331.htm" />
-  </HelpKINode>
   <HelpKINode Title="Id3V2.Album property" Url="html/9202d958-d694-8222-a8ab-7e8db155aa52.htm" />
   <HelpKINode Title="Id3V2.Artist property" Url="html/5c6ea4ac-524f-35a1-0db6-10b6b9020515.htm" />
   <HelpKINode Title="Id3V2.Genre property" Url="html/afb87609-1f59-a049-ce22-aa3f629c5286.htm" />
-  <HelpKINode Title="ID3V2.ID3V2 constructor" Url="html/5f06ccb0-7b8c-dbb2-6f95-2709dea21c43.htm" />
   <HelpKINode Title="Id3V2.Id3V2 constructor" Url="html/a2470402-9603-5a47-d3a9-89b1381076e5.htm" />
+  <HelpKINode Title="ID3V2.ID3V2 constructor" Url="html/5f06ccb0-7b8c-dbb2-6f95-2709dea21c43.htm" />
   <HelpKINode Title="ID3V2.ID3V2Properties method" Url="html/913f8be2-52f8-2078-6677-cdd43b4ed775.htm" />
   <HelpKINode Title="Id3V2.Language property" Url="html/cc2c5449-109a-197a-7efc-f4d27c80c249.htm" />
   <HelpKINode Title="Id3V2.Title property" Url="html/2af07219-67f2-4e32-2034-db34731bac85.htm" />
@@ -195,12 +208,12 @@
   <HelpKINode Title="Language class">
     <HelpKINode Title="Language Class" Url="html/8c6ba208-8453-bd24-8bda-45ad2b31ae2c.htm" />
     <HelpKINode Title="Language Class" Url="html/56392f00-974a-74f5-4018-fcf82b815e6c.htm" />
-    <HelpKINode Title="about Language class" Url="html/56392f00-974a-74f5-4018-fcf82b815e6c.htm" />
     <HelpKINode Title="about Language class" Url="html/8c6ba208-8453-bd24-8bda-45ad2b31ae2c.htm" />
+    <HelpKINode Title="about Language class" Url="html/56392f00-974a-74f5-4018-fcf82b815e6c.htm" />
     <HelpKINode Title="constructor" Url="html/c326e73b-66ee-cdd1-ab6d-c80e18163572.htm" />
     <HelpKINode Title="constructor" Url="html/7ef2e0a3-42c2-b63f-d534-b5e0729b90c9.htm" />
-    <HelpKINode Title="methods" Url="html/4d2a9dc7-a298-5e9e-0880-aad17917ee5f.htm" />
     <HelpKINode Title="methods" Url="html/2bfce58f-1dd2-3f3d-dd77-121e3d35b843.htm" />
+    <HelpKINode Title="methods" Url="html/4d2a9dc7-a298-5e9e-0880-aad17917ee5f.htm" />
     <HelpKINode Title="properties" Url="html/23b0fe67-83d8-6ee4-7235-c5510438b4b7.htm" />
   </HelpKINode>
   <HelpKINode Title="Language property">
@@ -245,7 +258,7 @@
   <HelpKINode Title="MP3Editor.Businesslogic.Filetypes.ID3V2.IID3V2 interface" Url="html/970eebaf-dae7-5761-9ddc-4baaed06b050.htm" />
   <HelpKINode Title="MP3Editor.Businesslogic.Genre namespace" Url="html/15746998-66ac-2f92-c2d6-686b5fd957ab.htm" />
   <HelpKINode Title="MP3Editor.Businesslogic.Genre.Genre class" Url="html/9cfbd10e-f0c2-4e7a-a3ee-3f9d95beecf5.htm" />
-  <HelpKINode Title="MP3Editor.Businesslogic.Genre.GenreFactory class" Url="html/21e24889-1e62-8b0b-5972-02d63a000d5f.htm" />
+  <HelpKINode Title="MP3Editor.Businesslogic.Genre.GenreRepository class" Url="html/20787be5-90da-f621-27d9-f6e647fa10fa.htm" />
   <HelpKINode Title="MP3Editor.Businesslogic.IFile interface" Url="html/bc3f239c-e704-721c-4a8b-55341d0e6816.htm" />
   <HelpKINode Title="MP3Editor.Businesslogic.IFileTypeReader interface" Url="html/b4a43e61-acfa-756a-4f21-add56274e792.htm" />
   <HelpKINode Title="MP3Editor.Businesslogic.Language namespace" Url="html/a8365d5c-6a58-ec93-6488-bf53c9509a0a.htm" />
@@ -254,6 +267,7 @@
   <HelpKINode Title="MP3Editor.Businesslogic.Playlist namespace" Url="html/b8fb44d5-34f1-626e-b096-766b5db2eb70.htm" />
   <HelpKINode Title="MP3Editor.Businesslogic.Playlist.Playlist class" Url="html/7bc73da0-2096-b656-3918-30b355b8fdf5.htm" />
   <HelpKINode Title="MP3Editor.Businesslogic.Test namespace" Url="html/dc328759-dc4e-dbee-c7b2-ee31045ea8ec.htm" />
+  <HelpKINode Title="MP3Editor.Businesslogic.Test.GenreTest class" Url="html/14fa0361-8c4f-1bb2-acb5-7c841d67f51d.htm" />
   <HelpKINode Title="MP3Editor.Businesslogic.Test.Id3V1 class" Url="html/29ac12fc-5e24-b22e-b5ef-74b7849ec960.htm" />
   <HelpKINode Title="MP3Editor.Businesslogic.Test.ID3V2 class" Url="html/d495c0bd-c164-f9dc-6cdb-3af350ea2670.htm" />
   <HelpKINode Title="MP3Editor.Businesslogic.Test.Language class" Url="html/8c6ba208-8453-bd24-8bda-45ad2b31ae2c.htm" />

@@ -9,7 +9,7 @@ namespace MP3Editor.Businesslogic.Genre
     /// <summary>
     /// The factory to produce Genres
     /// </summary>
-    public class GenreFactory
+    public class GenreRepository
     {
         /// <summary>
         /// Returns all Genre Options

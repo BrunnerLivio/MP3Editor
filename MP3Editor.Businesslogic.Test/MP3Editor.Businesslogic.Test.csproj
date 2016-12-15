@@ -58,6 +58,7 @@
     </Otherwise>
   </Choose>
   <ItemGroup>
+    <Compile Include="GenreTest.cs" />
     <Compile Include="ID3V1.cs" />
     <Compile Include="ID3V2.cs" />
     <Compile Include="Language.cs" />
