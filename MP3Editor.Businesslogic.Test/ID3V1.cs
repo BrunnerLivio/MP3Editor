@@ -17,29 +17,7 @@ namespace MP3Editor.Businesslogic.Test
         private string title = "Give Me The Night";
         private string artist = "George Benson";
         private uint track = 1;
-        private Mock<IID3V1> CreateID3V1File()
-        {
-            var id3v1file = new Mock<IID3V1>();
-
-            id3v1file.Setup(i => i.Album)
-                .Returns(album);
-
-            id3v1file.Setup(i => i.Comment)
-                .Returns(comment);
-
-            id3v1file.Setup(i => i.Genre)
-                .Returns(genre);
-
-            id3v1file.Setup(i => i.Year)
-                .Returns(year);
-
-            id3v1file.Setup(i => i.Track)
-                .Returns(track);
-
-            id3v1file.Setup(i => i.Title)
-                .Returns(title);
-            return id3v1file;
-        }
+       
         [TestMethod]
         public void ID3V1Properties()
         {
