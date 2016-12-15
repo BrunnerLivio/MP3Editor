@@ -35,6 +35,7 @@
     <CleanIntermediates>True</CleanIntermediates>
     <DocumentationSources>
       <DocumentationSource sourceFile="..\MP3Editor.Businesslogic\MP3Editor.Businesslogic.csproj" xmlns="" />
+      <DocumentationSource sourceFile="..\MP3Editor.Businesslogic.Test\MP3Editor.Businesslogic.Test.csproj" />
     </DocumentationSources>
     <WarnOnMissingSourceContext>False</WarnOnMissingSourceContext>
   </PropertyGroup>
