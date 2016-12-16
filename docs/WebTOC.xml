@@ -2,35 +2,35 @@
 <HelpTOC>
 
   <HelpTOCNode Title="Welcome to the [TODO: Add project name]" Url="html/e0066b36-a9e9-4c17-ab9e-70ce17fefe7d.htm" />
-  <HelpTOCNode Id="482f58e2-87bf-45d3-88a2-7cd7db687d27" Title="Version History" Url="html/a84d128c-610b-4dea-bf34-58735abc122a.htm">
+  <HelpTOCNode Id="24414f78-09fb-4f97-9c34-21669536f6d8" Title="Version History" Url="html/a84d128c-610b-4dea-bf34-58735abc122a.htm">
     <HelpTOCNode Title="Version 1.0.0.0" Url="html/915c76af-4b3d-42a5-a9df-b44367493a5d.htm" />
   </HelpTOCNode>
-  <HelpTOCNode Id="5308e096-da23-48a1-b549-ca2416a6ab4e" Title="MP3Editor.Businesslogic" Url="html/c2abb1c3-56eb-5b8a-d4c4-8b6b654a041d.htm">
-    <HelpTOCNode Id="4d9abf7e-98dc-4547-a3b2-72032846243f" Title="File Class" Url="html/ac7ee872-c89c-9d01-aae7-437cf34cd343.htm">
+  <HelpTOCNode Id="153f3f71-554c-444c-a144-29e9bd1e9d44" Title="MP3Editor.Businesslogic" Url="html/c2abb1c3-56eb-5b8a-d4c4-8b6b654a041d.htm">
+    <HelpTOCNode Id="5be2d6a5-2861-48bf-80f2-bcc42b605185" Title="File Class" Url="html/ac7ee872-c89c-9d01-aae7-437cf34cd343.htm">
       <HelpTOCNode Title="File Constructor " Url="html/3020991d-7819-8c66-ee43-e755db404fe9.htm" />
-      <HelpTOCNode Id="9e8cfd04-a27a-4392-8d56-6ef7c3a29560" Title="File Properties" Url="html/19564cd2-363b-84a4-0c89-154f94d56669.htm">
+      <HelpTOCNode Id="8c5d33d2-095c-49bb-965b-7451c81cb5e1" Title="File Properties" Url="html/19564cd2-363b-84a4-0c89-154f94d56669.htm">
         <HelpTOCNode Title="FilePath Property " Url="html/5cb39d50-0b1c-f54f-96fa-40923676e6d7.htm" />
       </HelpTOCNode>
       <HelpTOCNode Title="File Methods" Url="html/5b914e3b-fb32-02ae-f4c4-4b215ce8a948.htm" />
-      <HelpTOCNode Id="e7686344-3128-43f9-b30b-d8b7e63533dd" Title="File Fields" Url="html/0a8fb832-7e9c-afc8-20fc-60a68f395349.htm">
+      <HelpTOCNode Id="a4a4247f-bf35-465d-8d07-a4c8fcc78190" Title="File Fields" Url="html/0a8fb832-7e9c-afc8-20fc-60a68f395349.htm">
         <HelpTOCNode Title="filepath Field" Url="html/451fc9e9-5bc9-611d-54b3-c7eb9f28c5ca.htm" />
       </HelpTOCNode>
     </HelpTOCNode>
-    <HelpTOCNode Id="004297f7-76a2-465d-aaac-d3e3205bdc7e" Title="IFile Interface" Url="html/bc3f239c-e704-721c-4a8b-55341d0e6816.htm">
-      <HelpTOCNode Id="0f85fb7c-35d4-423c-97ee-929b536040be" Title="IFile Properties" Url="html/b263a556-5b9f-e077-56e4-99b9e0ca26ac.htm">
+    <HelpTOCNode Id="758cbb67-57f2-473b-b1c4-d55aa731880f" Title="IFile Interface" Url="html/bc3f239c-e704-721c-4a8b-55341d0e6816.htm">
+      <HelpTOCNode Id="72d1fc53-3477-4f41-b560-7e5b07029da2" Title="IFile Properties" Url="html/b263a556-5b9f-e077-56e4-99b9e0ca26ac.htm">
         <HelpTOCNode Title="FilePath Property " Url="html/0d86ca29-346d-4a67-5ee6-903c15a43c26.htm" />
       </HelpTOCNode>
     </HelpTOCNode>
-    <HelpTOCNode Id="eb53e8d3-c666-455c-9b3f-b1b79a0f8734" Title="IFileTypeReader Interface" Url="html/b4a43e61-acfa-756a-4f21-add56274e792.htm">
-      <HelpTOCNode Id="b6720249-7a9b-432c-9750-3c09d56bc624" Title="IFileTypeReader Methods" Url="html/d599ab32-b7d0-29ea-a4d0-2c44d3670a97.htm">
+    <HelpTOCNode Id="eabe8e86-0dc5-49ea-96bf-17090c596f91" Title="IFileTypeReader Interface" Url="html/b4a43e61-acfa-756a-4f21-add56274e792.htm">
+      <HelpTOCNode Id="74bd13b5-8315-4c56-b3a9-51e773f35b4d" Title="IFileTypeReader Methods" Url="html/d599ab32-b7d0-29ea-a4d0-2c44d3670a97.htm">
         <HelpTOCNode Title="Read Method " Url="html/c73b31d7-45f9-15f3-7124-11f5180f324a.htm" />
       </HelpTOCNode>
     </HelpTOCNode>
   </HelpTOCNode>
-  <HelpTOCNode Id="75823aa8-da99-421a-946a-f633cbbb1b33" Title="MP3Editor.Businesslogic.Filetypes.ID3V1" Url="html/a84e21d9-6dff-6044-09cd-fd1dc7061f42.htm">
-    <HelpTOCNode Id="54405357-1af5-47ef-a226-c10ffa492cd2" Title="Id3V1 Class" Url="html/f9899cf0-84fb-d770-050a-2bf17b78dffa.htm">
+  <HelpTOCNode Id="f1e863e2-a25f-440c-914a-f63c049c3134" Title="MP3Editor.Businesslogic.Filetypes.ID3V1" Url="html/a84e21d9-6dff-6044-09cd-fd1dc7061f42.htm">
+    <HelpTOCNode Id="f958f9ea-08ee-49b0-81df-5682b3379ab9" Title="Id3V1 Class" Url="html/f9899cf0-84fb-d770-050a-2bf17b78dffa.htm">
       <HelpTOCNode Title="Id3V1 Constructor " Url="html/30c1fd04-8c48-46da-b103-42d426f789d5.htm" />
-      <HelpTOCNode Id="e9dfbf6e-0c81-41e1-810a-3494d46bb9be" Title="Id3V1 Properties" Url="html/9fba4ded-37f3-6361-c9b1-c31abd419683.htm">
+      <HelpTOCNode Id="01dcf298-f718-4405-bc7b-b15e1277d334" Title="Id3V1 Properties" Url="html/9fba4ded-37f3-6361-c9b1-c31abd419683.htm">
         <HelpTOCNode Title="Album Property " Url="html/a08a8346-65d8-670a-c26f-8df0beef3d95.htm" />
         <HelpTOCNode Title="AlbumArtist Property " Url="html/91c1f942-daac-63b5-7559-42979ead2071.htm" />
         <HelpTOCNode Title="Comment Property " Url="html/ef84c720-69d4-c2ce-b918-877d93124260.htm" />
@@ -42,20 +42,20 @@
       <HelpTOCNode Title="Id3V1 Methods" Url="html/29729f02-f712-f7d0-b15c-06a41e0a6d39.htm" />
       <HelpTOCNode Title="Id3V1 Fields" Url="html/84175dd2-5dec-e07f-5d1e-91161e5cd631.htm" />
     </HelpTOCNode>
-    <HelpTOCNode Id="3d396d08-0860-457c-a462-79d6aebe0799" Title="Id3V1Reader Class" Url="html/d61cad24-c97b-f305-fd6c-b0de1b0a8b30.htm">
+    <HelpTOCNode Id="be2feb98-501b-45a4-bb29-b39d92c843c4" Title="Id3V1Reader Class" Url="html/d61cad24-c97b-f305-fd6c-b0de1b0a8b30.htm">
       <HelpTOCNode Title="Id3V1Reader Constructor " Url="html/29d2e380-e28f-9f69-4213-5fc09244887e.htm" />
-      <HelpTOCNode Id="3df5559b-1106-4065-af44-368130bef896" Title="Id3V1Reader Methods" Url="html/aea82ffc-95b0-0940-12c3-5047704d52f8.htm">
+      <HelpTOCNode Id="82eaa7ec-8944-46f8-b648-a35389fa84df" Title="Id3V1Reader Methods" Url="html/aea82ffc-95b0-0940-12c3-5047704d52f8.htm">
         <HelpTOCNode Title="Read Method " Url="html/58467e69-ce36-7fcf-daf7-7105c6df0438.htm" />
       </HelpTOCNode>
     </HelpTOCNode>
-    <HelpTOCNode Id="435ca7fd-ea7c-4ac8-b62c-16ac4a2e5d6d" Title="ID3V1Writer Class" Url="html/bde126be-ae47-ad4b-5a08-7f3abaaa55be.htm">
+    <HelpTOCNode Id="8766fd4e-dd13-4d88-a990-080819ca85e8" Title="ID3V1Writer Class" Url="html/bde126be-ae47-ad4b-5a08-7f3abaaa55be.htm">
       <HelpTOCNode Title="ID3V1Writer Constructor " Url="html/20c82593-6025-4438-6e73-19b7d783f33c.htm" />
-      <HelpTOCNode Id="7e3dbb13-184b-46b4-a53f-9e68e95ca97d" Title="ID3V1Writer Methods" Url="html/c1918471-725f-6490-8e7a-85e18cba0dcc.htm">
+      <HelpTOCNode Id="d0674710-7fb3-4402-b4d6-700570114398" Title="ID3V1Writer Methods" Url="html/c1918471-725f-6490-8e7a-85e18cba0dcc.htm">
         <HelpTOCNode Title="Write Method " Url="html/4eaf604c-b7ea-fcc6-5ba2-bfb2ff65bdb3.htm" />
       </HelpTOCNode>
     </HelpTOCNode>
-    <HelpTOCNode Id="c2837cdd-4bff-4ede-9752-501c004338c6" Title="IID3V1 Interface" Url="html/594f9767-8806-b0e7-d719-f78776d9dd83.htm">
-      <HelpTOCNode Id="88b35060-5c19-4b19-9fa3-106ca24f758d" Title="IID3V1 Properties" Url="html/764ec950-6b85-c6f4-11a5-dbdd0d7c32f2.htm">
+    <HelpTOCNode Id="d9c7d06d-9311-4b1e-9a72-844cb95fd3bd" Title="IID3V1 Interface" Url="html/594f9767-8806-b0e7-d719-f78776d9dd83.htm">
+      <HelpTOCNode Id="2dfc94d5-d5bd-4297-af20-69a263d1f87d" Title="IID3V1 Properties" Url="html/764ec950-6b85-c6f4-11a5-dbdd0d7c32f2.htm">
         <HelpTOCNode Title="Album Property " Url="html/73b29dae-fa9a-3eaf-626e-c4e781ba5e45.htm" />
         <HelpTOCNode Title="AlbumArtist Property " Url="html/2af4a003-c515-c046-5af3-f875677a0c80.htm" />
         <HelpTOCNode Title="Comment Property " Url="html/acf36225-eefc-5147-2e7b-ef03cec1ad4d.htm" />
@@ -66,16 +66,16 @@
         <HelpTOCNode Title="Year Property " Url="html/b8f76435-74be-bd49-28e4-aee68a631cca.htm" />
       </HelpTOCNode>
     </HelpTOCNode>
-    <HelpTOCNode Id="af51601a-c3f7-49c2-a4ee-ab61860e1fd0" Title="IID3V1Writer Interface" Url="html/d52f34e6-761b-d943-ea1c-5939fb52791a.htm">
-      <HelpTOCNode Id="297b1340-9f2f-4ad1-9a75-d53f9f4a9565" Title="IID3V1Writer Methods" Url="html/2311cdc5-3b85-22ff-a1cb-e08af174c36f.htm">
+    <HelpTOCNode Id="9b6d4f3b-dc90-4aab-90c5-590b8f39780a" Title="IID3V1Writer Interface" Url="html/d52f34e6-761b-d943-ea1c-5939fb52791a.htm">
+      <HelpTOCNode Id="f757315a-5c57-4ae8-9d87-7a37267950b8" Title="IID3V1Writer Methods" Url="html/2311cdc5-3b85-22ff-a1cb-e08af174c36f.htm">
         <HelpTOCNode Title="Write Method " Url="html/985e6d04-2b84-427c-591e-fdcff960dcbb.htm" />
       </HelpTOCNode>
     </HelpTOCNode>
   </HelpTOCNode>
-  <HelpTOCNode Id="d08fa2ed-acc4-42e9-a385-aa6fd46b3f06" Title="MP3Editor.Businesslogic.Filetypes.ID3V2" Url="html/d98ac3b6-50e3-ff6a-d9c2-67f3ba96873e.htm">
-    <HelpTOCNode Id="ea3d5993-dbcc-4b70-8433-18addcb3f6ef" Title="Id3V2 Class" Url="html/4ff3a08e-38a4-40cf-e1ab-f27d70b2ea50.htm">
+  <HelpTOCNode Id="0c41155b-0190-4a9a-a64b-023101f28f41" Title="MP3Editor.Businesslogic.Filetypes.ID3V2" Url="html/d98ac3b6-50e3-ff6a-d9c2-67f3ba96873e.htm">
+    <HelpTOCNode Id="184096e8-a399-4590-acbb-6a3ca5681476" Title="Id3V2 Class" Url="html/4ff3a08e-38a4-40cf-e1ab-f27d70b2ea50.htm">
       <HelpTOCNode Title="Id3V2 Constructor " Url="html/a2470402-9603-5a47-d3a9-89b1381076e5.htm" />
-      <HelpTOCNode Id="9a6e2405-2acd-4c6f-9c27-3fe584c2e3b8" Title="Id3V2 Properties" Url="html/6b6a8a5a-30d1-ee14-30c1-53f477def331.htm">
+      <HelpTOCNode Id="476ff60d-8fc0-4902-938d-1959ced63d57" Title="Id3V2 Properties" Url="html/6b6a8a5a-30d1-ee14-30c1-53f477def331.htm">
         <HelpTOCNode Title="Album Property " Url="html/9202d958-d694-8222-a8ab-7e8db155aa52.htm" />
         <HelpTOCNode Title="Artist Property " Url="html/5c6ea4ac-524f-35a1-0db6-10b6b9020515.htm" />
         <HelpTOCNode Title="Genre Property " Url="html/afb87609-1f59-a049-ce22-aa3f629c5286.htm" />
@@ -87,20 +87,20 @@
       <HelpTOCNode Title="Id3V2 Methods" Url="html/26bc884d-0743-16d6-c8f9-1b03e808ee4d.htm" />
       <HelpTOCNode Title="Id3V2 Fields" Url="html/e8793cad-bf82-5926-42f0-64d0f33d21f7.htm" />
     </HelpTOCNode>
-    <HelpTOCNode Id="2b82889b-36fb-4a9e-9ba5-72b3f2d7b0fc" Title="ID3V2Reader Class" Url="html/94a388fe-c4a3-e7f1-c429-3945fc8e654e.htm">
+    <HelpTOCNode Id="b766ded0-ffff-4b65-9caf-8d18d7b1bc1d" Title="ID3V2Reader Class" Url="html/94a388fe-c4a3-e7f1-c429-3945fc8e654e.htm">
       <HelpTOCNode Title="ID3V2Reader Constructor " Url="html/695c1986-da85-7304-07c6-f4f8ae27c9b3.htm" />
-      <HelpTOCNode Id="b325e273-fcf4-4993-9223-1c0e289a5f70" Title="ID3V2Reader Methods" Url="html/e6e7e968-56fe-95d9-334e-50ba79ec29eb.htm">
+      <HelpTOCNode Id="6775bed4-1e84-4e23-ba12-032ef6df7fff" Title="ID3V2Reader Methods" Url="html/e6e7e968-56fe-95d9-334e-50ba79ec29eb.htm">
         <HelpTOCNode Title="Read Method " Url="html/2b29914f-ef02-ed68-4b07-2a2022861f7b.htm" />
       </HelpTOCNode>
     </HelpTOCNode>
-    <HelpTOCNode Id="a89c398b-7979-4e50-94e1-19cc48cbfe63" Title="ID3V2Writer Class" Url="html/5a6c20bb-33f6-459a-fdb0-7dfba316b1a6.htm">
+    <HelpTOCNode Id="76445a63-1c30-43f4-86a5-0c4a75901710" Title="ID3V2Writer Class" Url="html/5a6c20bb-33f6-459a-fdb0-7dfba316b1a6.htm">
       <HelpTOCNode Title="ID3V2Writer Constructor " Url="html/207ae585-40e1-92a9-9ad1-5dc3327b1227.htm" />
-      <HelpTOCNode Id="1ac91315-0168-4c88-b9cb-3f89a632e1f7" Title="ID3V2Writer Methods" Url="html/d4688991-d95e-68f3-66a1-647f3e3f8f3a.htm">
+      <HelpTOCNode Id="43d4b5a9-22a0-4abe-91a8-f281a2736005" Title="ID3V2Writer Methods" Url="html/d4688991-d95e-68f3-66a1-647f3e3f8f3a.htm">
         <HelpTOCNode Title="Write Method " Url="html/fc2c7de9-19ef-40a8-9331-7ecd89e304a1.htm" />
       </HelpTOCNode>
     </HelpTOCNode>
-    <HelpTOCNode Id="b85f2ea8-2b4f-4880-a05b-e323e3e73fb7" Title="IID3V2 Interface" Url="html/970eebaf-dae7-5761-9ddc-4baaed06b050.htm">
-      <HelpTOCNode Id="b1e3e15d-e34b-45ee-9aab-1d9ba76f5bbd" Title="IID3V2 Properties" Url="html/af0a4acd-3db4-b148-f1fd-f1e3e08b48a9.htm">
+    <HelpTOCNode Id="65c35c19-f6ed-4f80-903f-f48963734ab9" Title="IID3V2 Interface" Url="html/970eebaf-dae7-5761-9ddc-4baaed06b050.htm">
+      <HelpTOCNode Id="2f6b8be3-60b8-4b50-b455-63af131d79f5" Title="IID3V2 Properties" Url="html/af0a4acd-3db4-b148-f1fd-f1e3e08b48a9.htm">
         <HelpTOCNode Title="Album Property " Url="html/f7a8bc77-176b-cb10-2bb1-70ef17522b35.htm" />
         <HelpTOCNode Title="Artist Property " Url="html/3ff383ed-fc27-8d11-7659-fb0e028a86b1.htm" />
         <HelpTOCNode Title="Genre Property " Url="html/d8672730-782a-90bf-8ec5-fec69f2db425.htm" />
@@ -111,46 +111,46 @@
       </HelpTOCNode>
     </HelpTOCNode>
   </HelpTOCNode>
-  <HelpTOCNode Id="c0538435-408f-498d-b03e-48efd625f90a" Title="MP3Editor.Businesslogic.Genre" Url="html/15746998-66ac-2f92-c2d6-686b5fd957ab.htm">
-    <HelpTOCNode Id="f4dd9937-5f98-4faf-a761-dfbf97650049" Title="Genre Class" Url="html/9cfbd10e-f0c2-4e7a-a3ee-3f9d95beecf5.htm">
+  <HelpTOCNode Id="f62398ad-4f33-4f8a-a726-b36e03c18bd9" Title="MP3Editor.Businesslogic.Genre" Url="html/15746998-66ac-2f92-c2d6-686b5fd957ab.htm">
+    <HelpTOCNode Id="e5658e67-3bd2-4791-8e85-7d003bc06d70" Title="Genre Class" Url="html/9cfbd10e-f0c2-4e7a-a3ee-3f9d95beecf5.htm">
       <HelpTOCNode Title="Genre Constructor " Url="html/05659bba-e714-fe72-04a5-123e83bfb8e5.htm" />
-      <HelpTOCNode Id="793ecd4d-9a1a-4c28-b793-b158ecfbce3e" Title="Genre Properties" Url="html/6f66be67-2552-c5ef-c787-daa31c51b03d.htm">
+      <HelpTOCNode Id="c83e601f-6bf5-4fd6-8009-00585d021c22" Title="Genre Properties" Url="html/6f66be67-2552-c5ef-c787-daa31c51b03d.htm">
         <HelpTOCNode Title="Name Property " Url="html/4be7b8c0-7472-fd75-c0c7-1779aa3eb22d.htm" />
       </HelpTOCNode>
       <HelpTOCNode Title="Genre Methods" Url="html/c05d749d-1a6c-ebc9-dd8e-7eba782572fd.htm" />
     </HelpTOCNode>
-    <HelpTOCNode Id="68f789c3-a4a6-4374-a104-1b14bf87daae" Title="GenreRepository Class" Url="html/20787be5-90da-f621-27d9-f6e647fa10fa.htm">
+    <HelpTOCNode Id="665fbeb2-8614-4d6a-82eb-f4fb0db821d3" Title="GenreRepository Class" Url="html/20787be5-90da-f621-27d9-f6e647fa10fa.htm">
       <HelpTOCNode Title="GenreRepository Constructor " Url="html/684f912b-feae-452e-9835-2a0a0d2971a9.htm" />
-      <HelpTOCNode Id="02260b4d-ff9f-43ee-9e16-549b41c94402" Title="GenreRepository Methods" Url="html/53e34764-8422-a44f-2248-6874467663ad.htm">
+      <HelpTOCNode Id="9896781d-9b57-4d12-9b82-6676cc03c058" Title="GenreRepository Methods" Url="html/53e34764-8422-a44f-2248-6874467663ad.htm">
         <HelpTOCNode Title="GetAllAudioGenres Method " Url="html/0d18e11c-b445-acfc-da65-37ad4276b533.htm" />
       </HelpTOCNode>
     </HelpTOCNode>
   </HelpTOCNode>
-  <HelpTOCNode Id="f61c08a9-988f-4eb6-8e96-e2f921c1fc26" Title="MP3Editor.Businesslogic.Language" Url="html/a8365d5c-6a58-ec93-6488-bf53c9509a0a.htm">
-    <HelpTOCNode Id="0d43739a-62a2-4e87-a856-32bf2e4b5846" Title="Language Class" Url="html/56392f00-974a-74f5-4018-fcf82b815e6c.htm">
+  <HelpTOCNode Id="6d00714a-696f-4651-898d-9f9bcd710ed7" Title="MP3Editor.Businesslogic.Language" Url="html/a8365d5c-6a58-ec93-6488-bf53c9509a0a.htm">
+    <HelpTOCNode Id="a86a2711-215e-4c56-a3b7-ee8e3b0ced57" Title="Language Class" Url="html/56392f00-974a-74f5-4018-fcf82b815e6c.htm">
       <HelpTOCNode Title="Language Constructor " Url="html/7ef2e0a3-42c2-b63f-d534-b5e0729b90c9.htm" />
-      <HelpTOCNode Id="71136c27-d767-422f-95ca-6b0c6e5df9eb" Title="Language Properties" Url="html/23b0fe67-83d8-6ee4-7235-c5510438b4b7.htm">
+      <HelpTOCNode Id="4cfeb641-97e4-42e9-8b87-0ae205ae4ce6" Title="Language Properties" Url="html/23b0fe67-83d8-6ee4-7235-c5510438b4b7.htm">
         <HelpTOCNode Title="Name Property " Url="html/c4cf1751-6389-a57d-bdeb-5612c07bb8c1.htm" />
         <HelpTOCNode Title="Shortname Property " Url="html/03c345f1-5693-7806-2fd5-5beadd711ce6.htm" />
       </HelpTOCNode>
       <HelpTOCNode Title="Language Methods" Url="html/4d2a9dc7-a298-5e9e-0880-aad17917ee5f.htm" />
     </HelpTOCNode>
-    <HelpTOCNode Id="92d61bb4-fe6a-47e2-9449-8c56eb938972" Title="LanguageRepository Class" Url="html/a2069644-b96c-1e08-2f12-42556218c63b.htm">
-      <HelpTOCNode Id="c908080b-d5c8-4275-99d1-1a232e0b2add" Title="LanguageRepository Methods" Url="html/47e7dff8-c7fb-e139-6dac-0ce2d9e52697.htm">
+    <HelpTOCNode Id="2c81aef3-ee8a-48cb-9d37-508c170dd8b7" Title="LanguageRepository Class" Url="html/a2069644-b96c-1e08-2f12-42556218c63b.htm">
+      <HelpTOCNode Id="2a33043a-74a3-49ed-ade3-ea9f043680f5" Title="LanguageRepository Methods" Url="html/47e7dff8-c7fb-e139-6dac-0ce2d9e52697.htm">
         <HelpTOCNode Title="Clear Method " Url="html/8b098dda-8a99-e01c-2c8c-1a91a2a019fb.htm" />
         <HelpTOCNode Title="GetAll Method " Url="html/e94dbff8-d187-253f-39bf-4c733a957f69.htm" />
         <HelpTOCNode Title="GetByShortname Method " Url="html/e86fc860-ab9a-f360-8a27-f64e5fb1ef4d.htm" />
       </HelpTOCNode>
     </HelpTOCNode>
   </HelpTOCNode>
-  <HelpTOCNode Id="39e0bddc-2078-44b0-b5ef-6a47ebafbb91" Title="MP3Editor.Businesslogic.Playlist" Url="html/b8fb44d5-34f1-626e-b096-766b5db2eb70.htm">
-    <HelpTOCNode Id="9772b5d2-c62e-41db-8f71-2bfd51b7fe20" Title="Playlist Class" Url="html/7bc73da0-2096-b656-3918-30b355b8fdf5.htm">
+  <HelpTOCNode Id="a8cd9aab-7f42-4a16-953d-35e3aa427328" Title="MP3Editor.Businesslogic.Playlist" Url="html/b8fb44d5-34f1-626e-b096-766b5db2eb70.htm">
+    <HelpTOCNode Id="c7143808-617d-4f84-b9f9-27c83ac8ab33" Title="Playlist Class" Url="html/7bc73da0-2096-b656-3918-30b355b8fdf5.htm">
       <HelpTOCNode Title="Playlist Constructor " Url="html/bbdf503c-eb33-f1af-967f-d9b8f5b0cb14.htm" />
-      <HelpTOCNode Id="2ada9948-c4fd-42e9-aaae-f60fa9bea695" Title="Playlist Properties" Url="html/66672458-04d0-ee54-f32c-5061326766c3.htm">
+      <HelpTOCNode Id="70670794-e3e4-4439-8c24-a9ace66e1d6a" Title="Playlist Properties" Url="html/66672458-04d0-ee54-f32c-5061326766c3.htm">
         <HelpTOCNode Title="Files Property " Url="html/1610b533-dc64-105f-4d88-f843f4e3ae8c.htm" />
         <HelpTOCNode Title="M3UText Property " Url="html/25d4b23a-8a22-640c-8d1f-786220d84d0d.htm" />
       </HelpTOCNode>
-      <HelpTOCNode Id="014e23e6-7066-430d-b30c-12fe30a87f1a" Title="Playlist Methods" Url="html/c172124e-349f-4f21-d56f-e19d3289906c.htm">
+      <HelpTOCNode Id="67cf158e-7209-4a7a-952c-a7a63061b89b" Title="Playlist Methods" Url="html/c172124e-349f-4f21-d56f-e19d3289906c.htm">
         <HelpTOCNode Title="Add Method " Url="html/f31394bf-2601-4ecb-b6e5-c845b2663efc.htm" />
         <HelpTOCNode Title="Load Method " Url="html/1169afde-551f-0a39-9a90-f7069f858965.htm" />
         <HelpTOCNode Title="ParseFile Method " Url="html/612fc743-0886-a0d8-5d7c-57ed493d3379.htm" />
@@ -158,39 +158,39 @@
       </HelpTOCNode>
     </HelpTOCNode>
   </HelpTOCNode>
-  <HelpTOCNode Id="80a8f8dc-9fcf-454a-a636-19166f884755" Title="MP3Editor.Businesslogic.Test" Url="html/dc328759-dc4e-dbee-c7b2-ee31045ea8ec.htm">
-    <HelpTOCNode Id="ee0e485b-279b-47b6-b8e6-1f4eb50b4a11" Title="GenreTest Class" Url="html/14fa0361-8c4f-1bb2-acb5-7c841d67f51d.htm">
+  <HelpTOCNode Id="e7fbe3b1-5e98-4030-8c75-dca5ab005b4b" Title="MP3Editor.Businesslogic.Test" Url="html/dc328759-dc4e-dbee-c7b2-ee31045ea8ec.htm">
+    <HelpTOCNode Id="e33129f9-fbc4-4604-ac53-3b26dd1a2bb0" Title="GenreTest Class" Url="html/14fa0361-8c4f-1bb2-acb5-7c841d67f51d.htm">
       <HelpTOCNode Title="GenreTest Constructor " Url="html/0c9dc0cc-ed49-bfab-621f-0cdc959b2a28.htm" />
-      <HelpTOCNode Id="b13a68b9-5260-4066-aa2e-a2317300290f" Title="GenreTest Methods" Url="html/f266f008-420c-ffc6-8788-19a81ad664f0.htm">
+      <HelpTOCNode Id="d3118cdb-0e7a-4cf0-a4bc-3ab515098970" Title="GenreTest Methods" Url="html/f266f008-420c-ffc6-8788-19a81ad664f0.htm">
         <HelpTOCNode Title="Create Method " Url="html/bb51a190-2b03-d1eb-7ffc-503a07e7f501.htm" />
         <HelpTOCNode Title="GetAll Method " Url="html/89797815-ba5e-1fc2-97e6-abfdf12359f7.htm" />
       </HelpTOCNode>
     </HelpTOCNode>
-    <HelpTOCNode Id="75da602a-3287-45d2-bba6-b5f5f028e07e" Title="Id3V1 Class" Url="html/29ac12fc-5e24-b22e-b5ef-74b7849ec960.htm">
+    <HelpTOCNode Id="d095d2e5-a813-403b-a8a5-03f8e437e7e1" Title="Id3V1 Class" Url="html/29ac12fc-5e24-b22e-b5ef-74b7849ec960.htm">
       <HelpTOCNode Title="Id3V1 Constructor " Url="html/e18ff287-8a5b-40ea-8f66-5999d1154afc.htm" />
-      <HelpTOCNode Id="db7dd519-15e6-4891-a9de-d683c50363ec" Title="Id3V1 Methods" Url="html/e7e4c2dc-a486-3450-fb40-5742bd477c52.htm">
+      <HelpTOCNode Id="0920a0a4-8e38-4f41-84df-3715fc5d6c8a" Title="Id3V1 Methods" Url="html/e7e4c2dc-a486-3450-fb40-5742bd477c52.htm">
         <HelpTOCNode Title="ID3V1Properties Method " Url="html/11e1d07e-5caf-4ae4-3cc4-2267a50a722f.htm" />
         <HelpTOCNode Title="ReadFile Method " Url="html/49300a25-3933-e244-e530-979d14a03278.htm" />
         <HelpTOCNode Title="WriteFile Method " Url="html/b717bb4c-2d77-459c-e490-6ebf826c50c9.htm" />
       </HelpTOCNode>
     </HelpTOCNode>
-    <HelpTOCNode Id="a778555d-2f7d-45ec-80ef-daac294117a4" Title="ID3V2 Class" Url="html/d495c0bd-c164-f9dc-6cdb-3af350ea2670.htm">
+    <HelpTOCNode Id="8de07768-11d3-4c3e-afc3-6b007f48dfc2" Title="ID3V2 Class" Url="html/d495c0bd-c164-f9dc-6cdb-3af350ea2670.htm">
       <HelpTOCNode Title="ID3V2 Constructor " Url="html/5f06ccb0-7b8c-dbb2-6f95-2709dea21c43.htm" />
-      <HelpTOCNode Id="54342ef4-c85d-4b77-9acb-26b148af90f0" Title="ID3V2 Methods" Url="html/7bf8bf27-129d-84ce-0053-f883f37a489a.htm">
+      <HelpTOCNode Id="ed029be7-c9aa-480e-9e91-88ba585e8436" Title="ID3V2 Methods" Url="html/7bf8bf27-129d-84ce-0053-f883f37a489a.htm">
         <HelpTOCNode Title="ID3V2Properties Method " Url="html/913f8be2-52f8-2078-6677-cdd43b4ed775.htm" />
       </HelpTOCNode>
     </HelpTOCNode>
-    <HelpTOCNode Id="5ba9db0c-4eb5-4ebd-a9ae-09b75e9716aa" Title="Language Class" Url="html/8c6ba208-8453-bd24-8bda-45ad2b31ae2c.htm">
+    <HelpTOCNode Id="27ef29f5-7f37-4971-a5d8-6ead1cab5d21" Title="Language Class" Url="html/8c6ba208-8453-bd24-8bda-45ad2b31ae2c.htm">
       <HelpTOCNode Title="Language Constructor " Url="html/c326e73b-66ee-cdd1-ab6d-c80e18163572.htm" />
-      <HelpTOCNode Id="665931d7-60a8-47cd-8706-bfdca571f72b" Title="Language Methods" Url="html/2bfce58f-1dd2-3f3d-dd77-121e3d35b843.htm">
+      <HelpTOCNode Id="5adc1212-e032-4d39-8050-8553553609cd" Title="Language Methods" Url="html/2bfce58f-1dd2-3f3d-dd77-121e3d35b843.htm">
         <HelpTOCNode Title="LanguageProperties Method " Url="html/15a25b97-5980-94a4-7f33-938fcc930121.htm" />
         <HelpTOCNode Title="LanguageRepositoryGetAll Method " Url="html/25485473-2be4-f57b-786b-a193dd2cb027.htm" />
         <HelpTOCNode Title="LanguageRepositoryGetByShortname Method " Url="html/2dffeb7c-14e3-e4c9-c885-c0841c6c43c4.htm" />
       </HelpTOCNode>
     </HelpTOCNode>
-    <HelpTOCNode Id="4f5690c8-0d1b-4853-b7ea-ab0f0ef2ac1f" Title="PlaylistTest Class" Url="html/af4cdaee-4548-a1b3-e847-4a44dcd3524e.htm">
+    <HelpTOCNode Id="5ab9ced7-e8f7-4a0d-a0fa-73068a3a5f75" Title="PlaylistTest Class" Url="html/af4cdaee-4548-a1b3-e847-4a44dcd3524e.htm">
       <HelpTOCNode Title="PlaylistTest Constructor " Url="html/95b97eaf-cf1b-4552-5f9a-b766f409047f.htm" />
-      <HelpTOCNode Id="48d60b5a-9320-47d4-bc21-c68786bad683" Title="PlaylistTest Methods" Url="html/43a8baa3-d9ba-5143-81a1-53f8567b7faa.htm">
+      <HelpTOCNode Id="f47f2d87-a74c-4724-9c3f-d48060bd1794" Title="PlaylistTest Methods" Url="html/43a8baa3-d9ba-5143-81a1-53f8567b7faa.htm">
         <HelpTOCNode Title="AddList Method " Url="html/c0d0a403-16e7-76c9-7e0b-bd9f5aa5654a.htm" />
         <HelpTOCNode Title="M3UText Method " Url="html/7e18ff98-2bec-820a-c462-4d9c1e827d0b.htm" />
         <HelpTOCNode Title="ParseFile Method " Url="html/3b581fb3-2cb1-ec8a-ed8b-0c1d3de1cd7b.htm" />

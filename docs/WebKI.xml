@@ -83,11 +83,11 @@
     <HelpKINode Title="Id3V1 Class" Url="html/29ac12fc-5e24-b22e-b5ef-74b7849ec960.htm" />
     <HelpKINode Title="about Id3V1 class" Url="html/29ac12fc-5e24-b22e-b5ef-74b7849ec960.htm" />
     <HelpKINode Title="about Id3V1 class" Url="html/f9899cf0-84fb-d770-050a-2bf17b78dffa.htm" />
-    <HelpKINode Title="constructor" Url="html/30c1fd04-8c48-46da-b103-42d426f789d5.htm" />
     <HelpKINode Title="constructor" Url="html/e18ff287-8a5b-40ea-8f66-5999d1154afc.htm" />
+    <HelpKINode Title="constructor" Url="html/30c1fd04-8c48-46da-b103-42d426f789d5.htm" />
     <HelpKINode Title="fields" Url="html/84175dd2-5dec-e07f-5d1e-91161e5cd631.htm" />
-    <HelpKINode Title="methods" Url="html/29729f02-f712-f7d0-b15c-06a41e0a6d39.htm" />
     <HelpKINode Title="methods" Url="html/e7e4c2dc-a486-3450-fb40-5742bd477c52.htm" />
+    <HelpKINode Title="methods" Url="html/29729f02-f712-f7d0-b15c-06a41e0a6d39.htm" />
     <HelpKINode Title="properties" Url="html/9fba4ded-37f3-6361-c9b1-c31abd419683.htm" />
   </HelpKINode>
   <HelpKINode Title="Id3V1.Album property" Url="html/a08a8346-65d8-670a-c26f-8df0beef3d95.htm" />
@@ -95,8 +95,8 @@
   <HelpKINode Title="Id3V1.Comment property" Url="html/ef84c720-69d4-c2ce-b918-877d93124260.htm" />
   <HelpKINode Title="Id3V1.Genre property" Url="html/741bdd1c-683a-82a7-996b-04f0aa6563ae.htm" />
   <HelpKINode Title="Id3V1.Id3V1 constructor">
-    <HelpKINode Title="Id3V1 Constructor " Url="html/e18ff287-8a5b-40ea-8f66-5999d1154afc.htm" />
     <HelpKINode Title="Id3V1 Constructor " Url="html/30c1fd04-8c48-46da-b103-42d426f789d5.htm" />
+    <HelpKINode Title="Id3V1 Constructor " Url="html/e18ff287-8a5b-40ea-8f66-5999d1154afc.htm" />
   </HelpKINode>
   <HelpKINode Title="Id3V1.ID3V1Properties method" Url="html/11e1d07e-5caf-4ae4-3cc4-2267a50a722f.htm" />
   <HelpKINode Title="Id3V1.ReadFile method" Url="html/49300a25-3933-e244-e530-979d14a03278.htm" />
@@ -125,15 +125,15 @@
     <HelpKINode Title="Id3V2 Class" Url="html/4ff3a08e-38a4-40cf-e1ab-f27d70b2ea50.htm" />
     <HelpKINode Title="about Id3V2 class" Url="html/4ff3a08e-38a4-40cf-e1ab-f27d70b2ea50.htm" />
     <HelpKINode Title="constructor" Url="html/a2470402-9603-5a47-d3a9-89b1381076e5.htm" />
+    <HelpKINode Title="fields" Url="html/e8793cad-bf82-5926-42f0-64d0f33d21f7.htm" />
     <HelpKINode Title="methods" Url="html/26bc884d-0743-16d6-c8f9-1b03e808ee4d.htm" />
     <HelpKINode Title="properties" Url="html/6b6a8a5a-30d1-ee14-30c1-53f477def331.htm" />
-    <HelpKINode Title="fields" Url="html/e8793cad-bf82-5926-42f0-64d0f33d21f7.htm" />
   </HelpKINode>
   <HelpKINode Title="ID3V2 class">
-    <HelpKINode Title="ID3V2 Class" Url="html/d495c0bd-c164-f9dc-6cdb-3af350ea2670.htm" />
-    <HelpKINode Title="about ID3V2 class" Url="html/d495c0bd-c164-f9dc-6cdb-3af350ea2670.htm" />
-    <HelpKINode Title="constructor" Url="html/5f06ccb0-7b8c-dbb2-6f95-2709dea21c43.htm" />
     <HelpKINode Title="methods" Url="html/7bf8bf27-129d-84ce-0053-f883f37a489a.htm" />
+    <HelpKINode Title="about ID3V2 class" Url="html/d495c0bd-c164-f9dc-6cdb-3af350ea2670.htm" />
+    <HelpKINode Title="ID3V2 Class" Url="html/d495c0bd-c164-f9dc-6cdb-3af350ea2670.htm" />
+    <HelpKINode Title="constructor" Url="html/5f06ccb0-7b8c-dbb2-6f95-2709dea21c43.htm" />
   </HelpKINode>
   <HelpKINode Title="Id3V2.Album property" Url="html/9202d958-d694-8222-a8ab-7e8db155aa52.htm" />
   <HelpKINode Title="Id3V2.Artist property" Url="html/5c6ea4ac-524f-35a1-0db6-10b6b9020515.htm" />
@@ -210,8 +210,8 @@
     <HelpKINode Title="Language Class" Url="html/56392f00-974a-74f5-4018-fcf82b815e6c.htm" />
     <HelpKINode Title="about Language class" Url="html/8c6ba208-8453-bd24-8bda-45ad2b31ae2c.htm" />
     <HelpKINode Title="about Language class" Url="html/56392f00-974a-74f5-4018-fcf82b815e6c.htm" />
-    <HelpKINode Title="constructor" Url="html/c326e73b-66ee-cdd1-ab6d-c80e18163572.htm" />
     <HelpKINode Title="constructor" Url="html/7ef2e0a3-42c2-b63f-d534-b5e0729b90c9.htm" />
+    <HelpKINode Title="constructor" Url="html/c326e73b-66ee-cdd1-ab6d-c80e18163572.htm" />
     <HelpKINode Title="methods" Url="html/2bfce58f-1dd2-3f3d-dd77-121e3d35b843.htm" />
     <HelpKINode Title="methods" Url="html/4d2a9dc7-a298-5e9e-0880-aad17917ee5f.htm" />
     <HelpKINode Title="properties" Url="html/23b0fe67-83d8-6ee4-7235-c5510438b4b7.htm" />
