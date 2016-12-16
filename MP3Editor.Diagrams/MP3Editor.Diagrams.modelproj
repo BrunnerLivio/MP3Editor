@@ -1,0 +1,94 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{4c83d948-1a2d-4434-90dc-ea167dc99b29}</ProjectGuid>
+    <ArchitectureToolsVersion>2.0.0.0</ArchitectureToolsVersion>
+    <Name>MP3Editor.Diagrams</Name>
+    <RootNamespace>MP3Editor.Diagrams</RootNamespace>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <OutputPath>bin\Debug\</OutputPath>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <OutputPath>bin\Release\</OutputPath>
+  </PropertyGroup>
+  <PropertyGroup>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
+    <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
+  </PropertyGroup>
+  <Import Project="$(VSToolsPath)\ArchitectureTools\Microsoft.VisualStudio.TeamArchitect.ModelingProject.targets" Condition="'$(VSToolsPath)' != ''" />
+  <ItemGroup>
+    <Content Include="Language_LanguageRepositoryGetByShortname.sequencediagram">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Language_LanguageRepositoryGetByShortname.sequencediagram.layout">
+      <SubType>Content</SubType>
+      <DependentUpon>Language_LanguageRepositoryGetByShortname.sequencediagram</DependentUpon>
+    </Content>
+    <Content Include="ModelDefinition\Package10_1242.uml">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="ModelDefinition\Package1_1242.uml">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="ModelDefinition\Package2_1242.uml">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="ModelDefinition\Package3_1242.uml">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="ModelDefinition\Package4_1242.uml">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="ModelDefinition\Package5_1242.uml">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="ModelDefinition\Package6_1242.uml">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="ModelDefinition\Package7_1242.uml">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="ModelDefinition\Package8_1242.uml">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="ModelDefinition\Package9_1242.uml">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="ModelDefinition\Package_1242.uml">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="ModelDefinition\Package_1243.uml">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="PlaylistTest_AddList.sequencediagram">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="PlaylistTest_AddList.sequencediagram.layout">
+      <SubType>Content</SubType>
+      <DependentUpon>PlaylistTest_AddList.sequencediagram</DependentUpon>
+    </Content>
+    <Content Include="PlaylistTest_ParseFile.sequencediagram">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="PlaylistTest_ParseFile.sequencediagram.layout">
+      <SubType>Content</SubType>
+      <DependentUpon>PlaylistTest_ParseFile.sequencediagram</DependentUpon>
+    </Content>
+    <Content Include="Businesslogic.classdiagram">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Businesslogic.classdiagram.layout">
+      <SubType>Content</SubType>
+      <DependentUpon>Businesslogic.classdiagram</DependentUpon>
+    </Content>
+    <Folder Include="ModelDefinition\" />
+    <Content Include="ModelDefinition\MP3Editor.Diagrams.uml">
+      <SubType>Content</SubType>
+    </Content>
+  </ItemGroup>
+</Project>

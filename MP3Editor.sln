@@ -1,7 +1,7 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio 14
-VisualStudioVersion = 14.0.25420.1
+# Visual Studio 2013
+VisualStudioVersion = 12.0.31101.0
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MP3Editor.Businesslogic", "MP3Editor.Businesslogic\MP3Editor.Businesslogic.csproj", "{42050D97-09AE-4F00-82F4-7E7303C126B6}"
 EndProject
@@ -10,6 +10,8 @@ EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MP3Editor.UI", "MP3Editor.UI\MP3Editor.UI.csproj", "{3F59EA07-B138-4EEC-A8AD-C7C89E6D8CEF}"
 EndProject
 Project("{7CF6DF6D-3B04-46F8-A40B-537D21BCA0B4}") = "MP3Editor.Docs", "MP3Editor.Docs\MP3Editor.Docs.shfbproj", "{91AC51AB-FDB8-4EE1-B07D-4F310C26607B}"
+EndProject
+Project("{F088123C-0E9E-452A-89E6-6BA2F21D5CAC}") = "MP3Editor.Diagrams", "MP3Editor.Diagrams\MP3Editor.Diagrams.modelproj", "{4C83D948-1A2D-4434-90DC-EA167DC99B29}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -33,6 +35,10 @@ Global
 		{91AC51AB-FDB8-4EE1-B07D-4F310C26607B}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{91AC51AB-FDB8-4EE1-B07D-4F310C26607B}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{91AC51AB-FDB8-4EE1-B07D-4F310C26607B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{4C83D948-1A2D-4434-90DC-EA167DC99B29}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4C83D948-1A2D-4434-90DC-EA167DC99B29}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4C83D948-1A2D-4434-90DC-EA167DC99B29}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4C83D948-1A2D-4434-90DC-EA167DC99B29}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

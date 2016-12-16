@@ -14,8 +14,8 @@ namespace MP3Editor.Businesslogic.Test
         public void AddList()
         {
             Playlist.Playlist playlist = new Playlist.Playlist();
-            playlist.Add("yourmother");
-            Assert.AreEqual("yourmother", playlist.Files.First().FilePath);
+            playlist.Add("C:/Musik/Hardcoredeathmetalpussyshit.mp3");
+            Assert.AreEqual("C:/Musik/Hardcoredeathmetalpussyshit.mp3", playlist.Files.First().FilePath);
         }
 
         [TestMethod]

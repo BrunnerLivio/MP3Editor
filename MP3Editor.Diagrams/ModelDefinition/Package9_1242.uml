@@ -1,0 +1,27 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<package xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" xmlns:dm1="http://schemas.microsoft.com/dsltools/Kernel" xmlns:dm2="http://schemas.microsoft.com/dsltools/Component" xmlns:dm3="http://schemas.microsoft.com/dsltools/UseCase" xmlns:dm4="http://schemas.microsoft.com/dsltools/Activity" xmlns:dm5="http://schemas.microsoft.com/dsltools/Interaction" xmlns:dm6="http://schemas.microsoft.com/dsltools/UmlModelLibrary" xmlns:dm7="http://schemas.microsoft.com/dsltools/UmlDiagrams" xmlns:dm8="http://schemas.microsoft.com/dsltools/LogicalClassDesigner"
+  dslVersion="1.0.0.0"
+  Id="a44ebfa2-36cc-43ad-a26e-a130babf76e3"
+  name="Filetypes"
+  visibility="Private" xmlns="http://schemas.microsoft.com/dsltools/ModelStore">
+  <referencesInternal>
+    <reference
+      Id="f02e7aa5-84eb-4bfe-81be-90b2410bbbc7"
+      handle="viewcode://./CodeSchema_Namespace?Namespace%3DMP3Editor.Businesslogic.Filetypes"
+      tag="ViewCode" />
+  </referencesInternal>
+  <packagedElements>
+    <packageHasNamedElement>
+      <packageMoniker
+        Id="29772c7f-a0b1-44a7-a5a3-db408cd12391"
+        LastKnownName="ID3V1"
+        LastKnownLocation="Package10_1242.uml" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <packageMoniker
+        Id="6a996303-07c1-48a5-b594-753e77a1c4bc"
+        LastKnownName="ID3V2"
+        LastKnownLocation="Package_1243.uml" />
+    </packageHasNamedElement>
+  </packagedElements>
+</package>

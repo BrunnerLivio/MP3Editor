@@ -9,7 +9,7 @@ namespace MP3Editor.Businesslogic.Filetypes.ID3V1
     /// <summary>
     /// Interface for a ID3V1 writer. Writes Tags to a file
     /// </summary>
-    public interface IID3V1Writer
+    public interface IID3V1Writer : IFileTypeWriter
     {
         /// <summary>
         /// Write tags to a file

@@ -9,8 +9,9 @@
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <RootNamespace>MP3Editor.Businesslogic</RootNamespace>
     <AssemblyName>MP3Editor.Businesslogic</AssemblyName>
-    <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
+    <TargetFrameworkProfile />
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
     <DebugSymbols>true</DebugSymbols>
@@ -64,6 +65,7 @@
     <Compile Include="Genre\GenreRepository.cs" />
     <Compile Include="IFile.cs" />
     <Compile Include="IFileTypeReader.cs" />
+    <Compile Include="IFileTypeWriter.cs" />
     <Compile Include="Language\Language.cs" />
     <Compile Include="Language\LanguageRepository.cs" />
     <Compile Include="Playlist\Playlist.cs" />

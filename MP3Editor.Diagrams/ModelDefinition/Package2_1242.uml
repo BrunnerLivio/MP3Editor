@@ -1,0 +1,806 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<package xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" xmlns:dm1="http://schemas.microsoft.com/dsltools/Kernel" xmlns:dm2="http://schemas.microsoft.com/dsltools/Component" xmlns:dm3="http://schemas.microsoft.com/dsltools/UseCase" xmlns:dm4="http://schemas.microsoft.com/dsltools/Activity" xmlns:dm5="http://schemas.microsoft.com/dsltools/Interaction" xmlns:dm6="http://schemas.microsoft.com/dsltools/UmlModelLibrary" xmlns:dm7="http://schemas.microsoft.com/dsltools/UmlDiagrams" xmlns:dm8="http://schemas.microsoft.com/dsltools/LogicalClassDesigner" xmlns:dm9="http://schemas.microsoft.com/VisualStudio/TeamArchitect/SequenceDesigner"
+  dslVersion="1.0.0.0"
+  Id="eb4ccb5d-f631-4ee4-ac2b-a767230e76da"
+  name="Playlist"
+  visibility="Private" xmlns="http://schemas.microsoft.com/dsltools/ModelStore">
+  <referencesInternal>
+    <reference
+      Id="4f61c9cf-5ea6-4963-bcc1-d471b07786c9"
+      handle="viewcode://./CodeSchema_Namespace?Namespace%3DMP3Editor.Businesslogic.Playlist"
+      tag="ViewCode" />
+  </referencesInternal>
+  <packagedElements>
+    <packageHasNamedElement>
+      <class
+        Id="327251d6-c53a-495a-a9e5-df6b04be5055"
+        name="Playlist"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false">
+        <referencesInternal>
+          <reference
+            Id="f419c633-ea26-47fc-b0e7-395d20022a19"
+            handle="viewcode://./CodeSchema_Class?Assembly%3Dfile:%2F%2F%2FC:%2FUsers%2Flbrunner%2FSource%2FRepos%2FMP3Editor%2FMP3Editor.Businesslogic%2Fbin%2FDebug%2FMP3Editor.Businesslogic.dll Namespace%3DMP3Editor.Businesslogic.Playlist Type%3DPlaylist"
+            tag="ViewCode" />
+        </referencesInternal>
+        <appliedStereotypesInternal>
+          <stereotypeInstance
+            Id="02be28fe-e12f-457f-9d7a-594c1e0e0da2"
+            name="class"
+            profile="CSharpProfile">
+            <propertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="03492d17-04f8-4eb5-843b-9cea7296f2a2">
+                <propertyInstance
+                  Id="4d8f9109-45d8-43a9-b1ea-c2f1f120cbc6"
+                  name="ClrAttributes" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="56b88861-4397-4927-8afa-db2cce38e8ba">
+                <propertyInstance
+                  Id="f5790194-ec08-4f66-b5f7-1ec21b868ef4"
+                  name="IsPartial"
+                  value="false" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="dee84838-f45b-46bb-96ae-50cb77832e94">
+                <propertyInstance
+                  Id="ab7331df-0bcc-4978-8822-025da8c8c0bd"
+                  name="IsStatic"
+                  value="False" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="103b53a3-93a1-4c62-9145-ada3562b18fd">
+                <propertyInstance
+                  Id="f748c5b2-70e9-4c7f-8777-50a59ef210d0"
+                  name="IsUnsafe"
+                  value="false" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="652eab07-0de8-4234-883e-6b47993326f9">
+                <propertyInstance
+                  Id="31a844f7-ed4c-4be4-8694-eaa215721099"
+                  name="PackageVisibility"
+                  value="internal" />
+              </stereotypeInstanceHasPropertyInstances>
+            </propertyInstances>
+          </stereotypeInstance>
+        </appliedStereotypesInternal>
+        <targetEnds>
+          <association
+            Id="ca46c122-d57f-4050-8932-e7b211b0063e"
+            isDerived="false"
+            sourceEndRoleName="Playlist"
+            targetEndRoleName="Files"
+            isLeaf="false"
+            isAbstract="false">
+            <classMoniker
+              Id="0ce84932-bb23-4d99-933f-e2416663788d"
+              LastKnownName="List&lt;File‎&gt;"
+              LastKnownLocation="Package5_1242.uml" />
+            <description>Eigenschaft Files Verweistyp List&lt;File‎&gt;.</description>
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="76b67a0b-0a4d-4343-aa15-52d9cf9264eb"
+                  name="Playlist"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false"
+                  isNavigableOwned="false">
+                  <lowerValueInternal>
+                    <literalString
+                      Id="f85fb149-4fef-4b7e-96c9-26bc57ca743e"
+                      name="Lower"
+                      value="*" />
+                  </lowerValueInternal>
+                  <upperValueInternal>
+                    <literalString
+                      Id="c266c8c3-f291-44cf-9ea5-dea3d4f2c30c"
+                      name="Upper"
+                      value="*" />
+                  </upperValueInternal>
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="5fcbe788-0a28-40d6-8086-68c7e3446442"
+                  name="Files"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false">
+                  <lowerValueInternal>
+                    <literalString
+                      Id="51a65aea-f67a-4cf1-bb54-7cdeb7f2700e"
+                      name="Lower"
+                      value="1" />
+                  </lowerValueInternal>
+                  <upperValueInternal>
+                    <literalString
+                      Id="3ec3c8ce-f78c-4bf8-ae3e-4c55e5c0f579"
+                      name="Upper"
+                      value="1" />
+                  </upperValueInternal>
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+          </association>
+        </targetEnds>
+        <ownedAttributesInternal>
+          <property
+            Id="45dd9887-913e-401c-ba26-3f252d174d0a"
+            name="Files"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="true"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false">
+            <referencesInternal>
+              <reference
+                Id="05fc23bc-751f-46b4-9811-67eafd2f5db7"
+                handle="viewcode://./CodeSchema_Property?Assembly%3Dfile:%2F%2F%2FC:%2FUsers%2Flbrunner%2FSource%2FRepos%2FMP3Editor%2FMP3Editor.Businesslogic%2Fbin%2FDebug%2FMP3Editor.Businesslogic.dll Namespace%3DMP3Editor.Businesslogic.Playlist Type%3DPlaylist Member%3DFiles"
+                tag="ViewCode" />
+            </referencesInternal>
+            <appliedStereotypesInternal>
+              <stereotypeInstance
+                Id="37762dfa-227a-48d8-b6b0-8a0b085238d7"
+                name="property"
+                profile="CSharpProfile">
+                <propertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="e8826850-fca2-4c0a-b312-0dce01c877b4">
+                    <propertyInstance
+                      Id="c45d93e0-4c42-40af-8adf-a5b2982c4673"
+                      name="ClrAttributes" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="01dd1099-65d9-46e2-8945-7e42fbd0b36b">
+                    <propertyInstance
+                      Id="17992620-dae1-439c-b5af-29adc4e482f5"
+                      name="Get"
+                      value="public" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="9151402d-3c9d-4c78-9072-a0c62e8736db">
+                    <propertyInstance
+                      Id="35cfe52d-87ea-4ded-aee2-f1a03ef0a698"
+                      name="HasBody"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="09b20aae-5a8f-40c5-9c7b-1396e406f400">
+                    <propertyInstance
+                      Id="13816647-d50e-4a5f-b316-7aae4ab4f26b"
+                      name="IsUnsafe"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="a9f34eb4-81b5-45a5-ad9e-00216565bef5">
+                    <propertyInstance
+                      Id="234e4b6d-7aed-418c-af99-af1c88ea6277"
+                      name="Inheritance"
+                      value="none" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="dcf37eed-7c09-451f-839b-4699ef7fead7">
+                    <propertyInstance
+                      Id="f612a878-e801-486a-b89b-7d8827ec8230"
+                      name="PackageVisibility"
+                      value="internal" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="8e31943a-7d14-4b39-8b68-3f8b58624b08">
+                    <propertyInstance
+                      Id="548e5765-7d92-4e12-8524-3589dc46f2d9"
+                      name="Set"
+                      value="none" />
+                  </stereotypeInstanceHasPropertyInstances>
+                </propertyInstances>
+              </stereotypeInstance>
+            </appliedStereotypesInternal>
+            <type_NamedElement>
+              <classMoniker
+                Id="0ce84932-bb23-4d99-933f-e2416663788d"
+                LastKnownName="List&lt;File‎&gt;"
+                LastKnownLocation="Package5_1242.uml" />
+            </type_NamedElement>
+          </property>
+          <property
+            Id="d7241c40-1f7e-4093-87a8-e8a1b5da2081"
+            name="M3UText"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="true"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false">
+            <referencesInternal>
+              <reference
+                Id="32bfafa1-0bde-4247-a678-c4b01626e5ad"
+                handle="viewcode://./CodeSchema_Property?Assembly%3Dfile:%2F%2F%2FC:%2FUsers%2Flbrunner%2FSource%2FRepos%2FMP3Editor%2FMP3Editor.Businesslogic%2Fbin%2FDebug%2FMP3Editor.Businesslogic.dll Namespace%3DMP3Editor.Businesslogic.Playlist Type%3DPlaylist Member%3DM3UText"
+                tag="ViewCode" />
+            </referencesInternal>
+            <appliedStereotypesInternal>
+              <stereotypeInstance
+                Id="e7a51733-1a76-4b87-aca0-cee04c2f2c37"
+                name="property"
+                profile="CSharpProfile">
+                <propertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="002a00e6-f28a-4216-aaaa-199564d18ea3">
+                    <propertyInstance
+                      Id="26e49bac-7b95-4de9-b1bf-5ed64ba7f73c"
+                      name="ClrAttributes" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="52a14b22-a6d3-4442-81a5-677eb9c76d75">
+                    <propertyInstance
+                      Id="0d904cf1-9601-4879-95dd-f45d303cf22b"
+                      name="Get"
+                      value="public" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="0ece0d5d-3131-4547-8a50-e80e09873402">
+                    <propertyInstance
+                      Id="76095074-1408-48cd-a0de-4b5c378f0614"
+                      name="HasBody"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="374af8eb-78f1-4f12-9dbb-58e4a18f3f1c">
+                    <propertyInstance
+                      Id="f21bab1b-d1df-4cac-b13a-69a89ca263d8"
+                      name="IsUnsafe"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="e66105b9-b96b-418d-bc01-7dc77e58b2bb">
+                    <propertyInstance
+                      Id="6eb4e576-66e1-4355-be02-3aa5ce5752d4"
+                      name="Inheritance"
+                      value="none" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="2344863d-ae80-4bb8-a74e-882522808f4c">
+                    <propertyInstance
+                      Id="60397fe8-ee8c-49f6-b62b-3d0ad02def80"
+                      name="PackageVisibility"
+                      value="internal" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="6fbe602b-1db7-4b1d-bbdc-348b1ec2269d">
+                    <propertyInstance
+                      Id="f98006c5-7c3d-4de5-a48a-11f996966298"
+                      name="Set"
+                      value="none" />
+                  </stereotypeInstanceHasPropertyInstances>
+                </propertyInstances>
+              </stereotypeInstance>
+            </appliedStereotypesInternal>
+            <type_NamedElement>
+              <primitiveTypeMoniker
+                Id="59259974-6d55-42c6-b7bd-763d77ac8ef9"
+                LastKnownName="String"
+                LastKnownLocation="MP3Editor.Diagrams.uml" />
+            </type_NamedElement>
+          </property>
+          <property
+            Id="3ab6f99c-c977-47e2-be80-a83e4f6caf8a"
+            name="files"
+            visibility="Private"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false">
+            <referencesInternal>
+              <reference
+                Id="c071fead-6b5a-4d29-87b5-ff1fd5f362b4"
+                handle="viewcode://./CodeSchema_Field?Assembly%3Dfile:%2F%2F%2FC:%2FUsers%2Flbrunner%2FSource%2FRepos%2FMP3Editor%2FMP3Editor.Businesslogic%2Fbin%2FDebug%2FMP3Editor.Businesslogic.dll Namespace%3DMP3Editor.Businesslogic.Playlist Type%3DPlaylist Member%3Dfiles"
+                tag="ViewCode" />
+            </referencesInternal>
+            <appliedStereotypesInternal>
+              <stereotypeInstance
+                Id="0d1ceaea-119e-4c75-b299-fd54c694c484"
+                name="field"
+                profile="CSharpProfile">
+                <propertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="1b3abf44-4855-4938-87b2-e8676563e550">
+                    <propertyInstance
+                      Id="49b72234-e28d-4664-889b-c057ab9cff27"
+                      name="ClrAttributes" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="9b5ab1fc-a743-45f1-ba1f-85cea0877cd2">
+                    <propertyInstance
+                      Id="55711019-2613-4e5e-90c0-d336b9bef0e6"
+                      name="IsConst"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="2ace25b8-3813-4d26-b9cc-4de962f10735">
+                    <propertyInstance
+                      Id="ac961f91-938e-4984-8aaa-7298e21edacd"
+                      name="IsNullable"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="9b1cdfe7-0cd6-4d5b-b3a3-c58905101f92">
+                    <propertyInstance
+                      Id="bdc7e2e7-0d13-44d9-a97e-43a9f2dfca8e"
+                      name="IsVolatile"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="cce95552-6def-44da-9582-ff22d07bc6fa">
+                    <propertyInstance
+                      Id="587257ac-0f5c-4b65-a821-fac8165a6d3e"
+                      name="PackageVisibility"
+                      value="internal" />
+                  </stereotypeInstanceHasPropertyInstances>
+                </propertyInstances>
+              </stereotypeInstance>
+            </appliedStereotypesInternal>
+            <type_NamedElement>
+              <classMoniker
+                Id="0ce84932-bb23-4d99-933f-e2416663788d"
+                LastKnownName="List&lt;File‎&gt;"
+                LastKnownLocation="Package5_1242.uml" />
+            </type_NamedElement>
+          </property>
+        </ownedAttributesInternal>
+        <ownedOperationsInternal>
+          <operation
+            Id="c4951ddd-23af-450d-ae41-c77f45eba485"
+            name="ParseFile"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false">
+            <referencesInternal>
+              <reference
+                Id="0cc9c23d-da6b-4100-94c5-b5c0ca7bf19c"
+                handle="viewcode://./CodeSchema_Method?Assembly%3Dfile:%2F%2F%2FC:%2FUsers%2Flbrunner%2FSource%2FRepos%2FMP3Editor%2FMP3Editor.Businesslogic%2Fbin%2FDebug%2FMP3Editor.Businesslogic.dll Namespace%3DMP3Editor.Businesslogic.Playlist Type%3DPlaylist Member%3D(Name%3DParseFile OverloadingParameters%3D[(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.5%2Fmscorlib.dll&quot; Namespace%3DSystem Type%3D(Name%3DString ArrayRank%3D1 ParentType%3DString))])"
+                tag="ViewCode" />
+            </referencesInternal>
+            <appliedStereotypesInternal>
+              <stereotypeInstance
+                Id="de6dcfd3-f9df-4bdf-9a3a-eb61dbd723fd"
+                name="method"
+                profile="CSharpProfile">
+                <propertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="ef782e89-6750-4823-bb21-dafea516a1d6">
+                    <propertyInstance
+                      Id="069f67e3-7108-40b4-b6da-fd1595aa2d16"
+                      name="ClrAttributes" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="355d2d0b-3bf0-41b3-8f57-8fe7ad819123">
+                    <propertyInstance
+                      Id="1ab5ed22-a8f2-4a59-a49b-8af90808c259"
+                      name="IsPartial"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="e78bb26d-0922-4a7f-b165-70dec6cf6091">
+                    <propertyInstance
+                      Id="86ba4633-a92c-46c6-bcbe-979ebde0af16"
+                      name="IsUnsafe"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="848b078b-17a8-4051-a0e3-b4a5c61903ae">
+                    <propertyInstance
+                      Id="2a64665b-fbba-4b9c-9799-352f2fe7a545"
+                      name="Inheritance"
+                      value="none" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="b7af1c8f-7065-455f-85b2-5c2c5398b20d">
+                    <propertyInstance
+                      Id="9c90cc91-590d-4905-ab79-8e195b7485f4"
+                      name="PackageVisibility"
+                      value="internal" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="0c01c488-4698-4247-b0ad-3ae5ee7295c3">
+                    <propertyInstance
+                      Id="5d49bdc2-b542-48fd-b4ab-bba4127ea87a"
+                      name="params"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                </propertyInstances>
+              </stereotypeInstance>
+            </appliedStereotypesInternal>
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="72ea2ddc-4d24-4f1f-b44f-d45b60b0e1b7"
+                  direction="Return">
+                  <type_NamedElement>
+                    <classMoniker
+                      Id="0ce84932-bb23-4d99-933f-e2416663788d"
+                      LastKnownName="List&lt;File‎&gt;"
+                      LastKnownLocation="Package5_1242.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="14ffcbbf-5dff-4f24-b8f2-7f49dab4441e"
+                  name="content"
+                  direction="In"
+                  isOrdered="true">
+                  <referencesInternal>
+                    <reference
+                      Id="1f609043-694a-4428-a1b3-d76cc1715903"
+                      handle="viewcode://./CodeSchema_Parameter?Assembly%3Dfile:%2F%2F%2FC:%2FUsers%2Flbrunner%2FSource%2FRepos%2FMP3Editor%2FMP3Editor.Businesslogic%2Fbin%2FDebug%2FMP3Editor.Businesslogic.dll Namespace%3DMP3Editor.Businesslogic.Playlist Type%3DPlaylist Member%3D(Name%3DParseFile OverloadingParameters%3D[(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.5%2Fmscorlib.dll&quot; Namespace%3DSystem Type%3D(Name%3DString ArrayRank%3D1 ParentType%3DString))]) ParameterIdentifier%3Dcontent"
+                      tag="ViewCode" />
+                  </referencesInternal>
+                  <lowerValueInternal>
+                    <literalString
+                      Id="f9fc01df-7518-496c-a643-d733c6122ebe"
+                      name="Lower"
+                      value="*" />
+                  </lowerValueInternal>
+                  <upperValueInternal>
+                    <literalString
+                      Id="2a91622f-923b-44ec-b431-5e22f7323bed"
+                      name="Upper"
+                      value="*" />
+                  </upperValueInternal>
+                  <type_NamedElement>
+                    <primitiveTypeMoniker
+                      Id="59259974-6d55-42c6-b7bd-763d77ac8ef9"
+                      LastKnownName="String"
+                      LastKnownLocation="MP3Editor.Diagrams.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+          <operation
+            Id="9b4737e6-6a42-462e-889b-cced8eeec806"
+            name="Load"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false">
+            <referencesInternal>
+              <reference
+                Id="b22b81d5-7da8-4fb6-b642-97e0ad165942"
+                handle="viewcode://./CodeSchema_Method?Assembly%3Dfile:%2F%2F%2FC:%2FUsers%2Flbrunner%2FSource%2FRepos%2FMP3Editor%2FMP3Editor.Businesslogic%2Fbin%2FDebug%2FMP3Editor.Businesslogic.dll Namespace%3DMP3Editor.Businesslogic.Playlist Type%3DPlaylist Member%3D(Name%3DLoad OverloadingParameters%3D[(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.5%2Fmscorlib.dll&quot; Namespace%3DSystem Type%3DString)])"
+                tag="ViewCode" />
+            </referencesInternal>
+            <appliedStereotypesInternal>
+              <stereotypeInstance
+                Id="c04dadea-030b-44cc-b5a2-9a2039d74211"
+                name="method"
+                profile="CSharpProfile">
+                <propertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="22420dd1-1594-4b43-8dd4-03c22796fafa">
+                    <propertyInstance
+                      Id="a4ff5948-e525-4351-b2d5-216dd9a64008"
+                      name="ClrAttributes" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="a5be0848-ff84-4c1f-9ce5-5ad285d1fe22">
+                    <propertyInstance
+                      Id="77f7d3fc-6c66-46cb-99d5-c26972a97c82"
+                      name="IsPartial"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="49382ffc-bffa-449a-9d2f-846e209c5638">
+                    <propertyInstance
+                      Id="dcca8d36-61e0-413c-9497-4f9c235bd3fc"
+                      name="IsUnsafe"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="2cedc83f-9bec-4b13-b02b-8757ff781b39">
+                    <propertyInstance
+                      Id="56a9b846-3ab5-4783-88a1-074de87126a7"
+                      name="Inheritance"
+                      value="none" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="e16b77b9-0c4d-4eef-b7b4-750361a3de98">
+                    <propertyInstance
+                      Id="e92ceb2f-3aef-469b-8368-769cccfa8c11"
+                      name="PackageVisibility"
+                      value="internal" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="e431029f-eb2d-4aa1-b73c-b9fc1dc14dfb">
+                    <propertyInstance
+                      Id="58e2fd73-88d5-475b-bee1-376db227d6ec"
+                      name="params"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                </propertyInstances>
+              </stereotypeInstance>
+            </appliedStereotypesInternal>
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="7dd7b5dc-768f-48a9-b0dd-eadf421ed41d"
+                  name="path"
+                  direction="In">
+                  <referencesInternal>
+                    <reference
+                      Id="26fd06b8-e856-40fa-8060-ffc8a05b2c32"
+                      handle="viewcode://./CodeSchema_Parameter?Assembly%3Dfile:%2F%2F%2FC:%2FUsers%2Flbrunner%2FSource%2FRepos%2FMP3Editor%2FMP3Editor.Businesslogic%2Fbin%2FDebug%2FMP3Editor.Businesslogic.dll Namespace%3DMP3Editor.Businesslogic.Playlist Type%3DPlaylist Member%3D(Name%3DLoad OverloadingParameters%3D[(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.5%2Fmscorlib.dll&quot; Namespace%3DSystem Type%3DString)]) ParameterIdentifier%3Dpath"
+                      tag="ViewCode" />
+                  </referencesInternal>
+                  <type_NamedElement>
+                    <primitiveTypeMoniker
+                      Id="59259974-6d55-42c6-b7bd-763d77ac8ef9"
+                      LastKnownName="String"
+                      LastKnownLocation="MP3Editor.Diagrams.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+          <operation
+            Id="5f41ee2a-6b42-471d-b917-db6e699096a1"
+            name="Save"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false">
+            <referencesInternal>
+              <reference
+                Id="b6e519f2-2bc7-41fb-9b4f-7263e90acc34"
+                handle="viewcode://./CodeSchema_Method?Assembly%3Dfile:%2F%2F%2FC:%2FUsers%2Flbrunner%2FSource%2FRepos%2FMP3Editor%2FMP3Editor.Businesslogic%2Fbin%2FDebug%2FMP3Editor.Businesslogic.dll Namespace%3DMP3Editor.Businesslogic.Playlist Type%3DPlaylist Member%3D(Name%3DSave OverloadingParameters%3D[(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.5%2Fmscorlib.dll&quot; Namespace%3DSystem Type%3DString)])"
+                tag="ViewCode" />
+            </referencesInternal>
+            <appliedStereotypesInternal>
+              <stereotypeInstance
+                Id="b1a98d5b-65c7-40cb-ab65-f882b4a7582c"
+                name="method"
+                profile="CSharpProfile">
+                <propertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="06ac364d-e754-429e-9032-2dd234d3d7c9">
+                    <propertyInstance
+                      Id="33a7ecb6-0950-468a-bb51-2cb7826328b4"
+                      name="ClrAttributes" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="73915c86-416d-4298-89a1-f221ce2fd5ea">
+                    <propertyInstance
+                      Id="e77c4ddc-6a85-43d3-9b40-bede21a47ce6"
+                      name="IsPartial"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="b3d29f40-f483-4339-97a3-95e97340fd1c">
+                    <propertyInstance
+                      Id="991bab75-2991-4956-a75d-dbc312d351a4"
+                      name="IsUnsafe"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="dd3f298f-1f0c-4b7e-8b79-496880cb6f90">
+                    <propertyInstance
+                      Id="d58f023d-6a51-49b6-94af-d09c1031cf5f"
+                      name="Inheritance"
+                      value="none" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="212b21e1-3b38-439d-8908-213fdc09cb87">
+                    <propertyInstance
+                      Id="308f1046-0f02-4fe1-a123-631683b859b8"
+                      name="PackageVisibility"
+                      value="internal" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="4cecda00-71d4-4e7f-a4c0-98558aceca64">
+                    <propertyInstance
+                      Id="d2478383-ecba-40b1-8049-cd0df01d6759"
+                      name="params"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                </propertyInstances>
+              </stereotypeInstance>
+            </appliedStereotypesInternal>
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="a01b8286-3e88-4e80-8a2b-3a3a052529be"
+                  name="path"
+                  direction="In">
+                  <referencesInternal>
+                    <reference
+                      Id="11d44fc2-08a6-43b8-a54a-d7d0298c78cf"
+                      handle="viewcode://./CodeSchema_Parameter?Assembly%3Dfile:%2F%2F%2FC:%2FUsers%2Flbrunner%2FSource%2FRepos%2FMP3Editor%2FMP3Editor.Businesslogic%2Fbin%2FDebug%2FMP3Editor.Businesslogic.dll Namespace%3DMP3Editor.Businesslogic.Playlist Type%3DPlaylist Member%3D(Name%3DSave OverloadingParameters%3D[(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.5%2Fmscorlib.dll&quot; Namespace%3DSystem Type%3DString)]) ParameterIdentifier%3Dpath"
+                      tag="ViewCode" />
+                  </referencesInternal>
+                  <type_NamedElement>
+                    <primitiveTypeMoniker
+                      Id="59259974-6d55-42c6-b7bd-763d77ac8ef9"
+                      LastKnownName="String"
+                      LastKnownLocation="MP3Editor.Diagrams.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+          <operation
+            Id="bebfb942-8a4b-4a15-ba0a-243ab18ef184"
+            name="Add"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false">
+            <referencesInternal>
+              <reference
+                Id="0aefb141-006c-44ce-a517-5c76a7c4c437"
+                handle="viewcode://./CodeSchema_Method?Assembly%3Dfile:%2F%2F%2FC:%2FUsers%2Flbrunner%2FSource%2FRepos%2FMP3Editor%2FMP3Editor.Businesslogic%2Fbin%2FDebug%2FMP3Editor.Businesslogic.dll Namespace%3DMP3Editor.Businesslogic.Playlist Type%3DPlaylist Member%3D(Name%3DAdd OverloadingParameters%3D[(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.5%2Fmscorlib.dll&quot; Namespace%3DSystem Type%3DString)])"
+                tag="ViewCode" />
+            </referencesInternal>
+            <appliedStereotypesInternal>
+              <stereotypeInstance
+                Id="c19a14dd-c966-4f72-8f37-95b43e71f1af"
+                name="method"
+                profile="CSharpProfile">
+                <propertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="2b94bbc2-9ae3-4d3e-b41b-f0c7737e8a5b">
+                    <propertyInstance
+                      Id="f8181b28-6ce6-42b2-8d07-d482e215e551"
+                      name="ClrAttributes" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="1eb66840-f614-4eb7-994d-46b51ee4b6e6">
+                    <propertyInstance
+                      Id="7c41d1b0-2203-4485-b983-16bcd25885bc"
+                      name="IsPartial"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="37c2c421-885d-4ec1-827d-c14b7216f709">
+                    <propertyInstance
+                      Id="41d3a3c6-c132-4706-af7b-831282c7871d"
+                      name="IsUnsafe"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="3f3abdb0-7356-43fb-8fbe-fad708c2b45a">
+                    <propertyInstance
+                      Id="acdd6b45-acd7-4d6d-8bdc-2c791d423c42"
+                      name="Inheritance"
+                      value="none" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="8bd93268-6b39-465d-99d5-7583371cd3ba">
+                    <propertyInstance
+                      Id="0af535f0-a97a-45ad-ac3f-c6733edc50db"
+                      name="PackageVisibility"
+                      value="internal" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="ed4a129f-8ead-4d29-abe7-1ecb2ec47bf1">
+                    <propertyInstance
+                      Id="906b08be-812c-4cbf-88bc-01ba4b540cfb"
+                      name="params"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                </propertyInstances>
+              </stereotypeInstance>
+            </appliedStereotypesInternal>
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="125af6f6-375d-49ea-8c7f-54310a9e54b1"
+                  name="filepath"
+                  direction="In">
+                  <referencesInternal>
+                    <reference
+                      Id="42bec1af-cb01-422a-945d-182903fbbffa"
+                      handle="viewcode://./CodeSchema_Parameter?Assembly%3Dfile:%2F%2F%2FC:%2FUsers%2Flbrunner%2FSource%2FRepos%2FMP3Editor%2FMP3Editor.Businesslogic%2Fbin%2FDebug%2FMP3Editor.Businesslogic.dll Namespace%3DMP3Editor.Businesslogic.Playlist Type%3DPlaylist Member%3D(Name%3DAdd OverloadingParameters%3D[(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.5%2Fmscorlib.dll&quot; Namespace%3DSystem Type%3DString)]) ParameterIdentifier%3Dfilepath"
+                      tag="ViewCode" />
+                  </referencesInternal>
+                  <type_NamedElement>
+                    <primitiveTypeMoniker
+                      Id="59259974-6d55-42c6-b7bd-763d77ac8ef9"
+                      LastKnownName="String"
+                      LastKnownLocation="MP3Editor.Diagrams.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+          <operation
+            Id="5d172d2b-65d6-4f77-b1a8-12c9e724e8c5"
+            name="Playlist"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false">
+            <referencesInternal>
+              <reference
+                Id="529e74eb-c7d5-42db-ba99-2b59bd8fc8be"
+                handle="viewcode://./CodeSchema_Method?Assembly%3Dfile:%2F%2F%2FC:%2FUsers%2Flbrunner%2FSource%2FRepos%2FMP3Editor%2FMP3Editor.Businesslogic%2Fbin%2FDebug%2FMP3Editor.Businesslogic.dll Namespace%3DMP3Editor.Businesslogic.Playlist Type%3DPlaylist Member%3D.ctor"
+                tag="ViewCode" />
+            </referencesInternal>
+            <appliedStereotypesInternal>
+              <stereotypeInstance
+                Id="c747bfc2-fb4a-40e0-a6ab-5a6c5517cfab"
+                name="method"
+                profile="CSharpProfile">
+                <propertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="a72961ef-a5ea-432a-a39c-abbe6b60c1ff">
+                    <propertyInstance
+                      Id="3038f5b2-fd74-492f-8ad4-895308ef2bcc"
+                      name="ClrAttributes" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="7595f954-afe0-463b-956f-8349b2f70310">
+                    <propertyInstance
+                      Id="8ebbf143-1471-423c-b6d6-dc186ef39851"
+                      name="IsPartial"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="c3c2e9bb-ef19-47bb-99f4-1408d1d07173">
+                    <propertyInstance
+                      Id="14449601-0aa0-4461-8665-7dcafc28c691"
+                      name="IsUnsafe"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="1cff7439-8e70-4a3d-8b55-f93c2b0dc3fd">
+                    <propertyInstance
+                      Id="b6db9b22-6ada-4cca-a15f-b87a46349d2f"
+                      name="Inheritance"
+                      value="none" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="d20eca84-5bb0-4a71-a780-11de0e791542">
+                    <propertyInstance
+                      Id="cd0735c5-ca87-4c44-86f0-d5ece6499f8c"
+                      name="PackageVisibility"
+                      value="internal" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="368d5c30-409f-4415-8330-a05386449c73">
+                    <propertyInstance
+                      Id="fb040dbc-c725-4e91-a707-9694ff19fb24"
+                      name="params"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                </propertyInstances>
+              </stereotypeInstance>
+            </appliedStereotypesInternal>
+          </operation>
+        </ownedOperationsInternal>
+      </class>
+    </packageHasNamedElement>
+  </packagedElements>
+</package>

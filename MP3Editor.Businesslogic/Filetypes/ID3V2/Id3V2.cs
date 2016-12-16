@@ -11,7 +11,7 @@ namespace MP3Editor.Businesslogic.Filetypes.ID3V2
     /// Represents a data file which reprensents one MP3 file.
     /// This class writes to the ID3V2 attributes of this file
     /// </summary>
-    public class Id3V2 : File, IID3V2
+    public class Id3V2 : File, IFile, IID3V2
     {
         private string album;
         private uint track;
