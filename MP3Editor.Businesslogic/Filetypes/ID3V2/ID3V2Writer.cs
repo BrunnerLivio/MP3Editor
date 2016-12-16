@@ -10,7 +10,7 @@ namespace MP3Editor.Businesslogic.Filetypes.ID3V2
     /// <summary>
     /// Write ID3V2 Tags
     /// </summary>
-    public class ID3V2Writer : IID3V2Writer
+    public class ID3V2Writer
     {
         /// <summary>
         /// Write to the ID3V2 file
